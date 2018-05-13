@@ -1,0 +1,176 @@
+<resources>
+    <style name="theme_default" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="stock_up_color">@color/stock_red_color</item>
+        <item name="stock_down_color">@color/stock_green_color</item>
+        <item name="stock_base_color">@color/stock_stop_color</item>
+
+        <!-- 公共控件 -->
+        <item name="delete_button_text_color_selector">@color/delete_button_text_color_selector</item>
+
+        <item name="main_bottom_tab_bar_bg_color">@color/main_tab_bg</item>
+        <item name="main_bottom_tab_bar_divide_line_color">#e6e6e6</item>
+        <item name="main_bottom_tab_bar_text_color">@color/tab_bar_text_selector</item>
+
+        <item name="actionbar_subtitle_text_color">@color/white_80</item>
+        <item name="actionbar_refresh_drawable">@drawable/refresh</item>
+        <item name="actionbar_search_drawable">@drawable/actionbar_search_selector</item>
+        <item name="help_icon_drawable">@drawable/help_icon</item>
+        <item name="right_arrow_drawable">@drawable/right_arrow</item>
+        <item name="privatization_right_arrow_drawable">@drawable/right_arrow</item>
+        <item name="ticks_scrollbar_thumb_drawable">@drawable/ticks_scrollbar_thumb</item>
+        <item name="right_corner">@drawable/right_corner</item>
+        <item name="arrow_down">@drawable/arrow_down</item>
+        <item name="arrow_up">@drawable/arrow_up</item>
+        <item name="list_group_more_drawable">@drawable/list_group_more</item>
+        <item name="tag_round_rect_bg_neutual">@drawable/tag_round_rect_bg_neutual</item>
+        <item name="attitude_neutual">@color/attitude_neutual</item>
+        <item name="actionbar_live_icon">@drawable/actionbar_live_icon</item>
+
+        <!-- 自选股 -->
+        <item name="portfolio_empty_add">@drawable/portfolio_empty_add</item>
+        <item name="recommend_subject_bg">@drawable/recommend_subject_bg</item>
+        <item name="stock_tag_hk_drawable">@drawable/stock_tag_hk</item>
+        <item name="stock_tag_us_drawable">@drawable/stock_tag_us</item>
+        <item name="add_portfolio_icon">@drawable/add_portfolio_icon</item>
+        <item name="portfolio_group_title_expand_drawable">@drawable/portfolio_group_title_expand</item>
+        <item name="top_close_drawable">@drawable/top_close_icon</item>
+        <item name="portfolio_group_edit_drawable">@drawable/portfolio_group_edit</item>
+        <item name="portfolio_group_new_drawable">@drawable/portfolio_group_new</item>
+        <item name="portfolio_group_check_mark_drawable">@drawable/check_mark</item>
+
+        <!-- setting -->
+        <item name="setting_edit_text_selector">@color/setting_edit_text_selector</item>
+        <item name="setting_button_selector">@drawable/setting_button_selector</item>
+        <item name="setting_checkbox_text_color_selector">@color/setting_checkbox_text_color_selector</item>
+        <item name="setting_button_text_color_selector">@color/setting_button_text_color_selector</item>
+        <item name="input_clear_button">@drawable/input_clear_button</item>
+        <item name="setting_progress_button_bg">@drawable/setting_progress_button_bg</item>
+        <item name="setting_about_bg">@drawable/about_bg</item>
+        <item name="setting_edit_bg_selector">@drawable/setting_edit_bg_selector</item>
+        <item name="setting_seekbar_progress">@drawable/setting_seekbar_progress</item>
+
+        <!-- search -->
+        <item name="search_edit_text_bg">@drawable/search_edit_text_bg</item>
+        <item name="search_edit_text_icon">@drawable/search_edit_text_icon</item>
+        <item name="arrow_right_icon">@drawable/arrow_right_icon</item>
+
+        <!-- discovery-->
+        <item name="stock_pick_down_bg">#fafafa</item>
+        <item name="stock_pick_hot_stock_bg">@drawable/stock_pick_hot_stock_bg</item>
+        <item name="stock_pick_hot_stock_blur">@drawable/stock_pick_hot_stock_blur</item>
+        <item name="stock_pick_hot_stock_lock">@drawable/stock_pick_hot_stock_lock</item>
+        <item name="stock_pick_login_button_text_color">@color/white_100</item>
+
+        <!-- TabLayout -->
+        <item name="news_important">@color/tab_bar_text_selected_color</item>
+        <item name="news_important_clicked">@color/actionbar_bg_color_60</item>
+
+        <item name="normal_two_tab_textColor">@color/normal_tab_text</item>
+        <item name="normal_two_tab_selector_view_bg_drawable">@drawable/normal_two_tab_selector_view_bg</item>
+        <item name="normal_two_tab_selector_selected_bg_left_drawable">@drawable/normal_two_tab_selector_selected_bg_left</item>
+        <item name="normal_two_tab_selector_selected_bg_middle_drawable">@drawable/normal_two_tab_selector_selected_bg_middle</item>
+        <item name="normal_two_tab_selector_selected_bg_right_drawable">@drawable/normal_two_tab_selector_selected_bg_right</item>
+
+        <item name="transaction_two_tab_textColor">@color/transaction_tab_text</item>
+        <item name="transaction_two_tab_selector_view_bg_drawable">@drawable/transaction_two_tab_selector_view_bg</item>
+        <item name="transaction_two_tab_selector_selected_bg_left_drawable">@drawable/transaction_two_tab_selector_selected_bg_left</item>
+        <item name="transaction_two_tab_selector_selected_bg_right_drawable">@drawable/transaction_two_tab_selector_selected_bg_right</item>
+        <item name="transaction_two_tab_selector_selected_bg_middle_drawable">@drawable/transaction_two_tab_selector_selected_bg_middle</item>
+
+        <!-- 分时K线图 -->
+        <item name="line_chart_bg">@color/main_bg_color</item>
+        <item name="line_chart_border_rect_color">@color/line_chart_border_rect</item>
+        <item name="line_chart_time_line_shadow_color">@color/stock_time_chart_shadow</item>
+        <item name="k_line_control_text_color">@color/k_line_control_text</item>
+        <item name="k_line_indicator_bg_color">@color/k_line_indicator_bg</item>
+        <item name="k_line_indicator_text_color">@color/white_100</item>
+        <item name="line_chart_touch_line_color">@color/line_chart_touch_line_color</item>
+
+        <item name="operation_bar_bg">@color/operation_bar_bg</item>
+        <item name="operation_bar_add_bg">@color/operation_bar_add_bg</item>
+
+        <item name="stock_intro_related_subject_bg_color">@color/bg_gray</item>
+        <item name="stock_detail_finance_incoming_polyline_color">@color/stock_detail_finance_indicator_default</item>
+        <item name="polyline_icon_drawable">@drawable/polyline_icon</item>
+        <item name="capital_structure_shareholder_number_icon_drawable">@drawable/shareholder_number_indicator</item>
+        <item name="heat_line_color">@color/heat_line</item>
+        <item name="heat_shadow_color">@color/heat_shadow</item>
+        <item name="attitude_view_text_color">@color/white_100</item>
+        <item name="usa_privatization_bg">@drawable/privatization_round_rect_bg</item>
+
+        <!-- refresh anim -->
+        <item name="refresh_frame_1_00">@drawable/refresh_frame_1_00</item>
+        <item name="refresh_frame_1_01">@drawable/refresh_frame_1_01</item>
+        <item name="refresh_frame_1_02">@drawable/refresh_frame_1_02</item>
+        <item name="refresh_frame_1_03">@drawable/refresh_frame_1_03</item>
+        <item name="refresh_frame_1_04">@drawable/refresh_frame_1_04</item>
+        <item name="refresh_frame_1_05">@drawable/refresh_frame_1_05</item>
+        <item name="refresh_frame_1_06">@drawable/refresh_frame_1_06</item>
+        <item name="refresh_frame_1_07">@drawable/refresh_frame_1_07</item>
+        <item name="refresh_frame_1_08">@drawable/refresh_frame_1_08</item>
+        <item name="refresh_frame_1_09">@drawable/refresh_frame_1_09</item>
+        <item name="refresh_frame_1_10">@drawable/refresh_frame_1_10</item>
+        <item name="refresh_frame_1_11">@drawable/refresh_frame_1_11</item>
+        <item name="refresh_frame_1_12">@drawable/refresh_frame_1_12</item>
+        <item name="refresh_frame_1_13">@drawable/refresh_frame_1_13</item>
+        <item name="refresh_frame_1_14">@drawable/refresh_frame_1_14</item>
+        <item name="refresh_frame_1_15">@drawable/refresh_frame_1_15</item>
+        <item name="refresh_frame_1_16">@drawable/refresh_frame_1_16</item>
+        <item name="refresh_frame_1_17">@drawable/refresh_frame_1_17</item>
+        <item name="refresh_frame_1_18">@drawable/refresh_frame_1_18</item>
+        <item name="refresh_frame_1_19">@drawable/refresh_frame_1_19</item>
+        <item name="refresh_frame_1_20">@drawable/refresh_frame_1_20</item>
+        <item name="refresh_frame_1_21">@drawable/refresh_frame_1_21</item>
+        <item name="refresh_frame_1_22">@drawable/refresh_frame_1_22</item>
+        <item name="refresh_frame_1_23">@drawable/refresh_frame_1_23</item>
+        <item name="refresh_frame_1_24">@drawable/refresh_frame_1_24</item>
+        <item name="refresh_frame_1_25">@drawable/refresh_frame_1_25</item>
+        <item name="refresh_frame_1_26">@drawable/refresh_frame_1_26</item>
+        <item name="refresh_frame_1_27">@drawable/refresh_frame_1_27</item>
+        <!--<item name="refresh_frame_2_00">@drawable/refresh_frame_2_00</item>-->
+        <!--<item name="refresh_frame_2_01">@drawable/refresh_frame_2_01</item>-->
+        <!--<item name="refresh_frame_2_02">@drawable/refresh_frame_2_02</item>-->
+        <!--<item name="refresh_frame_2_03">@drawable/refresh_frame_2_03</item>-->
+        <!--<item name="refresh_frame_2_04">@drawable/refresh_frame_2_04</item>-->
+        <!--<item name="refresh_frame_2_05">@drawable/refresh_frame_2_05</item>-->
+        <!--<item name="refresh_frame_2_06">@drawable/refresh_frame_2_06</item>-->
+        <!--<item name="refresh_frame_2_07">@drawable/refresh_frame_2_07</item>-->
+        <!--<item name="refresh_frame_2_08">@drawable/refresh_frame_2_08</item>-->
+        <!--<item name="refresh_frame_2_09">@drawable/refresh_frame_2_09</item>-->
+        <!--<item name="refresh_frame_2_10">@drawable/refresh_frame_2_10</item>-->
+        <!--<item name="refresh_frame_2_11">@drawable/refresh_frame_2_11</item>-->
+        <!--<item name="refresh_frame_2_12">@drawable/refresh_frame_2_12</item>-->
+        <!--<item name="refresh_frame_2_13">@drawable/refresh_frame_2_13</item>-->
+        <!--<item name="refresh_frame_2_14">@drawable/refresh_frame_2_14</item>-->
+        <!--<item name="refresh_frame_2_15">@drawable/refresh_frame_2_15</item>-->
+        <!--<item name="refresh_frame_2_16">@drawable/refresh_frame_2_16</item>-->
+        <!--<item name="refresh_frame_2_17">@drawable/refresh_frame_2_17</item>-->
+        <!--<item name="refresh_frame_2_18">@drawable/refresh_frame_2_18</item>-->
+        <!--<item name="refresh_frame_2_19">@drawable/refresh_frame_2_19</item>-->
+        <!--<item name="refresh_frame_2_20">@drawable/refresh_frame_2_20</item>-->
+        <!--<item name="refresh_frame_2_21">@drawable/refresh_frame_2_21</item>-->
+        <!--<item name="refresh_frame_2_22">@drawable/refresh_frame_2_22</item>-->
+        <!--<item name="refresh_frame_2_23">@drawable/refresh_frame_2_23</item>-->
+        <!--<item name="refresh_frame_2_24">@drawable/refresh_frame_2_24</item>-->
+        <!--<item name="refresh_frame_2_25">@drawable/refresh_frame_2_25</item>-->
+        <!--<item name="refresh_frame_2_26">@drawable/refresh_frame_2_26</item>-->
+        <!--<item name="refresh_frame_2_27">@drawable/refresh_frame_2_27</item>-->
+
+        <!-- 二维码 -->
+        <item name="scan_duplicate_button_bg">@drawable/scan_duplicate_button_bg</item>
+        <item name="scan_duplicate_button_text_color">@color/actionbar_bg_color</item>
+
+    </style>
+
+    <style name="theme_default_no_translucent" parent="theme_default">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="theme_default_fullscreen" parent="theme_default">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

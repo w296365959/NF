@@ -1,0 +1,142 @@
+<com.sscf.investment.market.view.MarketChinaWarningHeader xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/main_bg_style"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/default_text_color_100"
+            android:textSize="@dimen/font_size_14"
+            android:text="@string/market_strength"/>
+
+        <ImageView
+            android:id="@+id/group_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin"
+            android:layout_gravity="right"
+            android:scaleType="center"
+            android:src="?attr/list_group_more_drawable" />
+    </FrameLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout
+        android:id="@+id/mainBoardWarningLayout"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/mainBoardWarningDial"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/actionbar_margin"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:id="@+id/mainBoardWarningDialBg"
+                android:layout_width="104dp"
+                android:layout_height="52dp"
+                android:background="@drawable/market_warning_dial_bg" />
+
+            <View
+                android:id="@+id/mainBoardWarningPointer"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/market_warning_pointer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainBoardWarningDialBg"
+                android:text="@string/weak"
+                android:textColor="@color/default_text_color_40"
+                android:textSize="@dimen/font_size_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/mainBoardWarningDialBg"
+                android:text="@string/strong"
+                android:textColor="@color/default_text_color_40"
+                android:textSize="@dimen/font_size_10" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tips1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/default_text_color_100"
+                    android:textSize="@dimen/font_size_16" />
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/stock_red_color"
+                    android:textSize="@dimen/font_size_16" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tips2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:textColor="@color/default_text_color_80"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/actionbar_margin"
+        android:layout_marginTop="20dp"
+        android:text="@string/change_stat"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/changeStatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/actionbar_margin"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/default_text_color_80"
+        android:textSize="@dimen/font_size_12" />
+
+    <com.sscf.investment.market.view.MarketChinaChangeStatView
+        android:id="@+id/changeStatChart"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="@dimen/actionbar_margin"
+        android:layout_marginRight="@dimen/actionbar_margin"
+        android:layout_marginTop="24dp" />
+
+</com.sscf.investment.market.view.MarketChinaWarningHeader>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_setting" />
+
+    <LinearLayout
+        style="@style/portfolio_remind_item_style"
+        android:layout_marginTop="@dimen/setting_item_small_margin_top">
+
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/setting_live_switch_text" />
+
+        <CheckBox
+            android:id="@+id/settingLiveSwitch"
+            style="@style/portfolio_remind_item_right_checkbox_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingLiveSubSwitchLayout"
+        style="@style/null_bg_style"
+        android:layout_marginTop="@dimen/setting_item_small_margin_top"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/portfolio_remind_item_style">
+
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/setting_portfolio_live_switch_text" />
+
+            <CheckBox
+                android:id="@+id/settingPortfolioLiveSwitch"
+                style="@style/portfolio_remind_item_right_checkbox_style" />
+        </LinearLayout>
+
+        <View style="@style/list_line_style" />
+
+        <LinearLayout style="@style/portfolio_remind_item_style">
+
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/setting_main_board_live_switch_text" />
+
+            <CheckBox
+                android:id="@+id/settingMainBoardLiveSwitch"
+                style="@style/portfolio_remind_item_right_checkbox_style" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/setting_sub_intro_item_style"
+            android:text="@string/setting_live_switch_tips_1" />
+
+        <LinearLayout style="@style/portfolio_remind_item_style">
+
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/setting_stock_live_switch_text" />
+
+            <CheckBox
+                android:id="@+id/settingStockLiveSwitch"
+                style="@style/portfolio_remind_item_right_checkbox_style" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/setting_sub_intro_item_style"
+            android:text="@string/setting_live_switch_tips_2" />
+    </LinearLayout>
+
+</LinearLayout>

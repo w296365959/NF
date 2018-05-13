@@ -1,0 +1,42 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+    <include
+            layout="@layout/actionbar_setting"/>
+    <include
+            style="@style/setting_error_tips_style"
+            layout="@layout/activity_setting_error_tips"/>
+    <com.sscf.investment.setting.widgt.RoundImageView
+            android:id="@+id/registerAvatar"
+            android:layout_width="@dimen/setting_user_icon_size"
+            android:layout_height="@dimen/setting_user_icon_size"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/setting_user_padding"
+            android:src="@drawable/default_consultant_face"
+            android:background="@drawable/setting_user_icon_bg"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp">
+
+        <EditText
+                android:id="@+id/registerNickname"
+                style="@style/setting_edit_text_item_style"
+                android:maxLength="@integer/nickname_max_length"
+                android:hint="@string/nickname"/>
+
+        <View
+                android:id="@+id/registerNicknameClearButton"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/actionbar_margin"
+                style="@style/input_clear_button_style"/>
+    </FrameLayout>
+
+    <Button
+            android:id="@+id/nextButton"
+            style="@style/setting_button_style"
+            android:text="@string/login"
+            android:layout_marginTop="@dimen/setting_button_margin_top"/>
+</LinearLayout>

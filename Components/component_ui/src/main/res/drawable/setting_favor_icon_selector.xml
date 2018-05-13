@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/setting_favor_icon_activated" android:state_activated="true"/>
+    <item android:drawable="@drawable/setting_favor_icon_normal_60" android:state_activated="false"/>
+</selector>

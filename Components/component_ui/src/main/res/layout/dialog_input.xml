@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogContentView"
+    style="@style/dialog_comfirm_layout_style"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        style="@style/dialog_title_style"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="42dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/dialog_input_edit_text_bg">
+        <EditText
+            android:id="@+id/dialogEditText"
+            style="@style/dialog_input_style" />
+        <View
+            android:id="@+id/inputClear"
+            android:layout_marginRight="4dp"
+            style="@style/input_clear_button_style"/>
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/dialog_button_style"
+            android:text="@string/cancel" />
+
+        <View
+            android:id="@+id/dialogButtonDivider"
+            style="@style/list_vertical_line_style" />
+
+        <Button
+            android:id="@+id/ok"
+            style="@style/dialog_button_style"
+            android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

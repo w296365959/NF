@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sscf.investment.widget.BeaconPullToRefreshFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/ptr_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/default_background">
+            <include
+                layout="@layout/recycler_view"
+                android:visibility="gone" />
+        </FrameLayout>
+    </com.sscf.investment.widget.BeaconPullToRefreshFrameLayout>
+    <include
+        layout="@layout/loading_layout_center"
+        android:visibility="gone" />
+    <include
+        layout="@layout/fail_retry_fullscreen"
+        android:visibility="gone" />
+    <include
+        layout="@layout/no_content_layout"
+        android:visibility="gone" />
+</FrameLayout>

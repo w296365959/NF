@@ -1,0 +1,11 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/null_bg_style"
+    android:layout_height="88dp">
+    <TextView
+        android:id="@+id/textView"
+        style="@style/setting_tool_style" />
+    <TextView
+        android:id="@+id/newIcon"
+        style="@style/setting_tag_new_style"/>
+</FrameLayout>

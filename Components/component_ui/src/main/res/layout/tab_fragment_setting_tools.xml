@@ -1,0 +1,15 @@
+<com.sscf.investment.component.ui.widget.SettingToolsLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/main_bg_style"
+    android:id="@+id/settingToolsLayout"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.sscf.investment.component.ui.widget.DotIndicatorView
+        android:id="@+id/indexIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:gravity="center_horizontal" />
+</com.sscf.investment.component.ui.widget.SettingToolsLayout>

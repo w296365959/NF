@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/intro_concept_height"
+              android:background="?attr/stock_intro_related_subject_bg_color"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/concept_name"
+        android:text="--"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/default_text_color_100"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/concept_delta_percent"
+        android:text="--"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/default_text_color_100"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

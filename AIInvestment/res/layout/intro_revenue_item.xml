@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/icon"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/revenue_circle_icon"/>
+    <TextView
+        android:id="@+id/revenue_amount"
+        android:text="----"
+        android:layout_width="70dp"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        style="@style/intro_revenue_incoming_amount"/>
+
+    <TextView
+        android:id="@+id/revenue_type"
+        android:text="----"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/icon"
+        android:layout_toLeftOf="@id/revenue_amount"
+        style="@style/intro_revenue_incoming_name"/>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<com.sscf.investment.widget.BottomEditLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottomEditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="?attr/main_bottom_tab_bar_bg_color">
+        <View
+                style="@style/list_line_style"
+                android:background="?attr/main_bottom_tab_bar_divide_line_color"/>
+
+        <CheckedTextView
+                android:id="@+id/editSelectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/favor_item_padding_left_edit"
+                android:drawableLeft="@drawable/checkbox_selector"
+                android:drawablePadding="@dimen/default_drawable_padding"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/default_text_color_60"
+                android:text="@string/select_all"/>
+
+        <TextView
+                android:id="@+id/editDeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/actionbar_margin"
+                android:layout_gravity="right"
+                android:gravity="center_vertical"
+                android:enabled="false"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="?attr/delete_button_text_color_selector"
+                android:text="@string/delete"/>
+</com.sscf.investment.widget.BottomEditLayout>

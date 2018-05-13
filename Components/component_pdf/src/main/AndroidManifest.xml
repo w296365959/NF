@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sscf.investment.pdf">
+
+    <application android:allowBackup="false"
+        android:supportsRtl="true">
+        <activity android:name="com.sscf.investment.pdf.PdfViewerActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

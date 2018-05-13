@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_list_item_style">
+    <TextView
+        android:id="@+id/settingItemTitle"
+        style="@style/setting_default_text_style"
+        android:layout_gravity="center_vertical"/>
+    <com.sscf.investment.widget.SettingTwoTabSelectorView
+        android:id="@+id/settingItemSettingTwoTabSelectorView"
+        android:layout_width="@dimen/list_item_selector_width"
+        android:layout_height="@dimen/list_item_selector_height"
+        android:layout_gravity="center_vertical|right" />
+</FrameLayout>

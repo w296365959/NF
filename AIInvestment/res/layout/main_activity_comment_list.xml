@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <com.sscf.investment.detail.view.CommentListActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sscf.investment.widget.BeaconPullToRefreshFrameLayout
+            android:id="@+id/ptr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/comment_input_bar_height">
+
+            <include layout="@layout/recycler_view"
+                     android:visibility="gone" />
+
+        </com.sscf.investment.widget.BeaconPullToRefreshFrameLayout>
+
+        <include
+            layout="@layout/loading_layout_center"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/fail_retry_fullscreen"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/no_content_layout"
+            android:visibility="gone" />
+
+        <include layout="@layout/comment_input_layout" />
+    </FrameLayout>
+
+</LinearLayout>

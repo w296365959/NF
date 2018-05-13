@@ -1,0 +1,15 @@
+<com.sscf.investment.widget.BeaconPullToRefreshFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ptr"
+    style="@style/null_bg_style">
+    <FrameLayout style="@style/null_bg_style">
+        <include layout="@layout/recycler_view" />
+        <TextView
+            android:id="@+id/dateSticky"
+            style="@style/setting_sub_title_text_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="0px"
+            android:background="@color/default_background"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:visibility="gone" />
+    </FrameLayout>
+</com.sscf.investment.widget.BeaconPullToRefreshFrameLayout>

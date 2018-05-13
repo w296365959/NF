@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/dialogFrame"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/black_40">
+
+    <LinearLayout
+        android:id="@+id/dialogContentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/follow"
+            style="@style/setting_dialog_modify_avatar_button_style"
+            android:text="@string/homepage_select_all"/>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/list_line_style"/>
+
+        <TextView
+            android:id="@+id/share"
+            style="@style/setting_dialog_modify_avatar_button_style"
+            android:text="@string/homepage_select_invest"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            style="@style/setting_dialog_modify_avatar_button_style"
+            android:layout_marginTop="@dimen/bottom_dialog_divider_height"
+            android:text="@string/cancel"
+            android:textColor="@color/default_text_color_100"/>
+    </LinearLayout>
+</FrameLayout>

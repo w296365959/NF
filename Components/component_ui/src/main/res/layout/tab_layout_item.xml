@@ -1,0 +1,29 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style">
+    <com.sscf.investment.component.ui.widget.NumberTextView
+            android:id="@+id/tabTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_centerInParent="true"
+            android:paddingTop="3dp"
+            android:textColor="@color/tab_title_text"
+            android:textSize="@dimen/font_size_14"/>
+    <View
+            android:id="@+id/tabIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@id/tabTitle"
+            android:layout_alignRight="@id/tabTitle"
+            android:background="@color/tab_indicatorColor"/>
+    <View
+            android:id="@+id/tabRedDot"
+            style="@style/red_dot_style"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_alignTop="@id/tabTitle"
+            android:layout_toRightOf="@id/tabTitle"/>
+</RelativeLayout>

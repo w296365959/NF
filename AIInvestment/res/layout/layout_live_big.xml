@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sscf.investment.information.view.VideoItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/layout_live_padding_bottom">
+    <com.sscf.investment.widget.CropView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/live_image_big_height"
+        android:id="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/live_image_big_height"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/video_mask"/>
+    
+    <ImageView
+        style="@style/live_state_style"
+        android:id="@+id/state"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/live_item_title_margin_top"
+        style="@style/live_item_title_style"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/source"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/live_item_source_style"/>
+</com.sscf.investment.information.view.VideoItemView>

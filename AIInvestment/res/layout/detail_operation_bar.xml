@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/operation_bar_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider_height"
+        android:background="@color/list_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/sec_detail_operation_bar_add_width"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/operation_bar_add_bg"
+                android:gravity="center"
+                android:text="@string/operation_add"
+                android:textColor="@color/operation_bar_add_text"
+                android:textSize="@dimen/operation_textSize" />
+
+            <TextView
+                android:id="@+id/remove"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/operation_remove"
+                android:textColor="@color/operation_bar_text"
+                android:textSize="@dimen/operation_textSize"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/list_divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/default_background" />
+
+        <com.sscf.investment.widget.EquantLayout xmlns:equantLayout="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            equantLayout:itemCount="4">
+
+            <FrameLayout
+                android:id="@+id/operation_bar_live_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_tab_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/operation_bar_live_msg"
+                    android:drawablePadding="@dimen/tab_bar_text_top_padding"
+                    android:text="@string/operation_live_message"
+                    android:textColor="@color/operation_bar_text"
+                    android:textSize="@dimen/tab_bar_text_size" />
+
+                <View
+                    android:id="@+id/live_message_red_dot"
+                    style="@style/red_dot_style"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="3dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/operation_bar_chip_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_tab_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/operation_bar_chip"
+                    android:drawablePadding="@dimen/tab_bar_text_top_padding"
+                    android:text="@string/operation_chip"
+                    android:textColor="@color/operation_bar_text"
+                    android:textSize="@dimen/tab_bar_text_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/operation_bar_smart_stare_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_tab_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/operation_bar_smart_stare"
+                    android:drawablePadding="@dimen/tab_bar_text_top_padding"
+                    android:text="@string/operation_stare"
+                    android:textColor="@color/operation_bar_text"
+                    android:textSize="@dimen/tab_bar_text_size" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/operation_bar_more_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_tab_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/operation_bar_more"
+                    android:drawablePadding="@dimen/tab_bar_text_top_padding"
+                    android:text="@string/operation_more"
+                    android:textColor="@color/operation_bar_text"
+                    android:textSize="@dimen/tab_bar_text_size" />
+                <View
+                    android:id="@+id/more_red_dot"
+                    style="@style/red_dot_style"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="3dp" />
+            </FrameLayout>
+        </com.sscf.investment.widget.EquantLayout>
+
+    </LinearLayout>
+</LinearLayout>

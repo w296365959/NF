@@ -1,0 +1,36 @@
+apply plugin: 'me.tatarka.retrolambda'
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "http://dl.bintray.com/dodola/maven"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.chenenyu.router:gradle-plugin:1.2.4'
+        classpath 'me.tatarka:gradle-retrolambda:3.3.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.0"
+    minSdkVersion = 16
+    targetSdkVersion = 21
+
+    supportV4='com.android.support:support-v4:25.3.1'
+    supportAppcompatV7='com.android.support:appcompat-v7:25.3.1'
+    supportRecyclerviewV7='com.android.support:recyclerview-v7:25.3.1'
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    appId = "com.sscf.investment"
+}

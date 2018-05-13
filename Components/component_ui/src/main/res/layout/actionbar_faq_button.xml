@@ -1,0 +1,5 @@
+<ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/actionbar_faq"
+        style="@style/null_bg_style"
+        android:src="@drawable/action_bar_faq_icon"/>

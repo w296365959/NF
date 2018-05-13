@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:background="@color/default_background"
+    >
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="0dp">
+
+        <!--独家投顾-->
+        <include
+            android:id="@+id/consultant_opinion_header"
+            layout="@layout/consultant_opinion_header"
+            android:visibility="visible"/>
+
+        <!--全网投顾-->
+        <LinearLayout
+            android:id="@+id/consultant_listview_header"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/default_content_bg">
+
+            <TextView
+                style="@style/setting_sub_title_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="@string/whole_network_consultant"/>
+
+            <View
+                style="@style/list_line_style"/>
+        </LinearLayout>
+
+        <com.sscf.investment.widget.StateFrameLayout
+            android:id="@+id/consultant_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.sscf.investment.widget.HeightVariableListView
+                android:id="@+id/consultant_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/default_background"
+                android:dividerHeight="@dimen/list_divider_height"
+                android:listSelector="@android:color/transparent"
+                />
+        </com.sscf.investment.widget.StateFrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/actionbar_style">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+        <ImageView
+            android:id="@+id/actionbar_live"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="?attr/actionbar_live_icon"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin"/>
+        <View
+            android:id="@+id/liveRedDot"
+            style="@style/red_dot_style"
+            android:layout_gravity="right"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/dot_red_intelligent_answer"/>
+    </FrameLayout>
+
+    <com.sscf.investment.widget.PortfolioTwoTabSelectorView
+        android:id="@+id/tab_selector"
+        android:layout_width="148dp"
+        android:layout_height="@dimen/sub_tab_selector_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+    <FrameLayout
+        android:id="@+id/intelligent_answer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/actionbar_margin_half"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:src="@drawable/intelligent_answer"/>
+        <View
+            android:id="@+id/intellgentAnswerRedDot"
+            style="@style/red_dot_style"
+            android:layout_gravity="right"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/dot_red_intelligent_answer"/>
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/actionbar_portfolio_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin_half"
+            android:src="?attr/actionbar_search_drawable"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/intelligent_answer_layout"/>
+</RelativeLayout>

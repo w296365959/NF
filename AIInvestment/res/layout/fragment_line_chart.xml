@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/line_tabs_group_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.sscf.investment.component.ui.widget.TabLayout
+                android:id="@+id/line_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false" />
+
+            <View style="@style/list_line_style" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.sscf.investment.detail.view.LineChartValueView
+        android:id="@+id/line_chart_value_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_11"
+        android:paddingLeft="@dimen/line_chart_container_margin"
+        android:paddingRight="@dimen/line_chart_container_margin"
+        android:minHeight="18dp"
+        android:gravity="left|center_vertical"/>
+
+    <LinearLayout
+        android:id="@+id/line_chart_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stock_detail_line_chart_height"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/line_chart_container_margin"
+        android:paddingRight="@dimen/line_chart_container_margin">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:id="@+id/select_compare_stock_button_group"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:background="@drawable/select_compare_stock_button_group_background">
+                    <Button
+                        android:id="@+id/select_compare_stock_button"
+                        style="@style/select_compare_stock_button_style"
+                        android:text="@string/compare_stock"/>
+                </LinearLayout>
+
+                <com.sscf.investment.detail.view.LineChartTextureView
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="@dimen/stock_trade_close_btn_width"
+                android:layout_height="@dimen/stock_trade_close_btn_height"
+                android:id="@+id/close_triangle_trade_detail"
+                android:layout_gravity="right"
+                android:layout_marginTop="77dp"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:src="@drawable/open_triangle"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/enlarge_timeline_entrance"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="40dp"
+                android:visibility="gone"/>
+
+            <Button android:id="@+id/callauction_entrance"
+                style="@style/callauction_entrance_style"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="77dp"
+                android:text="@string/callauction_entrance_text"
+                android:visibility="gone"/>
+
+            <com.sscf.investment.detail.view.IndicatorAnimationView
+                android:id="@+id/line_chart_indicator"
+                android:layout_width="@dimen/indicator_animation_width"
+                android:layout_height="@dimen/indicator_animation_width"
+                android:visibility="invisible" />
+
+            <include
+                layout="@layout/loading_layout_center"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/fail_retry_center"
+                android:visibility="gone" />
+
+            <com.sscf.investment.detail.view.HorizontalPopupEntranceGroup
+                android:id="@+id/similar_k_entrance_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/transaction_layout"
+            android:layout_width="@dimen/stock_detail_buy_sell_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/transaction_layout_marginLeft"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.sscf.investment.component.ui.widget.TwoTabSelectorView
+                xmlns:sel="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tab_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/transaction_tab_selector_height"
+                android:layout_gravity="center_horizontal"
+                sel:isBold="true" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.sscf.investment.detail.view.BuySellView
+                    android:id="@+id/buy_sell"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.sscf.investment.detail.view.InnerScrollView
+                    android:id="@+id/ticks_layout"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    style="@style/ticksScrollViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:visibility="invisible">
+                    <com.sscf.investment.detail.view.TicksView
+                        android:id="@+id/ticks"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.sscf.investment.detail.view.InnerScrollView>
+
+                <LinearLayout
+                        android:id="@+id/capital_flow_layout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible">
+                    <com.sscf.investment.detail.view.CapitalFlowView
+                            android:id="@+id/capital_flow_pie_transaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="104dp"/>
+                    <com.sscf.investment.detail.view.CapitalFlowDetailView
+                        android:id="@+id/capital_flow_detail_view"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <com.sscf.investment.detail.view.DKView
+                android:id="@+id/capital_flow_dkview_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/capital_flow_detail_duo_kong_layout_height"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

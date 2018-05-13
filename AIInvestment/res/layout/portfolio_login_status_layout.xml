@@ -1,0 +1,8 @@
+<com.sscf.investment.portfolio.LoginStatusLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginStatusLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/portfolio_login_layout_height"
+    android:gravity="center"
+    android:minHeight="@dimen/portfolio_login_layout_height"
+    android:textColor="@color/default_text_color_60"
+    android:textSize="@dimen/font_size_14" />

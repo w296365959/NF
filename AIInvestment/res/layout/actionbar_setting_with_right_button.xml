@@ -1,0 +1,17 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/actionbar_style">
+
+        <ImageView
+                android:id="@+id/actionbar_back_button"
+                style="@style/actionbar_back_button_style"/>
+
+        <TextView
+                android:id="@+id/actionbar_title"
+                style="@style/actionbar_title_text_style"/>
+
+        <TextView
+                android:id="@+id/actionbar_right_button"
+                android:layout_alignParentRight="true"
+                style="@style/actionbar_text_button_style"/>
+</RelativeLayout>

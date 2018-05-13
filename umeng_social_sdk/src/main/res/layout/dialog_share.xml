@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_dialog_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_40">
+
+    <LinearLayout
+        android:id="@+id/share_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_gravity="bottom"
+        android:background="@color/share_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/share_title"
+            android:textColor="@color/default_text_color_60"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/shareByWechatFriends"
+                style="@style/dialog_share_text_view_item_style"
+                android:drawableTop="@drawable/umeng_socialize_wechat"
+                android:text="@string/share_wechat_friends" />
+
+            <TextView
+                android:id="@+id/shareByWechatMoments"
+                style="@style/dialog_share_text_view_item_style"
+                android:drawableTop="@drawable/umeng_socialize_wxcircle"
+                android:text="@string/share_wechat_moments" />
+
+            <TextView
+                android:id="@+id/shareByQq"
+                style="@style/dialog_share_text_view_item_style"
+                android:drawableTop="@drawable/umeng_socialize_qq"
+                android:text="@string/share_qq" />
+
+            <TextView
+                android:id="@+id/shareBySinaWeibo"
+                style="@style/dialog_share_text_view_item_style"
+                android:drawableTop="@drawable/umeng_socialize_sina"
+                android:text="@string/share_sina_weibo" />
+            <TextView
+                android:id="@+id/shareIntentByWechatMoments"
+                style="@style/dialog_share_text_view_item_style"
+                android:drawableTop="@drawable/umeng_socialize_wxcircle"
+                android:visibility="gone"
+                android:text="@string/share_wechat_moments" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

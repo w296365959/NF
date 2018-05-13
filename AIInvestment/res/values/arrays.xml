@@ -1,0 +1,247 @@
+<resources>
+    <string-array name="setting_refresh_frequency_mobile_net_text_array">
+        <item>不刷新</item>
+        <item>3秒</item>
+        <item>5秒</item>
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>60秒</item>
+    </string-array>
+
+    <integer-array name="setting_refresh_frequency_mobile_net_seconds_array">
+        <item>3600000</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+    </integer-array>
+
+    <string-array name="setting_refresh_frequency_wifi_text_array">
+        <item>不刷新</item>
+        <item>3秒</item>
+        <item>5秒</item>
+    </string-array>
+
+    <integer-array name="setting_refresh_frequency_wifi_seconds_array">
+        <item>3600000</item>
+        <item>3000</item>
+        <item>5000</item>
+    </integer-array>
+
+    <string-array name="setting_k_line_rights_offering_text_array">
+        <item>不复权</item>
+        <item>前复权</item>
+    </string-array>
+
+    <integer-array name="setting_shake_sensor_array">
+        <item>13</item>
+        <item>15</item>
+        <item>17</item>
+    </integer-array>
+
+    <string-array name="setting_shake_sensor_text_array">
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+
+    <string-array name="setting_k_line_style_type_text_array">
+        <item>实心线</item>
+        <item>空心线</item>
+    </string-array>
+
+    <string-array name="setting_k_line_indicators_type_text_array">
+        <item>成交量</item>
+        <item>资金流</item>
+        <item>MACD</item>
+        <item>KDJ</item>
+        <item>RSI</item>
+        <item>BOLL</item>
+    </string-array>
+
+    <string-array name="china_index_market_unicode">
+        <item>0105000001</item>
+        <item>0005399001</item>
+        <item>0005399006</item>
+        <item>1605HSI</item>
+        <item>1605HSCEI</item>
+        <item>1605HSCCI</item>
+        <item>1705DJI</item>
+        <item>1705IXIC</item>
+        <item>1705SPX</item>
+    </string-array>
+
+    <string-array name="china_index_market_name">
+        <item>晓智指数</item>
+        <item>上证指数</item>
+        <item>深证成指</item>
+        <item>创业板指</item>
+        <item>恒生指数</item>
+        <item>国企指数</item>
+        <item>红筹指数</item>
+        <item>道琼斯</item>
+        <item>纳斯达克</item>
+        <item>标普500</item>
+    </string-array>
+
+    <string-array name="market_china_index_dtseccode_0">
+        <item>0105000001</item>
+        <item>0005399001</item>
+        <item>0005399006</item>
+    </string-array>
+
+    <string-array name="market_china_index_name_0">
+        <item>上证指数</item>
+        <item>深证成指</item>
+        <item>创业板指</item>
+    </string-array>
+
+    <string-array name="market_china_index_dtseccode_1">
+        <item>0005399005</item>
+        <item>0005399300</item>
+        <item>0105000016</item>
+    </string-array>
+
+    <string-array name="market_china_index_name_1">
+        <item>中小板指</item>
+        <item>沪深300</item>
+        <item>上证50</item>
+    </string-array>
+
+    <string-array name="market_china_index_dtseccode_2">
+        <item>0105000905</item>
+        <item>0306IFLX0</item>
+    </string-array>
+
+    <string-array name="market_china_index_name_2">
+        <item>中证500</item>
+        <item>沪深当月</item>
+    </string-array>
+
+    <string-array name="market_index_list_unicode">
+        <item>0105000001</item>
+        <item>0005399001</item>
+        <item>0005399006</item>
+        <item>0005399005</item>
+        <item>0005399300</item>
+        <item>0105000016</item>
+        <item>0105000905</item>
+    </string-array>
+
+    <string-array name="market_capital_flow_index_unicode">
+        <item>0105000001</item>
+        <item>0005399001</item>
+        <item>0005399006</item>
+        <item>0005399005</item>
+    </string-array>
+
+    <string-array name="market_hongkong_index_unicode">
+        <item>1605HSI</item>
+        <item>1605HSCEI</item>
+        <item>1605HSCCI</item>
+    </string-array>
+
+    <string-array name="market_america_index_unicode">
+        <item>1705DJI</item>
+        <item>1705IXIC</item>
+        <item>1705SPX</item>
+    </string-array>
+
+    <string-array name="market_index_futures_title">
+        <item>沪深指数</item>
+        <item>股指期货</item>
+    </string-array>
+
+    <string-array name="market_china_group_title">
+        <item>涨幅榜</item>
+        <item>跌幅榜</item>
+        <item>换手率榜</item>
+    </string-array>
+
+    <string-array name="market_hongkong_group_title">
+        <item>主板</item>
+        <item>创业板</item>
+    </string-array>
+
+    <string-array name="market_america_group_title">
+        <item>中概股私有化</item>
+        <item>中概股涨幅榜</item>
+        <item>中概股跌幅榜</item>
+        <item>标普500涨幅榜</item>
+        <item>标普500跌幅榜</item>
+    </string-array>
+
+    <string-array name="market_sh_hk_group_title">
+        <item>沪股通</item>
+        <item>港股通</item>
+        <item>AH股</item>
+    </string-array>
+
+    <string-array name="capital_flow_group_title">
+        <item>个股主力资金流入榜</item>
+        <item>个股主力资金流出榜</item>
+    </string-array>
+
+    <!-- 开发者选项 -->
+    <string-array name="entries_list_server_type">
+        <item>阿里云正式</item>
+        <!--<item>阿里云测试</item>-->
+        <item>本地测试</item>
+    </string-array>
+
+    <string-array name="entriesvalue_list_server_type">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="price_stare_morning_time_select_text_array">
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+    </string-array>
+
+    <string-array name="price_stare_noon_time_select_text_array">
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+    </string-array>
+
+    <string-array name="stradegy_stare_ma_up_select_text_array">
+        <item>股价上涨至5日均线|1</item>
+        <item>股价上涨至10日均线|3</item>
+        <item>股价上涨至20日均线|5</item>
+        <item>股价5日均线上穿10日均线|7</item>
+        <item>股价5日均线上穿20日均线|9</item>
+    </string-array>
+
+    <string-array name="stradegy_stare_ma_down_select_text_array">
+        <item>股价下跌至5日均线|2</item>
+        <item>股价下跌至10日均线|4</item>
+        <item>股价下跌至20日均线|6</item>
+        <item>股价5日均线下穿10日均线|8</item>
+        <item>股价5日均线下穿20日均线|10</item>
+    </string-array>
+
+    <string-array name="stradegy_stare_kline_select_text_array">
+        <item>向上缺口|11</item>
+        <item>向下缺口|12</item>
+    </string-array>
+
+    <string-array name="risk_eval_info1_array">
+        <item>你的风险测评结果：</item>
+        <item>你的拟投资品种：</item>
+        <item>投资期限：</item>
+    </string-array>
+
+    <string-array name="risk_eval_info2_array">
+        <item>产品的风险等级：</item>
+        <item>产品的投资品种：</item>
+        <item>产品的投资期限：</item>
+    </string-array>
+</resources>

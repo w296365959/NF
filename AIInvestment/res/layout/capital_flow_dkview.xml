@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical|center_horizontal"
+              android:orientation="horizontal">
+
+        <TextView
+                  android:text="@string/capital_duo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/font_size_12"
+                  android:textColor="@color/transaction_capital_duo"
+                  android:paddingRight="@dimen/capital_flow_detail_duo_kong_cornor"/>
+
+        <TextView android:id="@+id/transaction_capital_up_text"
+                  android:layout_width="41dp"
+                  android:layout_height="@dimen/capital_flow_detail_duo_kong_height"
+                  android:background="@drawable/capital_flow_detail_up"/>
+
+        <TextView android:id="@+id/transaction_capital_down_text"
+                  android:layout_width="41dp"
+                  android:layout_height="@dimen/capital_flow_detail_duo_kong_height"
+                  android:background="@drawable/capital_flow_detail_down"/>
+
+        <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/capital_kong"
+                  android:textSize="@dimen/font_size_12"
+                  android:textColor="@color/transaction_capital_kong"
+                  android:paddingLeft="@dimen/capital_flow_detail_duo_kong_cornor"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/horizontal_average_divide_style"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+                android:id="@+id/discoverStockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/default_text_color_60"
+                android:textSize="@dimen/font_size_12"/>
+        <TextView
+                android:id="@+id/discoverStockUpdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/default_text_color_60"
+                android:textSize="@dimen/font_size_14"/>
+</LinearLayout>

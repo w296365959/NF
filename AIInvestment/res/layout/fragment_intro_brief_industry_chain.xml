@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/industryChainLayout"
+    style="@style/null_bg_style"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/industry_chain" />
+
+        <TextView
+            android:id="@+id/industrialChainMore"
+            style="@style/finance_group_title_sub"
+            android:paddingLeft="10dp"
+            android:paddingBottom="12dp"
+            android:text="@string/more_2"/>
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin" />
+
+    <TextView
+        android:id="@+id/upstreamProductTitle"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/brief_industry_chain_title_bg_red"
+        android:drawableRight="@drawable/market_china_change_stat_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="8dp"
+        android:text="@string/upstream_industries"
+        android:textColor="@color/white_100"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/upstreamProduct"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:background="@drawable/brief_industry_chain_msg_bg_red"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="#ff6700"
+        android:textSize="14dp"
+        android:text="@string/no_industries"/>
+
+    <TextView
+        android:id="@+id/downstreamProductTitle"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/brief_industry_chain_title_bg_yellow"
+        android:drawableRight="@drawable/market_china_change_stat_arrow"
+        android:gravity="center_vertical"
+        android:text="@string/downstream_industries"
+        android:textColor="@color/white_100"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/downstreamProduct"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:background="@drawable/brief_industry_chain_msg_bg_yellow"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="#ffb230"
+        android:textSize="14dp"
+        android:text="@string/no_industries"/>
+</LinearLayout>

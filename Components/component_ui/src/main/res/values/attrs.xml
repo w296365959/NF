@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TwoTabSelectorView">
+        <attr name="selectorTextColor" format="reference|color"/>
+        <attr name="isBold" format="boolean"/>
+        <attr name="selectorBg" format="reference|color"/>
+        <attr name="selectedLeftBgDrawable" format="reference"/>
+        <attr name="selectedRightBgDrawable" format="reference"/>
+        <attr name="selectedMiddleBgDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabLayout">
+        <attr name="tabHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

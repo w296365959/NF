@@ -1,0 +1,11 @@
+<resources>
+    <string name="sina_weibo_share_success">成功分享到微博</string>
+    <string name="not_install_wechat">未安装微信</string>
+    <string name="not_install_qq">未安装QQ</string>
+    <string name="share_title">分享到</string>
+    <string name="share_wechat_friends">微信好友</string>
+    <string name="share_wechat_moments">朋友圈</string>
+    <string name="share_sina_weibo">微博</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_qrcode_text">股票AI智投，智能炒股神器</string>
+</resources>

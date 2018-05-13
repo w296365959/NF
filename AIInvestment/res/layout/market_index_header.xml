@@ -1,0 +1,16 @@
+<com.sscf.investment.market.view.MarketIndexHeader
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="@dimen/market_index_height"
+        android:minHeight="@dimen/market_index_height"
+        android:gravity="center_vertical"
+        style="@style/main_bg_style">
+    <include
+        layout="@layout/market_index_item"
+        style="@style/horizontal_average_divide_style"/>
+    <include
+        layout="@layout/market_index_item"
+        style="@style/horizontal_average_divide_style"/>
+    <include
+        layout="@layout/market_index_item"
+        style="@style/horizontal_average_divide_style"/>
+</com.sscf.investment.market.view.MarketIndexHeader>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_rect_bg_popup_window"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:orientation="vertical">
+    <TextView
+        style="@style/popup_window_item_style"
+        android:id="@+id/market"
+        android:text="@string/belong_to_market"/>
+    <View style="@style/list_line_style"/>
+    <TextView
+        style="@style/popup_window_item_style"
+        android:id="@+id/custom"
+        android:text="@string/custom"/>
+    <View style="@style/list_line_style"
+        android:id="@+id/last_divider"/>
+    <TextView
+        style="@style/popup_window_item_style"
+        android:id="@+id/remove_compare"
+        android:text="@string/remove_compare"/>
+</LinearLayout>

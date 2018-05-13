@@ -1,0 +1,430 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/brief_layout"
+    style="@style/null_bg_style"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/company_brief" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/company_name" />
+
+        <TextView
+            android:id="@+id/company_name"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/listing_date" />
+
+        <TextView
+            android:id="@+id/company_listing_date"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/issuing_price" />
+
+        <TextView
+            android:id="@+id/issuing_price"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/issuing_amount" />
+
+        <TextView
+            android:id="@+id/issuing_amount"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/actual_controllers" />
+
+        <TextView
+            android:id="@+id/actual_controllers"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/region" />
+
+        <TextView
+            android:id="@+id/region"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/industry" />
+
+        <TextView
+            android:id="@+id/industry"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:minHeight="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:minHeight="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/main_business" />
+
+        <TextView
+            android:id="@+id/main_business"
+            style="@style/intro_content_style" />
+    </LinearLayout>
+
+    <!-- 主营收入构成 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/company_revenue" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp">
+
+        <RelativeLayout
+            android:id="@+id/intro_revenue_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_content_margin"
+            android:layout_marginRight="@dimen/default_content_margin">
+
+            <com.sscf.investment.widget.DoughnutView
+                android:id="@+id/doughnut"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp" />
+
+            <LinearLayout
+                android:id="@+id/intro_revenue_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/doughnut"
+                android:orientation="vertical"/>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/intro_revenue_empty"
+            layout="@layout/empty_view" />
+    </FrameLayout>
+
+
+    <!-- 高管简介 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/executive_profile" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/executive_profile_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/intro_executive_profile_header"
+                    android:layout_width="60dp"
+                    android:gravity="top|left"
+                    android:text="@string/executive_name" />
+
+                <TextView
+                    style="@style/intro_executive_profile_header"
+                    android:layout_width="50dp"
+                    android:gravity="top|right"
+                    android:text="@string/executive_age" />
+
+                <TextView
+                    style="@style/intro_executive_profile_header"
+                    android:layout_width="80dp"
+                    android:gravity="top|right"
+                    android:text="@string/education" />
+
+                <TextView
+                    style="@style/intro_executive_profile_header"
+                    android:layout_width="match_parent"
+                    android:text="@string/duty" />
+            </LinearLayout>
+
+            <com.sscf.investment.detail.view.ExecutiveProfileListView
+                android:id="@+id/executive_profile_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/executive_profile_empty"
+            layout="@layout/empty_view" />
+    </FrameLayout>
+
+    <!-- 产业链 -->
+    <include layout="@layout/fragment_intro_brief_industry_chain"/>
+
+    <!-- 行业对比 -->
+    <com.sscf.investment.detail.view.IndustryBenchmarkView
+        android:id="@+id/industry_benchmark_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:text="@string/industry_benchmark" />
+
+                <TextView
+                    android:id="@+id/industry_benchmark_update_date"
+                    style="@style/finance_group_title_sub" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperator_line"
+                style="@style/list_line_style" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tab0"
+                    style="@style/industry_benchmark_tab_style"
+                    android:background="@drawable/industry_benchmark_left_tab_selector"
+                    android:text="@string/operation_revenue" />
+
+                <TextView
+                    android:id="@+id/tab1"
+                    style="@style/industry_benchmark_tab_style"
+                    android:background="@drawable/industry_benchmark_center_tab_selector"
+                    android:text="@string/net_margin" />
+
+                <TextView
+                    android:id="@+id/tab2"
+                    style="@style/industry_benchmark_tab_style"
+                    android:background="@drawable/industry_benchmark_center_tab_selector"
+                    android:text="@string/per_share_earnings" />
+
+                <TextView
+                    android:id="@+id/tab3"
+                    style="@style/industry_benchmark_tab_style"
+                    android:background="@drawable/industry_benchmark_right_tab_selector"
+                    android:text="@string/pe_ratio" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/industry_benchmark_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <include
+                android:id="@+id/industry_benchmark_empty"
+                layout="@layout/empty_view" />
+        </LinearLayout>
+
+    </com.sscf.investment.detail.view.IndustryBenchmarkView>
+
+
+    <TextView
+        style="@style/finance_group_title"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:text="@string/company_bonus" />
+
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/intro_bonus_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_content_margin"
+            android:layout_marginRight="@dimen/default_content_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/intro_incoming_name"
+                    android:text="@string/year"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_amount"
+                    android:layout_width="192dp"
+                    android:text="@string/intro_plan"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_ratio"
+                    android:text="@string/exrights_date"
+                    android:textColor="@color/default_text_color_60" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/intro_bonus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/intro_bonus_empty"
+            layout="@layout/empty_view" />
+    </FrameLayout>
+</LinearLayout>

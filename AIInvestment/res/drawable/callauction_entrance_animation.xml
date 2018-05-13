@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/callauction0" android:duration="41"/>
+    <item android:drawable="@drawable/callauction1" android:duration="41"/>
+    <item android:drawable="@drawable/callauction2" android:duration="41"/>
+    <item android:drawable="@drawable/callauction3" android:duration="41"/>
+    <item android:drawable="@drawable/callauction4" android:duration="41"/>
+    <item android:drawable="@drawable/callauction5" android:duration="41"/>
+    <item android:drawable="@drawable/callauction6" android:duration="41"/>
+    <item android:drawable="@drawable/callauction7" android:duration="41"/>
+    <item android:drawable="@drawable/callauction8" android:duration="41"/>
+    <item android:drawable="@drawable/callauction9" android:duration="41"/>
+    <item android:drawable="@drawable/callauction10" android:duration="41"/>
+    <item android:drawable="@drawable/callauction11" android:duration="41"/>
+    <item android:drawable="@drawable/callauction12" android:duration="41"/>
+    <item android:drawable="@drawable/callauction13" android:duration="41"/>
+    <item android:drawable="@drawable/callauction14" android:duration="41"/>
+    <item android:drawable="@drawable/callauction15" android:duration="41"/>
+    <item android:drawable="@drawable/callauction16" android:duration="41"/>
+    <item android:drawable="@drawable/callauction17" android:duration="41"/>
+    <item android:drawable="@drawable/callauction18" android:duration="41"/>
+    <item android:drawable="@drawable/callauction19" android:duration="41"/>
+    <item android:drawable="@drawable/callauction20" android:duration="41"/>
+    <item android:drawable="@drawable/callauction21" android:duration="41"/>
+    <item android:drawable="@drawable/callauction22" android:duration="41"/>
+    <item android:drawable="@drawable/callauction23" android:duration="41"/>
+</animation-list>

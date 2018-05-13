@@ -1,0 +1,18 @@
+<resources>
+    <string name="share_news_title">晓智资讯</string>
+    <string name="share_news_msg">更多好资讯，尽在AI智投。</string>
+    <string name="favor_not_support">此文章暂不支持收藏</string>
+
+    <string name="voice_input_tips">按住说话</string>
+    <string name="voice_input_recording">录音中...</string>
+    <string name="voice_input_recognizing">识别中...</string>
+    <string name="voice_input_blank">未识别到您说的话，请重试</string>
+    <string name="voice_input_error_tips">录音失败，请检查是否开启录音权限</string>
+
+    <string name="intelligent_answer_help">晓智帮助</string>
+    <string name="intelligent_answer_input_hint">你有什么想问晓智的么？</string>
+
+    <string name="dt_live_msg">晓智直播</string>
+    <string name="live_msg_portfolio">自选股</string>
+    <string name="live_msg_market">大盘</string>
+</resources>

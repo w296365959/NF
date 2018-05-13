@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="voice_volume_anim_view_rect_width">2dp</dimen>
+    <dimen name="voice_volume_anim_view_rect_max_height">20dp</dimen>
+    <dimen name="voice_volume_anim_view_rect_min_height">5dp</dimen>
+    <dimen name="voice_volume_anim_view_gap">2dp</dimen>
+
+    <dimen name="intelligent_input_suggestion_text_height">42dp</dimen>
+</resources>

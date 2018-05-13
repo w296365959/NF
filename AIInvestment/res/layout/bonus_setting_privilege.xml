@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/null_bg_style">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="@dimen/list_head_height"
+        android:layout_marginTop="@dimen/setting_item_small_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/default_content_bg"
+        android:visibility="gone">
+        <TextView android:id="@+id/setting_privilege_header"
+            style="@style/setting_privilege_header_style"
+            android:text="@string/setting_privilege_header_text"/>
+    </RelativeLayout>
+    <View style="@style/list_line_style"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:visibility="gone"
+        android:background="@drawable/list_item_bg"
+        android:gravity="center_vertical">
+        <!-- 筹码分布 -->
+        <TextView
+            android:id="@+id/setting_chip_distribution"
+            style="@style/setting_bonus_tool_style"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/chip_dist_disable"
+            android:text="@string/setting_cyq" />
+        <!-- 相似K线 -->
+        <TextView
+            android:id="@+id/setting_similar_kline"
+            style="@style/setting_bonus_tool_style"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/similar_kline_disable"
+            android:text="@string/setting_similar_k_line" />
+        <!-- 历史回看 -->
+        <TextView
+            android:id="@+id/setting_sec_history"
+            style="@style/setting_bonus_tool_style"
+            android:drawableTop="@drawable/history_disable"
+            android:text="@string/setting_sec_history" />
+    </LinearLayout>
+</merge>

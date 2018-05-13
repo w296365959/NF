@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+    <com.sscf.investment.widget.BeaconPullToRefreshFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp">
+        <com.sscf.investment.widget.FlowScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll_content"
+            android:overScrollMode="never">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/fragment_video_live_view"/>
+
+                <include layout="@layout/fragment_video_invest_view"/>
+            </LinearLayout>
+        </com.sscf.investment.widget.FlowScrollView>
+    </com.sscf.investment.widget.BeaconPullToRefreshFrameLayout>
+    <include layout="@layout/loading_layout_center" android:visibility="gone" />
+
+    <include layout="@layout/fail_retry_fullscreen" android:visibility="gone" />
+
+    <include layout="@layout/no_content_layout" android:visibility="gone" />
+</FrameLayout>

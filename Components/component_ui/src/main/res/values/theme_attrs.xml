@@ -1,0 +1,7 @@
+<resources>
+    <attr name="normal_two_tab_textColor" format="reference|color"/>
+    <attr name="normal_two_tab_selector_view_bg_drawable" format="reference|color"/>
+    <attr name="normal_two_tab_selector_selected_bg_left_drawable" format="reference|color"/>
+    <attr name="normal_two_tab_selector_selected_bg_middle_drawable" format="reference|color"/>
+    <attr name="normal_two_tab_selector_selected_bg_right_drawable" format="reference|color"/>
+</resources>

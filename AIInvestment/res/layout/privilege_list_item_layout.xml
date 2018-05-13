@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/checkbox_list_item_style"
+    android:clickable="true">
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/favor_item_padding_left_edit"
+        android:button="@drawable/checkbox_selector"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/font_size_14"
+        android:clickable="false"
+        android:textColor="@color/default_text_color_60"/>
+    <ImageView
+        android:layout_width="@dimen/privilege_icon_width_height"
+        android:layout_height="@dimen/privilege_icon_width_height"
+        android:id="@+id/privilege_icon"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/check"
+        android:layout_marginRight="@dimen/privilege_icon_margin_right"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/privilege_icon">
+        <TextView android:id="@+id/privilege_title"
+            style="@style/privilege_title_style"
+            android:layout_alignParentLeft="true"/>
+        <TextView android:id="@+id/privilege_cost_unit"
+            style="@style/privilege_cost_unit_style"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/privilege_title"
+            android:text="@string/privilege_cost_unit_text"/>
+        <com.sscf.investment.component.ui.widget.NumberTextView
+            android:id="@+id/privilege_cost"
+            style="@style/privilege_cost_style"
+            android:layout_toLeftOf="@id/privilege_cost_unit"
+            android:layout_alignBaseline="@id/privilege_title"/>/>
+    </RelativeLayout>
+</RelativeLayout>

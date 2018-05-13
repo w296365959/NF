@@ -1,0 +1,3 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recyclerview"
+    style="@style/default_recyclerview_bg_style" />

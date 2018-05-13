@@ -1,0 +1,498 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.sscf.investment.component.ui.widget.TwoTabSelectorView
+        android:id="@+id/tab_selector"
+        android:layout_width="132dp"
+        android:layout_height="@dimen/sub_tab_selector_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp">
+
+    </com.sscf.investment.component.ui.widget.TwoTabSelectorView>
+
+    <FrameLayout xmlns:pillarChange="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/achievement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 营业收入 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:layout_marginLeft="@dimen/default_content_margin"
+                    android:text="@string/incoming" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <TextView
+                android:id="@+id/incoming_detail"
+                style="@style/achievement_detail_text"
+                android:paddingLeft="@dimen/default_content_margin"
+                android:paddingRight="@dimen/default_content_margin" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pillar_indicator_marginBottom"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin"
+                android:layout_marginTop="@dimen/pillar_indicator_marginTop"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+                    android:src="@drawable/pillar_icon" />
+
+                <TextView
+                    android:id="@+id/incoming_with_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pillar_indicator_gap"
+                    android:text="@string/incoming"
+                    android:textColor="@color/stock_red_color"
+                    android:textSize="@dimen/stock_finance_indicator_textSize" />
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/seasons_icon"-->
+                <!--android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"-->
+                <!--android:layout_gravity="center_vertical"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/stock_finance_indicator_textSize"-->
+                <!--android:layout_marginRight="@dimen/pillar_indicator_gap"-->
+                <!--android:text="@string/seasons"-->
+                <!--android:textColor="@color/stock_red_color"/>-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+                    android:src="?attr/polyline_icon_drawable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/increasement"
+                    android:textColor="?attr/stock_detail_finance_incoming_polyline_color"
+                    android:textSize="@dimen/stock_finance_indicator_textSize" />
+            </LinearLayout>
+
+            <com.sscf.investment.detail.view.PillarChangeView
+                android:id="@+id/achievement_pillar_change"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pillar_change_view_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin"
+                pillarChange:pillarColorMinus="@color/stock_green_color"
+                pillarChange:pillarColorPlus="@color/stock_red_color"
+                pillarChange:polylineColor="?attr/stock_detail_finance_incoming_polyline_color" />
+
+            <!-- 利润 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:layout_marginLeft="@dimen/default_content_margin"
+                    android:text="@string/profit" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <TextView
+                android:id="@+id/profit_detail"
+                style="@style/achievement_detail_text"
+                android:paddingLeft="@dimen/default_content_margin"
+                android:paddingRight="@dimen/default_content_margin" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pillar_indicator_marginBottom"
+                android:layout_marginTop="@dimen/pillar_indicator_marginTop"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_content_margin"
+                android:paddingRight="@dimen/default_content_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+                    android:src="@drawable/pillar_icon" />
+
+                <TextView
+                    android:id="@+id/net_profit_with_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pillar_indicator_gap"
+                    android:text="@string/net_profit"
+                    android:textColor="@color/stock_red_color"
+                    android:textSize="@dimen/stock_finance_indicator_textSize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+                    android:src="?attr/polyline_icon_drawable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/increasement"
+                    android:textColor="?attr/stock_detail_finance_incoming_polyline_color"
+                    android:textSize="@dimen/stock_finance_indicator_textSize" />
+            </LinearLayout>
+
+            <com.sscf.investment.detail.view.PillarChangeView
+                android:id="@+id/profit_pillar_change"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pillar_change_view_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin"
+                pillarChange:pillarColorMinus="@color/stock_green_color"
+                pillarChange:pillarColorPlus="@color/stock_red_color"
+                pillarChange:polylineColor="?attr/stock_detail_finance_incoming_polyline_color" />
+
+            <!-- 盈利水平 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:layout_marginLeft="@dimen/default_content_margin"
+                    android:text="@string/profitability" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <TextView
+                android:id="@+id/profitability_detail"
+                style="@style/achievement_detail_text"
+                android:paddingLeft="@dimen/default_content_margin"
+                android:paddingRight="@dimen/default_content_margin" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pillar_indicator_marginBottom"
+                android:layout_marginTop="@dimen/pillar_indicator_marginTop"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/default_content_margin"
+                android:paddingRight="@dimen/default_content_margin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+                    android:src="?attr/polyline_icon_drawable" />
+
+                <TextView
+                    android:id="@+id/eps_with_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eps"
+                    android:textColor="?attr/stock_detail_finance_incoming_polyline_color"
+                    android:textSize="@dimen/stock_finance_indicator_textSize" />
+            </LinearLayout>
+
+            <com.sscf.investment.detail.view.PolylineChangeView
+                android:id="@+id/profitability_pillar_change"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pillar_change_view_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin"
+                pillarChange:pillarColorMinus="@color/stock_detail_finance_incoming_pillar_minus"
+                pillarChange:pillarColorPlus="@color/stock_detail_finance_incoming_pillar_plus"
+                pillarChange:polylineColor="?attr/stock_detail_finance_incoming_polyline_color" />
+        </LinearLayout>
+        <!--以上是财务业绩页面-->
+
+        <!-- 以下是财务分析页面 -->
+        <LinearLayout
+            android:id="@+id/analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_content_margin"
+            android:layout_marginRight="@dimen/default_content_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:text="@string/key_index" />
+
+                <TextView
+                    android:id="@+id/analysis_key"
+                    style="@style/finance_group_title_sub" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/eps" />
+
+                <TextView
+                    android:id="@+id/analysis_eps"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/bvps" />
+
+                <TextView
+                    android:id="@+id/analysis_bvps"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/roe" />
+
+                <TextView
+                    android:id="@+id/analysis_roe"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:text="@string/profit_table" />
+
+                <TextView
+                    android:id="@+id/analysis_profit"
+                    style="@style/finance_group_title_sub" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/gross_revenue" />
+
+                <TextView
+                    android:id="@+id/analysis_gross_revenue"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/net_profit" />
+
+                <TextView
+                    android:id="@+id/analysis_net_profit"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/business_revenue_growth" />
+
+                <TextView
+                    android:id="@+id/analysis_business_revenue_growth"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/net_growth" />
+
+                <TextView
+                    android:id="@+id/analysis_net_growth"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:text="@string/assets" />
+
+                <TextView
+                    android:id="@+id/analysis_assets"
+                    style="@style/finance_group_title_sub" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/total_assets" />
+
+                <TextView
+                    android:id="@+id/analysis_total_assets"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/total_liabilities" />
+
+                <TextView
+                    android:id="@+id/analysis_total_liabilities"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/total_equities" />
+
+                <TextView
+                    android:id="@+id/analysis_total_equities"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:text="@string/cash_table" />
+
+                <TextView
+                    android:id="@+id/analysis_cash"
+                    style="@style/finance_group_title_sub" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/cash_flow" />
+
+                <TextView
+                    android:id="@+id/analysis_operating_cash_flow"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/investment_cash_flow" />
+
+                <TextView
+                    android:id="@+id/analysis_investment_cash_flow"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_analysis_title"
+                    android:text="@string/financing_cash_flow" />
+
+                <TextView
+                    android:id="@+id/analysis_financing_cash_flow"
+                    style="@style/finance_analysis_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

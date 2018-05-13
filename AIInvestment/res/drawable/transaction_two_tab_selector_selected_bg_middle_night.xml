@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke
+        android:width="@dimen/transaction_two_tab_selector_strokeWidth"
+        android:color="@color/tab_text_selected_night"/>
+    <solid
+        android:color="@android:color/transparent"/>
+</shape>

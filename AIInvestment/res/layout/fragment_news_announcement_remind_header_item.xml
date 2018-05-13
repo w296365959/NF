@@ -1,0 +1,32 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style">
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:paddingTop="8dp"
+            android:textColor="@color/default_text_color_100"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_14"/>
+    <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/title"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:paddingBottom="6dp"
+            android:layout_below="@id/title"
+            android:textColor="@color/default_text_color_60"
+            android:textSize="@dimen/font_size_14"/>
+    <!-- 处理TimeLineView画不出来的问题 -->
+    <com.sscf.investment.widget.TimeLineView
+            android:id="@+id/timeLineView"
+            android:layout_marginLeft="15dp"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/title"
+            android:layout_alignBottom="@id/content"/>
+</RelativeLayout>

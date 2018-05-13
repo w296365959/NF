@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/null_bg_style">
+    <include layout="@layout/ptr_recycler_view_with_sticky" />
+    <!-- TODO 布局优化 -->
+    <include
+        layout="@layout/loading_layout_center"
+        android:visibility="gone" />
+    <include
+        layout="@layout/fail_retry_fullscreen"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_14"
+        android:visibility="gone" />
+</FrameLayout>

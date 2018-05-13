@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/content"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    style="@style/main_bg_style">
+
+    <ImageView
+        android:id="@+id/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/switch_night_mode_bg_day"/>
+
+    <ImageView
+        android:id="@+id/above_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/switch_night_mode_bg_night"/>
+
+    <ImageView
+        android:id="@+id/beacon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+        <!--android:src="@drawable/switch_night_mode_beacon"-->
+
+    <ImageView
+        android:id="@+id/light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+        <!--android:src="@drawable/switch_night_mode_light"-->
+
+    <ImageView
+        android:id="@+id/blast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+        <!--android:src="@drawable/switch_night_mode_blast"-->
+</FrameLayout>

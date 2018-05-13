@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_list_item_style"
+    android:layout_height="wrap_content">
+    <com.sscf.investment.setting.widgt.RoundImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"/>
+    <ImageView
+        android:id="@+id/iconV"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/user_icon_v"
+        android:layout_alignRight="@id/icon"
+        android:layout_alignBottom="@id/icon"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_alignTop="@id/icon"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:textColor="@color/default_text_color_80"
+        android:textSize="@dimen/font_size_14" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_12" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_16" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_setting" />
+    <com.sscf.investment.component.ui.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_tab_height"
+        android:background="@color/default_content_bg" />
+    <View style="@style/list_line_style" />
+    <com.sscf.investment.widget.AvoidClickViewPager
+        android:id="@+id/viewPager"
+        style="@style/null_bg_style" />
+</LinearLayout>

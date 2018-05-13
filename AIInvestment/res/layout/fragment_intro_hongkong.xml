@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin">
+        <LinearLayout
+            android:id="@+id/brief_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/company_brief"
+                    style="@style/finance_group_title"/>
+            </LinearLayout>
+            <View
+                style="@style/list_line_style"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+
+                <TextView
+                    android:text="@string/company_name"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/company_name"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/listing_date"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/company_listing_date"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/issuing_price"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/issuing_price"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/issuing_amount"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/issuing_amount"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/industry"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/industry"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/lot_size"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/lot_size"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/main_business"
+                    style="@style/intro_title_style"
+                    />
+                <TextView
+                    android:id="@+id/main_business"
+                    style="@style/intro_content_style"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/company_bonus_dividend"
+                    style="@style/finance_group_title"/>
+            </LinearLayout>
+            <View
+                style="@style/list_line_style"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/year"
+                    style="@style/intro_incoming_name"
+                    android:textColor="@color/default_text_color_60"/>
+                <TextView
+                    android:text="@string/dividend_content"
+                    style="@style/intro_incoming_amount"
+                    android:textColor="@color/default_text_color_60"
+                    android:layout_width="192dp"/>
+                <TextView
+                    android:text="@string/dividend_date"
+                    style="@style/intro_incoming_ratio"
+                    android:textColor="@color/default_text_color_60"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/intro_bonus_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

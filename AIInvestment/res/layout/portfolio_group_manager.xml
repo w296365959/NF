@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/group_manager"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true"
+             android:background="@color/default_content_semitransparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height">
+
+            <TextView
+                android:id="@+id/group_manager_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_22"
+                android:textColor="@color/default_text_color_100"
+                />
+
+            <ImageView
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_content_margin"
+                android:layout_gravity="right|center_vertical"
+                android:src="?attr/top_close_drawable"/>
+        </FrameLayout>
+
+        <View
+            style="@style/list_line_style"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/portfolio_group_manager_list_item_height">
+
+            <FrameLayout
+                android:id="@+id/edit_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="?attr/portfolio_group_edit_drawable"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="@string/portfolio_group_edit"
+                    android:textColor="@color/tab_indicatorColor"
+                    android:textSize="@dimen/font_size_14"/>
+            </FrameLayout>
+            
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="22dp"
+                android:background="@color/list_divider"
+                android:layout_gravity="center_vertical"/>
+
+            <FrameLayout
+                android:id="@+id/new_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="?attr/portfolio_group_new_drawable"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="@string/portfolio_group_new"
+                    android:textColor="@color/tab_indicatorColor"
+                    android:textSize="@dimen/font_size_14"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/list_line_style"/>
+
+        <ListView
+            android:id="@+id/group_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/default_list_view_style">
+
+        </ListView>
+
+    </LinearLayout>
+
+</FrameLayout>

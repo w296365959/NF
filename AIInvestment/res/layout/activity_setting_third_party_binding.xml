@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_setting" />
+    <include
+        android:id="@+id/errorTips"
+        style="@style/setting_error_tips_style"
+        layout="@layout/activity_setting_error_tips"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+    <LinearLayout
+        android:id="@+id/modifyCellphone"
+        style="@style/default_list_item_style">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/cellphone" />
+        <TextView
+            android:id="@+id/cellphone"
+            style="@style/setting_linear_layout_right_text_item_style" />
+    </LinearLayout>
+    <View style="@style/list_line_style" />
+    <TextView
+        android:id="@+id/modifyPassword"
+        style="@style/setting_text_view_item_style"
+        android:text="@string/modify_password"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/thirdPartyWechatBinding"
+        style="@style/default_list_item_style"
+        android:layout_marginTop="@dimen/setting_item_small_margin_top">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/third_party_binding_wechat" />
+        <TextView
+            android:id="@+id/thirdPartyWechatBindingState"
+            style="@style/setting_third_party_bind_state_text_style" />
+    </LinearLayout>
+    <View style="@style/list_line_style" />
+    <LinearLayout
+        android:id="@+id/thirdPartyQqBinding"
+        style="@style/default_list_item_style">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/third_party_binding_qq" />
+        <TextView
+            android:id="@+id/thirdPartyQqBindingState"
+            style="@style/setting_third_party_bind_state_text_style" />
+    </LinearLayout>
+    <View style="@style/list_line_style" />
+    <LinearLayout
+        android:id="@+id/thirdPartySinaWeiboBinding"
+        style="@style/default_list_item_style">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/third_party_binding_weibo" />
+        <TextView
+            android:id="@+id/thirdPartySinaWeiboBindingState"
+            style="@style/setting_third_party_bind_state_text_style" />
+    </LinearLayout>
+</LinearLayout>

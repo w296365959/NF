@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="@dimen/default_content_margin"
+    tools:showIn="@layout/stock_detail_top_area">
+
+    <LinearLayout
+        android:id="@+id/plate"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right">
+
+        <TextView
+            android:id="@+id/plate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/default_text_color_100"
+            android:textSize="@dimen/font_size_14"/>
+
+        <com.sscf.investment.component.ui.widget.NumberTextView
+            android:id="@+id/concept_delta_percent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textSize="@dimen/font_size_16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plate_subject_titles"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="12dp"/>
+</FrameLayout>

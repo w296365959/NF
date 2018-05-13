@@ -1,0 +1,7 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogContentView"
+    style="@style/default_scrollview_style"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"/>

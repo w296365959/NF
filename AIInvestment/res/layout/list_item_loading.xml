@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/default_background">
+    <View
+        android:id="@+id/line"
+        style="@style/list_line_style"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center_vertical"
+            android:indeterminateDrawable="@drawable/loading_rotate"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/loading_text"
+            android:text="@string/loading"
+            android:textColor="@color/default_text_color_60"
+            android:textSize="@dimen/tab_bar_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

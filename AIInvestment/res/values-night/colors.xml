@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_background">@color/setting_bg_color_night</color>
+    <color name="default_content_bg">@color/main_bg_color_night</color>
+    <color name="default_content_semitransparent">@color/main_bg_color_semitransparent_night</color>
+
+    <color name="list_divider">@color/setting_bg_color_night</color>
+
+    <color name="tab_bar_text_selected_color">#ca5616</color>
+
+    <color name="main_bottom_tab_bar_divide">#211f1f</color>
+
+    <color name="text_color_attend">@color/white_100</color>
+    <color name="text_color_attended">@color/white_60</color>
+
+    <color name="tag_stock_pick_bg">@color/default_text_color_60_night</color>
+    <color name="homepage_header_bg_mask">#4d000000</color>
+
+    <color name="popup_window_item_bg">@color/setting_bg_color_night</color>
+
+    <color name="buy_button_disable_bg_color">#3d3b3b</color>
+    <color name="buy_button_text_color_disable">@color/white_20</color>
+    <color name="setting_cancel_button_background_color">@color/main_bg_color_night</color>
+    <color name="setting_cancel_button_text_color">@color/white_100</color>
+    <color name="radar_view_line_color">#483329</color>
+    <color name="up_rate_color">@color/default_text_color_100_night</color>
+    <color name="top_panel_bg_color">#232121</color>
+    <color name="industry_benchmark_tab_text_color_selected">@color/main_bg_color_night</color>
+    <color name="doughnut_view_empty_color">#929292</color>
+
+    <color name="setting_vip_name_color">#ffffff</color>
+    <color name="user_info_bg_top_color">#944127</color>
+    <color name="user_info_bg_bottom_color">#272524</color>
+    <color name="vip_info_bg_top_color">#d6b780</color>
+    <color name="vip_info_bg_bottom_color">#a78851</color>
+    <color name="default_actionbar_bg_color">#944127</color>
+    <color name="member_actionbar_bg_color">#d6b780</color>
+    <color name="main_tab_bar_text_color_selected">#fff3eded</color>
+    <color name="main_tab_bar_text_color_normal">#9af3eded</color>
+    <color name="main_tab_bar_vip_text_color_selected">#fff3eded</color>
+
+    <color name="scrollbar_color_dark">@color/line_chart_border_rect_night</color>
+
+    <color name="flow_select_bg_color">#3d3b39</color>
+    <color name="flow_select_bg_stroke_color">#3a3838</color>
+    <color name="smart_stock_stare_button_text_color_normal">#fff3eded</color>
+    <color name="chip_cost_mask_color">#2f2d2d</color>
+    <color name="indicator_ad_bg_color">#2f2d2d</color>
+
+    <color name="market_change_stat_divider_color">#211f1f</color>
+    <color name="chart_rect_color">#3d3a3a</color>
+    <color name="portfolio_two_tab_color">@color/gray_100</color>
+</resources>

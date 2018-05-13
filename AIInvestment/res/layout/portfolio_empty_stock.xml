@@ -1,0 +1,61 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/main_bg_style">
+
+    <ImageView
+            android:id="@+id/portfolio_empty_add_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="146dp"
+            android:src="?attr/portfolio_empty_add"
+            android:layout_width="@dimen/portfolio_empty_add_image_size"
+            android:layout_height="@dimen/portfolio_empty_add_image_size"/>
+
+    <TextView
+            android:id="@+id/portfolio_empty_add_tips"
+            android:text="@string/portfolio_empty_add_stock"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/default_text_color_60"
+            android:layout_below="@id/portfolio_empty_add_button"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/portfolio_empty_add_tips"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="6dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/portfolio_empty_discory_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/portfolio_empty_discovery"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/actionbar_bg_color"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+
+    <!-- 指数行情 -->
+    <include
+            android:id="@+id/portfolio_header_market_id"
+            layout="@layout/portfolio_stock_market"/>
+    <View
+            android:id="@+id/divider"
+            android:layout_below="@id/portfolio_header_market_id"
+            style="@style/list_line_style"/>
+
+    <!-- 登录状态界面 -->
+    <include
+            android:id="@+id/loginStatusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/portfolio_login_layout_height"
+            android:layout_alignParentBottom="true"
+            layout="@layout/portfolio_login_status_layout"/>
+
+</RelativeLayout>

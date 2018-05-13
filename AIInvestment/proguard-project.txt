@@ -1,0 +1,501 @@
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keepattributes *Annotation*
+-keepattributes Signature
+
+#------------------  下方是android平台自带的排除项，这里不要动         ----------------
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.support.v7.**
+-keep public class * extends android.support.design.**
+
+
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.examples.android.model.** { *; }
+-keep class com.uuhelper.Application.** { *; }
+-keep class net.sourceforge.zbar.** { *; }
+-keep class com.google.android.gms.** { *; }
+
+-keep class com.bank.pingan.model.** { *; }
+
+-keep public class * extends com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper
+-keep public class * extends com.j256.ormlite.android.apptools.OpenHelperManager
+
+-keep class com.android.vending.licensing.ILicensingService
+-keep class android.support.v4.** { *; }
+-keep class org.apache.commons.net.** { *; }
+-keep class com.tencent.** { *; }
+
+-keep class com.j256.ormlite.** { *; }
+-keep class com.j256.ormlite.android.** { *; }
+-keep class com.j256.ormlite.field.** { *; }
+-keep class com.j256.ormlite.stmt.** { *; }
+
+-dontwarn android.support.v4.**
+-dontwarn org.apache.commons.net.**
+-dontwarn com.tencent.**
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep class * implements java.io.Serializable {*;}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context);
+}
+
+-dontshrink
+-dontoptimize
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+-dontwarn com.tencent.weibo.sdk.**
+-dontwarn com.facebook.**
+
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public interface com.facebook.**
+-keep public interface com.tencent.**
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+
+-keep public class com.umeng.socialize.* {*;}
+-keep public class javax.**
+-keep public class android.webkit.**
+
+-keep class com.umeng.scrshot.**
+-keep class com.umeng.socialize.sensor.**
+
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+
+-keep class im.yixin.sdk.api.YXMessage {*;}
+-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+
+-keep public class com.sscf.investment.R$*{
+    public static final int *;
+}
+
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+	public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepattributes *Annotation*
+
+-keepclasseswithmembernames class *{
+	native <methods>;
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+#------------------  下方是共性的排除项目         ----------------
+# 方法名中含有“JNI”字符的，认定是Java Native Interface方法，自动排除
+# 方法名中含有“JRI”字符的，认定是Java Reflection Interface方法，自动排除
+-keepclasseswithmembers class * {
+    ... *JNI*(...);
+}
+
+-keepclasseswithmembernames class * {
+	... *JRI*(...);
+}
+
+-keep class **JNI* {*;}
+
+
+#------------------  开源数据库         ----------------
+-keep class com.sscf.investment.afinal.** {*;}
+
+-keep class com.sscf.investment.portfolio.entity.** {*;}
+-keep class com.sscf.investment.search.entity.** {*;}
+-keep class com.sscf.investment.splash.SplashDbEntity {*;}
+-keep class com.sscf.investment.common.entity.** {*;}
+-keep class com.sscf.investment.sdk.download.entity.** {*;}
+
+
+#------------------  协议接口         ----------------
+-keep class BEC.** {*;}
+-keep class BEC.cnst.** {*;}
+
+
+#------------------  jar包排除         ----------------
+#-libraryjars libs/android-support-v4.jar
+#-libraryjars libs/codec.jar
+#-libraryjars libs/com.umeng.message.lib_v2.6.0.jar
+#-libraryjars libs/HwPush_SDK_V2559.jar
+#-libraryjars libs/MobLogCollector.jar
+#-libraryjars libs/MobTools.jar
+#-libraryjars libs/mta-sdk-1.6.2.jar
+#-libraryjars libs/open_sdk_r5276.jar
+#-libraryjars libs/ShareSDK-Core-2.6.1.jar
+#-libraryjars libs/ShareSDK-QQ-2.6.1.jar
+#-libraryjars libs/ShareSDK-SinaWeibo-2.6.1.jar
+#-libraryjars libs/ShareSDK-Wechat-2.6.1.jar
+#-libraryjars libs/ShareSDK-Wechat-Core-2.6.1.jar
+#-libraryjars libs/ShareSDK-Wechat-Favorite-2.6.1.jar
+#-libraryjars libs/ShareSDK-Wechat-Moments-2.6.1.jar
+#-libraryjars libs/tbs_sdk_v1.4.0.1098_25431_obfs_20150827_115045.jar
+#-libraryjars libs/umeng-analytics-v5.5.3.jar
+#-libraryjars libs/universal-image-loader-1.9.4.jar
+#-libraryjars libs/xUtils-2.6.14.jar
+
+
+-keep class com.lidroid.** {*;}
+-keep class com.qq.** {*;}
+-keep class com.squareup.** {*;}
+-keep class com.ta.** {*;}
+-keep class com.ut.** {*;}
+-keep class com.tencent.** {*;}
+
+
+-keep class com.tencent.open.TDialog$*
+-keep class com.tencent.open.TDialog$* {*;}
+-keep class com.tencent.open.PKDialog
+-keep class com.tencent.open.PKDialog {*;}
+-keep class com.tencent.open.PKDialog$*
+-keep class com.tencent.open.PKDialog$* {*;}
+
+-keep class com.nostral3.** {*;}
+-keep class com.tencent.** {*;}
+
+
+#用到了反射
+
+#用到了ValueAnimator，属性名用字符串指定，不能混淆
+-keep class com.sscf.investment.detail.view.IndicatorAnimationView {*;}
+-keep class com.sscf.investment.detail.view.CapitalFlowReminderView {*;}
+
+-keepattributes  EnclosingMethod,Signature
+
+-keepclassmembers class ** {
+    public void onEvent*(**);
+}
+
+-dontwarn org.apache.http.**
+-dontwarn com.android.internal.**
+-keep class org.apache.http.** { *; }
+-keep class com.android.internal.** { *; }
+
+#惠锁屏
+-dontwarn com.appinside.**
+
+
+#----------组件化----------
+#反射
+-keep class com.sscf.investment.web.sdk.component.WebSdkComponent {*;}
+-keep class com.sscf.investment.component.ui.manager.UIComponent {*;}
+-keep class com.sscf.investment.socialize.component.SocialComponent {*;}
+-keep class com.sscf.investment.logic.component.LogicComponent {*;}
+
+#db
+-keep class com.dengtacj.component.entity.db.** {*;}
+-keep class com.sscf.investment.setting.entity.** {*;}
+
+#----------组件化----------
+
+
+#----------web sdk组件----------
+-keep class com.sscf.investment.web.sdk.BeaconProtocal {*;}
+
+-keepclassmembers class com.sscf.investment.web.sdk.NativeProxy {
+   public *;
+}
+#-keepclassmembers class com.dengtacj.stock.web.sdk.JsProxy {
+#   public *;
+#}
+
+#----------web sdk组件----------
+
+
+#----------友盟统计----------
+#2016.05.26 友盟Android 统计分析SDK v6.0.1
+#compile 'com.umeng.analytics:analytics:latest.integration'
+#umeng-analytics-v6.0.1.jar
+#utdid4all-1.0.4.jar
+-dontwarn com.umeng.analytics.**
+
+-keep class com.umeng.analytics.** { *; }
+-keep class u.aly.** { *; }
+
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep public class com.sscf.investment.R$*{
+    public static final int *;
+}
+#----------友盟统计----------
+
+#----------友盟push----------
+#2017.04.12 友盟Android 消息推送SDK v3.1.1
+-dontwarn com.taobao.**
+-dontwarn anet.channel.**
+-dontwarn anetwork.channel.**
+-dontwarn org.android.**
+-dontwarn org.apache.thrift.**
+-dontwarn com.xiaomi.**
+-dontwarn com.huawei.**
+-dontwarn android.net.http.**
+
+-keepattributes *Annotation*
+
+-keep class com.taobao.** {*;}
+-keep class org.android.** {*;}
+-keep class anet.channel.** {*;}
+-keep class com.umeng.** {*;}
+-keep class com.xiaomi.** {*;}
+-keep class com.huawei.** {*;}
+-keep class org.apache.thrift.** {*;}
+-keep class com.alibaba.sdk.android.**{*;}
+-keep class com.ut.**{*;}
+-keep class com.ta.**{*;}
+-keep class android.net.http.**{*;}
+
+-keep public class **.R$*{
+   public static final int *;
+}
+#----------友盟push----------
+
+#----------华为push----------
+#HUAWEI 消息推送服务SDK 2.5.1.300
+-dontwarn com.huawei.**
+-dontwarn com.hianalytics.**
+-dontwarn com.baidu.mapapi.**
+
+-keep class com.huawei.android.pushagent.**{*;}
+-keep class com.huawei.android.pushselfshow.**{*;}
+-keep class com.huawei.android.microkernel.**{*;}
+-keep class com.hianalytics.android.**{*;}
+-keep class com.baidu.mapapi.**{*;}
+
+
+#2017.11.07 HUAWEI 消息推送服务SDK 2.5.2.300
+-ignorewarning
+-keepattributes *Annotation*
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keepattributes Signature
+-keepattributes SourceFile,LineNumberTable
+
+-keep class com.hianalytics.android.**{*;}
+-keep class com.huawei.updatesdk.**{*;}
+-keep class com.huawei.hms.**{*;}
+
+#----------华为push----------
+
+#----------友盟socialSDK----------
+#2017.07.12 Android 社会化组件SDK v6.4.5
+
+-dontshrink
+-dontoptimize
+-dontwarn com.google.android.maps.**
+-dontwarn android.webkit.WebView
+
+-dontwarn com.umeng.**
+-dontwarn com.tencent.weibo.sdk.**
+-dontwarn com.facebook.**
+-keep public class javax.**
+-keep public class android.webkit.**
+-dontwarn android.support.v4.**
+-keep enum com.facebook.**
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+
+-keep public interface com.facebook.**
+-keep public interface com.tencent.**
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+
+-keep public class com.umeng.socialize.* {*;}
+
+-keep class com.facebook.**
+-keep class com.facebook.** { *; }
+-keep class com.umeng.scrshot.**
+-keep public class com.tencent.** {*;}
+-keep class com.umeng.socialize.sensor.**
+-keep class com.umeng.socialize.handler.**
+-keep class com.umeng.socialize.handler.*
+-keep class com.umeng.weixin.handler.**
+-keep class com.umeng.weixin.handler.*
+-keep class com.umeng.qq.handler.**
+-keep class com.umeng.qq.handler.*
+-keep class UMMoreHandler{*;}
+-keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+-keep class im.yixin.sdk.api.YXMessage {*;}
+-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+-keep class com.tencent.mm.sdk.** {
+   *;
+}
+-keep class com.tencent.mm.opensdk.** {
+   *;
+}
+-keep class com.tencent.wxop.** {
+   *;
+}
+-keep class com.tencent.mm.sdk.** {
+   *;
+}
+-dontwarn twitter4j.**
+-keep class twitter4j.** { *; }
+
+-keep class com.tencent.** {*;}
+-dontwarn com.tencent.**
+-keep class com.kakao.** {*;}
+-dontwarn com.kakao.**
+-keep public class com.umeng.com.umeng.soexample.R$*{
+    public static final int *;
+}
+-keep public class com.linkedin.android.mobilesdk.R$*{
+    public static final int *;
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class com.tencent.open.TDialog$*
+-keep class com.tencent.open.TDialog$* {*;}
+-keep class com.tencent.open.PKDialog
+-keep class com.tencent.open.PKDialog {*;}
+-keep class com.tencent.open.PKDialog$*
+-keep class com.tencent.open.PKDialog$* {*;}
+-keep class com.umeng.socialize.impl.ImageImpl {*;}
+-keep class com.sina.** {*;}
+-dontwarn com.sina.**
+-keep class  com.alipay.share.sdk.** {
+   *;
+}
+
+-keepnames class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+-keep class com.linkedin.** { *; }
+-keep class com.android.dingtalk.share.ddsharemodule.** { *; }
+-keepattributes Signature
+
+#----------友盟socialSDK----------
+
+#----------讯飞语音识别SDK----------
+#1.1102
+
+#libmsc.so
+#Msc.jar
+#Sunflower.jar
+-dontwarn com.iflytek.**
+-keep class com.iflytek.**{*;}
+-keepattributes Signature
+
+#----------讯飞语音识别SDK----------
+
+#-ignorewarnings                # 抑制警告
+
+# for retrolambda
+-dontwarn java.lang.invoke.*
+
+#----------支付宝SDK----------
+#-ignorewarnings
+-dontwarn com.alipay.**
+-dontwarn com.ta.**
+-dontwarn com.ut.**
+-dontwarn org.json.alipay.**
+
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IAlixPay$Stub{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
+-keep class com.alipay.sdk.app.PayTask{ public *;}
+-keep class com.alipay.sdk.app.AuthTask{ public *;}
+-keep class com.ta.**{*;}
+-keep class com.ut.**{*;}
+-keep class org.json.alipay.**{*;}
+#----------支付宝SDK----------
+
+
+#----------守护进程组件----------
+-keep class com.sscf.investment.component.keepalive.KeepAlive{*;}
+
+-keep class com.marswin89.marsdaemon.NativeDaemonBase{*;}
+-keep class com.marswin89.marsdaemon.nativ.NativeDaemonAPI20{*;}
+-keep class com.marswin89.marsdaemon.nativ.NativeDaemonAPI21{*;}
+-keep class com.marswin89.marsdaemon.DaemonApplication{*;}
+-keep class com.marswin89.marsdaemon.DaemonClient{*;}
+-keepattributes Exceptions,InnerClasses,...
+-keep class com.marswin89.marsdaemon.DaemonConfigurations{*;}
+-keep class com.marswin89.marsdaemon.DaemonConfigurations$*{*;}
+#----------守护进程组件----------
+
+
+# Router
+-keep class com.chenenyu.router.** {*;}
+-keep class * implements com.chenenyu.router.RouteInterceptor {*;}
+
+#----------DroidPlugin----------
+-keep class com.morgoo.**{*;}
+-dontwarn com.morgoo.**
+#----------DroidPlugin----------
+
+#----------baidu map----------
+-keep class com.baidu.** {*;}
+-keep class vi.com.** {*;}
+-dontwarn com.baidu.**
+#----------baidu map----------
+
+-keep class com.sscf.investment.setting.model.KLineSettingConfigure {*;}
+-keep class com.sscf.investment.setting.model.IndicatorConfigure {*;}
+-keep class com.sscf.investment.teacherYan.entity.DBTeacherYanWord {*;}

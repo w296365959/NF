@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+            android:topLeftRadius="@dimen/capital_flow_detail_duo_kong_cornor"
+            android:topRightRadius="0dp"
+            android:bottomLeftRadius="@dimen/capital_flow_detail_duo_kong_cornor"
+            android:bottomRightRadius="0dp"/>
+
+    <solid android:color="@color/transaction_capital_duo"/>
+
+</shape>

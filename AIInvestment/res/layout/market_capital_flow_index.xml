@@ -1,0 +1,35 @@
+<com.sscf.investment.market.view.MarketCapitalFlowIndexHeader
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style"
+        android:orientation="vertical">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <include
+                layout="@layout/market_capital_flow_index_item"
+                android:id="@+id/capital_flow_index_0"/>
+        <View
+                style="@style/list_vertical_line_style"/>
+        <include
+                layout="@layout/market_capital_flow_index_item"
+                android:id="@+id/capital_flow_index_1"/>
+    </LinearLayout>
+
+    <View
+            style="@style/list_line_style"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <include
+                layout="@layout/market_capital_flow_index_item"
+                android:id="@+id/capital_flow_index_2"/>
+        <View
+                style="@style/list_vertical_line_style"/>
+        <include
+                layout="@layout/market_capital_flow_index_item"
+                android:id="@+id/capital_flow_index_3"/>
+    </LinearLayout>
+</com.sscf.investment.market.view.MarketCapitalFlowIndexHeader>

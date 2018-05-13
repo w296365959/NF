@@ -1,0 +1,36 @@
+<com.sscf.investment.widget.CheckableLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/default_list_item_style"
+        android:layout_height="@dimen/list_item_height"
+        android:minHeight="@dimen/list_item_height"
+        android:paddingLeft="@dimen/favor_item_padding_left_edit"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+    <CheckedTextView
+            style="@style/portfolio_checked_icon_style"
+            android:layout_marginRight="@dimen/default_drawable_padding"/>
+    <LinearLayout
+            android:orientation="vertical"
+            style="@style/horizontal_average_divide_style">
+        <com.sscf.investment.widget.VariableTextView
+                android:id="@+id/portfolioEditTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/market_stock_name_text_style"/>
+        <TextView
+                android:id="@+id/code"
+                style="@style/market_stock_code_text_style"/>
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/portfolioEditRemind"
+            style="@style/portfolio_edit_icon_style"
+            android:src="@drawable/portfolio_edit_remind_icon_selector"/>
+    <ImageView
+            android:id="@+id/portfolioEditStick"
+            style="@style/portfolio_edit_icon_style"
+            android:src="@drawable/portfolio_edit_stick_icon"/>
+    <ImageView
+            android:id="@+id/drag_handle"
+            style="@style/portfolio_edit_icon_style"
+            android:src="@drawable/portfolio_edit_drag_icon"/>
+</com.sscf.investment.widget.CheckableLinearLayout>

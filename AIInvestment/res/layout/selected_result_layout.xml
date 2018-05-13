@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="110dp">
+    <com.sscf.investment.stare.ui.widget.SelectedResultFlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selected_result_list"
+        android:layout_marginBottom="32dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/empty"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/default_text_color_60"
+        android:gravity="center"
+        android:text="@string/no_filter_select"/>
+</FrameLayout>

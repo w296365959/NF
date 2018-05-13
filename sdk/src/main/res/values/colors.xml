@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="qrcode_background_color">#ffffff</color>
+    <color name="qrcode_text_color">#fd7736</color>
+</resources>

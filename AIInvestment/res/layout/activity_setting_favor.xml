@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/actionbar_style">
+
+        <ImageView
+            android:id="@+id/actionbar_back_button"
+            style="@style/actionbar_back_button_style"/>
+
+        <TextView
+            android:id="@+id/actionbar_cancel_button"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            style="@style/actionbar_text_button_style"
+            android:text="@string/finish"/>
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            style="@style/actionbar_title_text_style"/>
+
+        <ImageView
+            android:id="@+id/actionbar_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/actionbar_edit_selector"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/default_list_view_style"/>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/setting_favor_empty"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_14"/>
+
+    <include
+        layout="@layout/bottom_bar_edit_delete_layout"/>
+
+</LinearLayout>

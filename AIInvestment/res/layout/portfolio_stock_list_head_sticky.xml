@@ -1,0 +1,65 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/list_title_layout_style">
+
+    <!-- 股票名称-->
+    <TextView
+            android:id="@+id/portfolio_stock_list_head_name"
+            android:layout_marginLeft="@dimen/portfolio_list_item_margin_left"
+            android:theme="@style/portfolio_stock_list_head_text_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/portfolio_stock_list_head_edit"
+            android:drawablePadding="@dimen/list_head_text_arrow_dis"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tab_bar_text_selected_color"
+            android:text="@string/stock_list_head_portfolio_edit"/>
+
+    <!-- 涨跌幅 -->
+    <RelativeLayout
+            android:id="@+id/portfolio_stock_list_head_change_layout"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/portfolio_list_item_width"
+            android:layout_height="@dimen/portfolio_list_item_height">
+        <TextView
+                android:id="@+id/portfolio_stock_list_head_updown"
+                android:theme="@style/portfolio_stock_list_head_text_style"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/right_corner"
+                android:drawablePadding="@dimen/list_head_text_arrow_dis"
+                android:textColor="@color/tab_bar_text_selected_color"
+                android:text="@string/delta"/>
+    </RelativeLayout>
+
+
+    <!-- 最新价 -->
+    <RelativeLayout
+            android:id="@+id/portfolio_stock_list_head_price_layout"
+            android:layout_toLeftOf="@id/portfolio_stock_list_head_change_layout"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/portfolio_list_item_width"
+            android:layout_height="@dimen/portfolio_list_item_height">
+        <TextView
+                android:id="@+id/portfolio_stock_list_head_price"
+                android:theme="@style/portfolio_stock_list_head_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/right_corner"
+                android:drawablePadding="@dimen/list_head_text_arrow_dis"
+                android:layout_centerVertical="true"
+                android:textColor="@color/tab_bar_text_selected_color"
+                android:text="@string/stock_list_head_new_price"/>
+    </RelativeLayout>
+
+    <View
+            style="@style/list_line_style"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

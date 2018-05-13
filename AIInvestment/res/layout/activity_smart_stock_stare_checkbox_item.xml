@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/actionbar_margin"
+    android:paddingRight="@dimen/actionbar_margin"
+    android:background="@color/default_content_bg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smart_stock_stare_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/smart_stock_stare_sub_title"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_16"
+        android:includeFontPadding="false"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smart_stock_stare_sub_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smart_stock_stare_title"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_12"
+        android:includeFontPadding="false"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="3dp"/>
+
+    <CheckBox
+        android:id="@+id/smart_stock_stare_checkbox"
+        style="@style/portfolio_remind_item_right_checkbox_style"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>

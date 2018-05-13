@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/null_bg_style"
+    android:id="@+id/item"
+    android:layout_width="100dp"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="6dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_15"/>
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="@dimen/font_size_16"/>
+</LinearLayout>

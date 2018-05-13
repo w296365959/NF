@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_setting_with_right_button" />
+    <include layout="@layout/common_ptr_recycler_view" />
+</LinearLayout>

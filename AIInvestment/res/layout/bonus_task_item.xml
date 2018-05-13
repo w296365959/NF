@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    style="@style/bonus_task_item_style">
+    <ImageView android:id="@+id/bonus_task_icon"
+        style="@style/task_icon_style"/>
+    <TextView android:id="@+id/bonus_task_title"
+        style="@style/bonus_task_title_style"
+        android:layout_toRightOf="@id/bonus_task_icon"/>
+    <TextView android:id="@+id/execute_task_btn"
+        style="@style/execute_task_btn_style"/>
+    <TextView android:id="@+id/bonus_task_description"
+        style="@style/bonus_task_description_style"
+        android:layout_below="@id/bonus_task_title"
+        android:layout_marginBottom="@dimen/bonus_task_padding_top_bottom"/>
+    <View android:id="@+id/divider_line"
+        style="@style/list_line_style"
+        android:layout_below="@id/bonus_task_description"/>
+</RelativeLayout>

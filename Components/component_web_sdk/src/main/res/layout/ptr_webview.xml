@@ -1,0 +1,8 @@
+<com.sscf.investment.widget.BeaconPullToRefreshFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ptr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sscf.investment.web.sdk.widget.DtWebView
+        android:id="@+id/webView"
+        style="@style/default_scrollview_style"/>
+</com.sscf.investment.widget.BeaconPullToRefreshFrameLayout>

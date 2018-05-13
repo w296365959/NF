@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/achievement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 个股涨跌幅 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:layout_marginLeft="@dimen/default_content_margin"
+                    android:text="@string/rise_and_down_amplitude" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <TextView
+                android:id="@+id/rise_and_down_amplitude_detail"
+                style="@style/achievement_detail_text"
+                android:paddingLeft="@dimen/default_content_margin"
+                android:paddingRight="@dimen/default_content_margin" />
+
+            <com.sscf.investment.detail.view.IndicatorGroupView
+                android:id="@+id/amplitude_indicators"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin" />
+
+            <com.sscf.investment.detail.view.UpAndDownAmplitudeView
+                android:id="@+id/amplitude_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/up_and_down_view_height"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin" />
+
+            <!-- 个股涨跌停板 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/finance_group_title"
+                    android:layout_marginLeft="@dimen/default_content_margin"
+                    android:text="@string/rise_and_down_limit" />
+            </LinearLayout>
+
+            <View style="@style/list_line_style" />
+
+            <TextView
+                android:id="@+id/rise_and_down_limit_detail"
+                style="@style/achievement_detail_text"
+                android:paddingLeft="@dimen/default_content_margin"
+                android:paddingRight="@dimen/default_content_margin" />
+
+            <com.sscf.investment.detail.view.IndicatorGroupView
+                android:id="@+id/limit_indicators"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin" />
+
+            <com.sscf.investment.detail.view.UpAndDownLimitView
+                android:id="@+id/limit_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/up_and_down_view_height"
+                android:layout_marginLeft="@dimen/default_content_margin"
+                android:layout_marginRight="@dimen/default_content_margin" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

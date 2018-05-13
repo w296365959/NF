@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sub_tab_selector_height">28dp</dimen>
+    <dimen name="sub_tab_textSize">16dp</dimen>
+
+    <dimen name="min_distance_to_start_scroll">30dp</dimen>
+    <dimen name="min_distance_to_trigger_scroll">10dp</dimen>
+    <dimen name="max_distance_to_lock_scroll">8dp</dimen>
+    <dimen name="min_speed_to_trigger_finish">1500dp</dimen>
+    <dimen name="min_distance_to_trigger_edge_tracking">30dp</dimen>
+
+    <!-- 字体大小定义 -->
+    <dimen name="font_size_6">6dp</dimen>
+    <dimen name="font_size_8">8dp</dimen>
+    <dimen name="font_size_9">9dp</dimen>
+    <dimen name="font_size_10">10dp</dimen>
+    <dimen name="font_size_11">11dp</dimen>
+    <dimen name="font_size_12">12dp</dimen>
+    <dimen name="font_size_13">13dp</dimen>
+    <dimen name="font_size_14">14dp</dimen>
+    <dimen name="font_size_15">15dp</dimen>
+    <dimen name="font_size_16">16dp</dimen>
+    <dimen name="font_size_17">17dp</dimen>
+    <dimen name="font_size_18">18dp</dimen>
+    <dimen name="font_size_20">20dp</dimen>
+    <dimen name="font_size_22">22dp</dimen>
+    <dimen name="font_size_24">24dp</dimen>
+    <dimen name="font_size_30">30dp</dimen>
+    <dimen name="font_size_34">34dp</dimen>
+    <dimen name="font_size_42">42dp</dimen>
+
+    <!-- actionbar -->
+    <dimen name="actionbar_margin">15dp</dimen>
+    <dimen name="actionbar_margin_half">7.5dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_title_marginTop">3dp</dimen>
+    <dimen name="actionbar_subtitle_marginBottom">3dp</dimen>
+
+    <!-- 公共常量定义 -->
+    <dimen name="default_content_margin">12dp</dimen>
+
+    <dimen name="default_scrollbar_size_wider">4dp</dimen>
+
+    <!-- dialog -->
+    <dimen name="dialog_horizontal_margin">30dp</dimen>
+    <dimen name="dialog_text_horizontal_margin">14dp</dimen>
+    <dimen name="dialog_text_vertical_margin">32dp</dimen>
+
+    <!--list头部高度-->
+    <dimen name="list_head_height">32dp</dimen>
+    <!--list条目高度-->
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="list_item_selector_height">32dp</dimen>
+    <dimen name="list_item_selector_width">110dp</dimen>
+    <!--list条目分割线高度-->
+    <dimen name="list_divider_height">0.5dp</dimen>
+    <dimen name="list_market_divider_height">8dp</dimen>
+    <dimen name="list_horizontal_divider_height">6dp</dimen>
+
+    <dimen name="tag_round_rect_corner_radius">2dp</dimen>
+    <dimen name="setting_drawable_mini_padding">5dp</dimen>
+
+</resources>

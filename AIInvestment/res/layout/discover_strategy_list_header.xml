@@ -1,0 +1,49 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/discoverCardLayout"
+        style="@style/setting_bg_style"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/default_content_bg"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/customizedStrategy"
+            style="@style/discover_strategy_tools_item_style">
+            <ImageView
+                style="@style/discover_strategy_tools_icon_style"
+                android:src="@drawable/stock_pick_customized_strategy" />
+            <TextView
+                style="@style/discover_strategy_tools_text_style"
+                android:text="@string/customized_strategy"/>
+        </LinearLayout>
+        <View
+            android:layout_height="16dp"
+            style="@style/list_vertical_line_style"/>
+        <LinearLayout
+            android:id="@+id/portfolioStrategy"
+            style="@style/discover_strategy_tools_item_style">
+            <ImageView
+                style="@style/discover_strategy_tools_icon_style"
+                android:src="@drawable/stock_pick_portfolio_strategy" />
+            <TextView
+                style="@style/discover_strategy_tools_text_style"
+                android:text="@string/portfolio_stratety"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="@dimen/actionbar_margin"
+        android:background="@color/default_content_bg"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_12"
+        android:text="@string/stock_pick_strategy_selected"/>
+</LinearLayout>

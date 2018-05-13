@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/setting_bg_style">
+    <include
+            layout="@layout/actionbar_setting"/>
+    <include
+            style="@style/setting_error_tips_style"
+            layout="@layout/activity_setting_error_tips"/>
+    <LinearLayout
+            android:id="@+id/modifyAvatar"
+            android:layout_height="60dp"
+            style="@style/default_list_item_style">
+        <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/avatar" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <com.sscf.investment.setting.widgt.RoundImageView
+                android:id="@+id/accountAvatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/default_consultant_face" />
+            <ImageView
+                android:id="@+id/iconV"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/user_icon_v"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/modifyNickname"
+            style="@style/default_list_item_style"
+            android:layout_marginTop="@dimen/setting_item_small_margin_top">
+        <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/nickname" />
+        <TextView
+                android:id="@+id/nickname"
+                style="@style/setting_linear_layout_right_text_item_style" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style" />
+
+    <LinearLayout
+        android:id="@+id/modifySex"
+        style="@style/default_list_item_style">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/sex" />
+        <TextView
+            android:id="@+id/sex"
+            style="@style/setting_linear_layout_right_text_item_style" />
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style" />
+
+    <LinearLayout
+        android:id="@+id/modifyPlace"
+        style="@style/default_list_item_style">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/place" />
+        <TextView
+            android:id="@+id/place"
+            style="@style/setting_linear_layout_right_text_item_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modifyIntro"
+        style="@style/default_list_item_style"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_item_small_margin_top">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/intro" />
+        <TextView
+            android:id="@+id/profile"
+            style="@style/setting_linear_layout_right_text_item_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/actionbar_margin"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style" />
+
+    <LinearLayout
+        android:id="@+id/verificationLayout"
+        style="@style/default_list_item_style"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/certification" />
+        <TextView
+            android:id="@+id/verification"
+            style="@style/setting_linear_layout_right_text_item_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/actionbar_margin"
+            android:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>

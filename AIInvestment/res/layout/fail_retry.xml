@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fail_retry"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/no_content_layout_height"
+    android:paddingTop="@dimen/on_content_paddingTop"
+    >
+
+    <TextView
+        android:text="@string/fail_retry"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        />
+</FrameLayout>

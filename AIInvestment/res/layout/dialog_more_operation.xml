@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/more_operation_dialog_frame"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+             android:background="@color/black_40">
+
+    <LinearLayout
+        android:id="@+id/more_operation_dialog_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/default_content_bg"
+        android:paddingTop="18dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/more_operation_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:layout_marginBottom="18dp"/>
+        <View
+            style="@style/list_line_style"
+            android:id="@+id/center_line"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/more_operation_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"/>
+        <View
+            style="@style/list_line_style"/>
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:background="@drawable/list_item_bg"
+            android:textColor="@color/default_text_color_100"
+            android:textSize="@dimen/font_size_16"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+</FrameLayout>

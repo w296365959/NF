@@ -1,0 +1,213 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/actionBarBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="148dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/actionbar_height"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <!--拉开后显示的背景图片-->
+                <include
+                    layout="@layout/tab_fragment_setting_user_info_layout"
+                    app:layout_collapseMode="parallax" />
+                <!--标题栏-->
+                <RelativeLayout
+                    android:id="@+id/actionBar"
+                    style="@style/actionbar_style"
+                    android:background="@android:color/transparent"
+                    app:layout_collapseMode="pin">
+
+                    <ImageView
+                        android:id="@+id/actionbarScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="@dimen/actionbar_margin"
+                        android:src="@drawable/actionbar_scan" />
+
+                    <TextView
+                        android:id="@+id/actionbar_title"
+                        style="@style/actionbar_title_text_style" />
+
+                    <ImageView
+                        android:id="@+id/actionbarMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/actionbar_margin_half"
+                        android:paddingRight="@dimen/actionbar_margin"
+                        android:src="@drawable/actionbar_message" />
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/actionbarMessage"
+                        android:layout_alignTop="@id/actionbarMessage"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/message_count_none_vip_bg"
+                        android:maxLines="1"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="1dp"
+                        android:textColor="@color/message_count_none_vip_color"
+                        android:textSize="@dimen/font_size_10" />
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            style="@style/default_scrollview_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                style="@style/null_bg_style"
+                android:orientation="vertical">
+
+                <View style="@style/list_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_height"
+                    android:background="@color/default_content_bg"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/myEvent"
+                        style="@style/user_info_title_text_style_new">
+
+                        <TextView
+                            android:text="@string/event"
+                            style="@style/user_info_title_text_style" />
+                        <TextView
+                            android:id="@+id/myEventCount"
+                            style="@style/user_info_count_text_style"
+                            android:text="@string/value_null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/myFavor"
+                        style="@style/user_info_title_text_style_new">
+
+                        <TextView
+                            android:text="@string/setting_favor_text"
+                            style="@style/user_info_title_text_style" />
+                        <TextView
+                            android:id="@+id/myFavorCount"
+                            style="@style/user_info_count_text_style"
+                            android:text="@string/value_null"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/myAttention"
+                        style="@style/user_info_title_text_style_new">
+
+                        <TextView
+                            android:text="@string/attention"
+                            style="@style/user_info_title_text_style" />
+                        <TextView
+                            android:id="@+id/myAttentionCount"
+                            style="@style/user_info_count_text_style"
+                            android:text="@string/value_null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/myFans"
+                        style="@style/user_info_title_text_style_new">
+
+                        <TextView
+                            android:text="@string/fans"
+                            style="@style/user_info_title_text_style" />
+                        <TextView
+                            android:id="@+id/myFansCount"
+                            style="@style/user_info_count_text_style"
+                            android:text="@string/value_null" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/myCoupon"
+                        style="@style/user_info_title_text_style_new">
+
+                        <TextView
+                            android:text="@string/coupon"
+                            style="@style/user_info_title_text_style" />
+                        <TextView
+                            android:id="@+id/myCouponCount"
+                            style="@style/user_info_count_text_style"
+                            android:text="@string/value_null" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/tab_fragment_setting_tools" />
+
+                <include layout="@layout/tab_fragment_setting_item_list" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/actionBar_sticky"
+        style="@style/actionbar_style"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/actionbarScan_sticky"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:src="@drawable/actionbar_scan" />
+
+        <TextView
+            android:id="@+id/actionbar_title_sticky"
+            style="@style/actionbar_title_text_style"
+            android:text="@string/main_tab_name_setting" />
+
+        <ImageView
+            android:id="@+id/actionbarMessage_sticky"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/actionbar_margin_half"
+            android:paddingRight="@dimen/actionbar_margin"
+            android:src="@drawable/actionbar_message" />
+
+        <TextView
+            android:id="@+id/count_sticky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/actionbarMessage_sticky"
+            android:layout_alignTop="@id/actionbarMessage_sticky"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/message_count_none_vip_bg"
+            android:maxLines="1"
+            android:paddingBottom="1dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="1dp"
+            android:textColor="@color/actionbar_bg_color"
+            android:textSize="@dimen/font_size_10" />
+    </RelativeLayout>
+</FrameLayout>

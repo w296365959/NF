@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_list_item_style">
+    <TextView
+        android:id="@+id/settingItemTitle"
+        style="@style/setting_default_text_style"
+        android:layout_gravity="center_vertical"
+        android:drawablePadding="@dimen/default_drawable_padding"/>
+    <ImageView
+        style="@style/setting_right_arrow_style"
+        android:layout_gravity="right|center_vertical"
+        android:visibility="gone"/>
+</FrameLayout>

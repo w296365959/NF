@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="14dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/smart_stock_stare_item_title"
+                android:id="@+id/group_title"/>
+
+            <ImageView
+                android:id="@+id/help_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/help_icon_drawable"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="20dp"
+            android:id="@+id/select_extand"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:background="@drawable/filter_select_extand_bg"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/default_text_color_100"
+            android:text="@string/select_filter"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/tab_collapsed_arrow_normal"/>
+    </RelativeLayout>
+    <View style="@style/list_line_style"/>
+    <include android:id="@+id/selected_result"
+        layout="@layout/selected_result_layout"/>
+</LinearLayout>

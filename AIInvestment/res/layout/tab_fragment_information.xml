@@ -1,0 +1,86 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/setting_bg_style">
+
+    <!--actionbar-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/actionbar"
+        style="@style/actionbar_style">
+
+        <TextView
+            style="@style/actionbar_title_text_style"
+            android:text="@string/infos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/intelligent_answer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/actionbar_margin_half"
+            android:paddingRight="@dimen/actionbar_margin"
+            android:src="@drawable/intelligent_answer"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            android:id="@+id/intellgentAnswerRedDot"
+            style="@style/red_dot_style"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dot_red_intelligent_answer"
+            app:layout_constraintRight_toRightOf="@id/intelligent_answer_layout"
+            app:layout_constraintTop_toTopOf="@id/intelligent_answer_layout" />
+
+        <ImageView
+            android:id="@+id/actionbar_portfolio_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin_half"
+            android:src="?attr/actionbar_search_drawable"
+            app:layout_constraintRight_toLeftOf="@id/intelligent_answer_layout" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.sscf.investment.detail.view.ScrollableTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_tab_height"
+        android:background="@color/default_content_bg"
+        app:layout_constraintTop_toBottomOf="@id/actionbar" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/list_line_style"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+
+    <com.sscf.investment.component.ui.widget.CommonViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+    <ImageView
+        android:id="@+id/ad"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="6dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ViewStub
+        android:id="@+id/viewstub_tab_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="51dp"
+        android:layout_marginTop="40dp"
+        android:layout="@layout/tab_guide"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tab_layout" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_input_layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comment_input_bar_height"
+    android:layout_gravity="bottom"
+    android:paddingLeft="@dimen/default_content_margin"
+    android:paddingRight="@dimen/default_content_margin"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@color/main_tab_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="@color/default_background"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/comment_input_hint"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_16"/>
+</LinearLayout>

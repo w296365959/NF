@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include
+        layout="@layout/actionbar_setting"/>
+    <View
+        style="@style/list_line_style" />
+    <LinearLayout
+        style="@style/null_bg_style"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/default_list_item_style"
+            android:layout_marginTop="@dimen/setting_item_small_margin_top">
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/commodity_info" />
+            <TextView
+                style="@style/setting_linear_layout_right_text_item_style"
+                android:textColor="@color/default_text_color_100"
+                android:id="@+id/commodity_info"/>
+        </LinearLayout>
+        <View style="@style/list_line_style" />
+        <LinearLayout
+            style="@style/default_list_item_style">
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/commodity_value" />
+            <TextView
+                style="@style/setting_linear_layout_right_text_item_style"
+                android:textColor="@color/default_text_color_100"
+                android:id="@+id/commodity_value"/>
+        </LinearLayout>
+        <View
+            style="@style/list_line_style" />
+
+        <LinearLayout
+            style="@style/default_list_item_style"
+            android:id="@+id/risk_eval_panel"
+            android:layout_marginTop="@dimen/setting_item_small_margin_top">
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/risk_eval_title" />
+            <TextView
+                style="@style/setting_linear_layout_right_text_item_style"
+                android:textColor="@color/default_text_color_100"
+                android:id="@+id/risk_eval"
+                android:drawablePadding="4dp"
+                android:drawableRight="?attr/arrow_right_icon"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/default_list_item_style"
+            android:layout_marginTop="8dp"
+            android:id="@+id/coupon">
+            <TextView android:id="@+id/coupon_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/default_text_color_100"
+                android:text="@string/coupon" />
+            <View
+                android:id="@+id/redot"
+                style="@style/red_dot_style"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/coupon_title"
+                android:layout_alignTop="@id/coupon_title"/>
+
+            <ImageView
+                style="@style/setting_right_arrow_style"
+                android:id="@+id/right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"/>
+            <TextView
+                style="@style/setting_linear_layout_right_text_item_style"
+                android:id="@+id/coupon_text"
+                android:layout_centerVertical="true"
+                android:text="@string/not_used"
+                android:textColor="@color/default_text_color_100"
+                android:layout_toLeftOf="@id/right_arrow"/>
+        </RelativeLayout>
+        <View
+            style="@style/list_line_style" />
+        <LinearLayout
+            style="@style/default_list_item_style">
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/order_total" />
+            <TextView
+                style="@style/setting_linear_layout_right_text_item_style"
+                android:id="@+id/order_amount"
+                android:textColor="@color/default_text_color_100"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_button"
+            style="@style/setting_stress_button_style"
+            android:text="@string/submit_order"
+            android:layout_marginTop="@dimen/confirm_button_margin_top"/>
+    </LinearLayout>
+</LinearLayout>

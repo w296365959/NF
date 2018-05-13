@@ -1,0 +1,6 @@
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_sub_title_text_style"
+        android:background="@color/default_background"
+        android:minHeight="@dimen/default_tab_height"
+        android:paddingLeft="@dimen/actionbar_margin"/>

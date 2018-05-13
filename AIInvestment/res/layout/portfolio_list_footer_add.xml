@@ -1,0 +1,26 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style"
+        android:orientation="vertical">
+    <LinearLayout
+            android:id="@+id/add_portfolio_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/list_item_bg">
+        <ImageView
+                android:layout_width="@dimen/stock_tag_icon_size"
+                android:layout_height="@dimen/stock_tag_icon_size"
+                android:background="?attr/add_portfolio_icon"/>
+        <TextView
+                android:id="@+id/add_portfolio_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/portfolio_add_stock"
+                android:paddingLeft="6dp"
+                android:textColor="@color/tab_indicatorColor"
+                android:textSize="@dimen/font_size_14"/>
+    </LinearLayout>
+</FrameLayout>

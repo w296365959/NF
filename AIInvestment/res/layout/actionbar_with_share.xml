@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/actionbar_style_without_bg">
+    <View
+        android:id="@+id/viewActionBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar_bg"
+        android:alpha="0"/>
+    <ImageView
+        android:id="@+id/actionbar_back_button"
+        style="@style/actionbar_back_button_style"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/actionbar_share"
+        android:layout_toRightOf="@id/actionbar_back_button"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:singleLine="true"
+            style="@style/actionbar_title_text_style"/>
+        <TextView
+            android:id="@+id/actionbar_listener_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/default_text_color_80"
+            android:drawableLeft="@drawable/icon_listener_number"
+            android:drawablePadding="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/actionbar_share"
+        style="@style/actionbar_right_button_style"
+        android:src="@drawable/actionbar_share_selector" />
+</RelativeLayout>

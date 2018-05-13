@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="@dimen/actionbar_margin"
+    android:layout_marginRight="@dimen/actionbar_margin"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:singleLine="true"
+    android:textSize="@dimen/font_size_18"
+    android:textColor="@color/white_100"
+    android:background="@drawable/open_member_button_background"
+    android:id="@+id/pay_button"
+    android:text="@string/open_member"/>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/homepage_select_bar_height"
+    android:paddingLeft="@dimen/default_content_margin"
+    android:paddingRight="@dimen/default_content_margin"
+    android:background="@color/default_background"
+    >
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_14"
+        android:text="全部动态"/>
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/homepage_select_arrow"
+        android:textColor="@color/tab_indicatorColor"
+        android:textSize="@dimen/font_size_14"
+        android:text="筛选"
+        android:visibility="gone"/>
+</FrameLayout>

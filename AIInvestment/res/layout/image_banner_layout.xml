@@ -1,0 +1,23 @@
+<com.sscf.investment.information.view.ImageBannerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_banner_layout"
+    style="@style/null_bg_style"
+    android:visibility="gone">
+    <com.hejunlin.superindicatorlibray.LoopViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.hejunlin.superindicatorlibray.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        app:ci_gravity="center"
+        app:ci_width="4dp"
+        app:ci_height="4dp"/>
+</com.sscf.investment.information.view.ImageBannerView>

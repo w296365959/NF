@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/default_content_bg"
+        android:paddingLeft="@dimen/default_content_margin"
+        android:paddingRight="@dimen/default_content_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/title"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/default_text_color_80"/>
+
+        <ImageView
+            android:id="@+id/expand_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/homepage_select_arrow"
+            android:rotation="-90"/>
+
+        <TextView
+            android:id="@+id/expand_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/expand_icon"
+            android:layout_marginRight="6dp"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/tab_indicatorColor"
+            android:text="@string/operation_more"/>
+    </RelativeLayout>
+    <View style="@style/list_line_style"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.sscf.investment.widget.HeightVariableListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/list_divider"
+            android:dividerHeight="@dimen/list_divider_height"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+        <include layout="@layout/no_content_layout" />
+        <include
+            layout="@layout/default_loading_layout"
+            android:visibility="gone" />
+        <include
+            layout="@layout/fail_retry"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

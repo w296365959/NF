@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <include
+        layout="@layout/list_item_loading"
+        android:visibility="visible"/>
+    <include
+        layout="@layout/no_more_text"
+        android:visibility="gone"/>
+    <include
+        layout="@layout/fail_retry_item"
+        android:visibility="gone"/>
+    <include
+        layout="@layout/no_content_layout"
+        android:visibility="gone"/>
+</merge>

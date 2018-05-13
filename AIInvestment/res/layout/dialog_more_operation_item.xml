@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/dialog_more_operation_item_width"
+              android:layout_height="wrap_content"
+              android:background="@drawable/list_item_bg">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_12"/>
+    <TextView
+        android:id="@+id/newIcon"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="8dp"
+        style="@style/tag_new_style"/>
+</FrameLayout>

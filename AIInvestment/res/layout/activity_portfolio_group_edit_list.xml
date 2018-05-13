@@ -1,0 +1,46 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:dslv="http://schemas.android.com/apk/res-auto"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+
+    <include layout="@layout/actionbar_portfolio_edit"/>
+
+    <LinearLayout
+            style="@style/portfolio_sub_title_layout_style">
+        <TextView
+                style="@style/horizontal_average_divide_style"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/default_text_color_80"
+                android:layout_marginLeft="33dp"
+                android:text="@string/portfolio_group_name"/>
+        <TextView
+                style="@style/portfolio_edit_list_title_text_style"
+                android:text="@string/name"/>
+        <TextView
+                style="@style/portfolio_edit_list_title_text_style"
+                android:text="@string/portfolio_edit_title_stick"/>
+        <TextView
+                style="@style/portfolio_edit_list_title_text_style"
+                android:text="@string/portfolio_edit_title_drag"/>
+
+    </LinearLayout>
+
+    <com.mobeta.android.dslv.DragSortListView
+            android:id="@android:id/list"
+            style="@style/default_list_view_style"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:choiceMode="multipleChoice"
+            dslv:collapsed_height="1px"
+            dslv:drag_enabled="true"
+            dslv:drag_handle_id="@+id/drag_handle"
+            dslv:drag_scroll_start="0.33"
+            dslv:drag_start_mode="onDown"
+            dslv:float_alpha="0.8"
+            dslv:slide_shuffle_speed="0.3"/>
+
+    <include
+            layout="@layout/bottom_bar_edit_delete_layout" />
+</LinearLayout>

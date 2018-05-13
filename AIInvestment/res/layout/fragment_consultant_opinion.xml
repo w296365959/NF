@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/ptr_recycler_view"/>
+        <include
+            layout="@layout/loading_layout_center"
+            android:visibility="gone" />
+        <include
+            layout="@layout/fail_retry_fullscreen"
+            android:visibility="gone" />
+        <include
+            layout="@layout/no_content_layout"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

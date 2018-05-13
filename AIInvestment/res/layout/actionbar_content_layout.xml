@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true" >
+
+    <TextView
+        android:id="@+id/stock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_18"
+        android:textColor="@color/actionbar_title_text_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/actionbar_title_marginTop" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/actionbar_subtitle_marginBottom">
+
+        <LinearLayout
+            android:id="@+id/sub_title_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/attr_tags"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sub_title"
+                android:textColor="?attr/actionbar_subtitle_text_color"
+                android:textSize="@dimen/font_size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sub_title_alternative"
+            android:text=""
+            android:textColor="?attr/actionbar_subtitle_text_color"
+            android:textSize="@dimen/font_size_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</FrameLayout>

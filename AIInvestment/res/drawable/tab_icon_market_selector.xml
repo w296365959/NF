@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tab_icon_market_selected" android:state_checked="true"/>
+    <item android:drawable="@drawable/tab_icon_market_normal" android:state_checked="false"/>
+</selector>

@@ -1,0 +1,135 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+    <include
+            layout="@layout/actionbar_setting"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <!-- 帐号安全 -->
+            <include
+                android:id="@+id/settingAccount"
+                layout="@layout/tab_fragment_setting_normal_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_marginTop="@dimen/setting_item_small_margin_top" />
+
+            <!-- 行情频率设置 -->
+            <include
+                android:id="@+id/settingRefreshFrequency"
+                layout="@layout/tab_fragment_setting_normal_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_marginTop="@dimen/setting_item_small_margin_top" />
+            <View
+                    style="@style/list_line_style"/>
+            <!-- K线设置 -->
+            <include
+                android:id="@+id/settingKLine"
+                layout="@layout/tab_fragment_setting_normal_item" />
+            <View
+                style="@style/list_line_style"/>
+            <!-- 消息设置 -->
+            <include
+                android:id="@+id/settingMessage"
+                layout="@layout/tab_fragment_setting_normal_item" />
+            <View
+                    style="@style/list_line_style"/>
+            <!-- 灯塔直播设置 -->
+            <include
+                android:id="@+id/settingLive"
+                layout="@layout/tab_fragment_setting_normal_item" />
+
+            <!-- 灯塔表哥设置 -->
+            <LinearLayout
+                android:id="@+id/settingSwitchShakeLayout"
+                style="@style/portfolio_remind_item_style"
+                android:layout_marginTop="@dimen/setting_item_small_margin_top">
+                <TextView
+                    style="@style/setting_linear_layout_left_text_item_style"
+                    android:text="@string/setting_switch_shake" />
+                <CheckBox
+                    android:id="@+id/settingSwitchShake"
+                    style="@style/portfolio_remind_item_right_checkbox_style" />
+            </LinearLayout>
+            <View
+                style="@style/list_line_style"/>
+            <!-- 夜间模式开关 -->
+            <LinearLayout
+                style="@style/portfolio_remind_item_style">
+                <TextView
+                    style="@style/setting_linear_layout_left_text_item_style"
+                    android:text="@string/setting_switch_day_night_mode"/>
+                <CheckBox
+                    android:id="@+id/settingSwitchDayNightMode"
+                    style="@style/portfolio_remind_item_right_checkbox_style"/>
+            </LinearLayout>
+
+            <!-- 清理缓存 -->
+            <FrameLayout
+                android:id="@+id/settingClearLayout"
+                style="@style/default_list_item_style"
+                android:layout_marginTop="@dimen/setting_item_small_margin_top">
+                <TextView
+                    style="@style/setting_default_text_style"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/setting_clear"/>
+                <TextView
+                    android:id="@+id/settingClearSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColor="@color/default_text_color_60"/>/>
+            </FrameLayout>
+            <View
+                style="@style/list_line_style"/>
+            <!-- 意见反馈 -->
+            <include
+                android:id="@+id/settingFeedback"
+                layout="@layout/tab_fragment_setting_normal_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"/>
+            <View
+                    style="@style/list_line_style"/>
+            <!-- 关于灯塔 -->
+            <RelativeLayout
+                    android:id="@+id/settingAboutLayout"
+                    style="@style/default_list_item_style">
+                <TextView
+                        android:id="@+id/settingAbout"
+                        style="@style/setting_default_text_style"
+                        android:layout_centerVertical="true"
+                        android:text="@string/setting_about"/>
+                <TextView
+                        android:id="@+id/settingVersionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/font_size_14"
+                        android:textColor="@color/default_text_color_60"/>
+                <View
+                        android:id="@+id/settingAboutRetDot"
+                        style="@style/red_dot_style"
+                        android:layout_alignTop="@id/settingAbout"
+                        android:layout_toRightOf="@id/settingAbout"
+                        android:layout_marginLeft="2dp"/>
+            </RelativeLayout>
+
+            <!-- 退出登录 -->
+            <TextView
+                android:id="@+id/settingLogout"
+                style="@style/setting_text_view_item_style"
+                android:layout_marginTop="@dimen/setting_item_small_margin_top"
+                android:gravity="center"
+                android:text="@string/logout"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

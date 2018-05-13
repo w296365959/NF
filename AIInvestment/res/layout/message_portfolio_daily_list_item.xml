@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_list_item_style"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/title"
+        style="@style/horizontal_average_divide_style"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_16" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_12" />
+</LinearLayout>

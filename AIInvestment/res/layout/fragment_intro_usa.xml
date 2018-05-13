@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin">
+        <LinearLayout
+            android:id="@+id/brief_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/company_brief"
+                    style="@style/finance_group_title"/>
+            </LinearLayout>
+            <View
+                style="@style/list_line_style"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+
+                <TextView
+                    android:text="@string/company_name"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/company_name"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/listing_date"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/company_listing_date"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/listing_addr"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/listing_addr"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/sec_category"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/sec_category"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/country"
+                    style="@style/intro_title_style"/>
+                <TextView
+                    android:id="@+id/country"
+                    style="@style/intro_content_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/intro_text_height">
+                <TextView
+                    android:text="@string/company_brief"
+                    style="@style/intro_title_style"
+                    />
+                <TextView
+                    android:id="@+id/company_brief"
+                    style="@style/intro_content_style"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

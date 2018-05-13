@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>功能介绍</title>
+      <style>
+            /*reset*/
+            html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}figure,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}img{vertical-align:middle}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a[href],label[for],select,input[type=checkbox],input[type=radio]{cursor:pointer}button,input[type=button],input[type=image],input[type=reset],input[type=submit]{padding:0;overflow:visible;cursor:pointer}button::-moz-focus-inner,input[type=button]::-moz-focus-inner,input[type=image]::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]::-moz-focus-inner{border:0}.hide{position:absolute!important;left:-9999em!important}.clearfix:after{content:".";display:block;visibility:hidden;clear:both;height:0}h1,h2,h3,h4,h5,h6{font-weight:normal}.ie7 .clearfix{zoom:1}strong{font-weight:bold}em{font-style:italic}del{text-decoration:line-through}th,td{vertical-align:top}th{font-weight:normal;text-align:left}address,cite,dfn{font-style:normal}abbr,acronym{border-bottom:1px dotted #999;cursor:help}sub{line-height:0}sup{top:-0.5em}sub{bottom:-0.25em}textarea{overflow:auto}img{width: 100%; height: auto;}
+            html{font-size:10px}
+            body{ background: #ececec; color: #595959; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0,0,0,0); width: 100%; overflow-x: hidden;}
+            /*通用title*/
+            .title{text-align: center; font-size: 16px;color: #595959;background: #f6f6f6;border-bottom: 1px solid #ececec; height: 40px;display: block; line-height: 40px; position: relative; z-index: 99;}
+            
+            .page_gap{padding: 16px 15px;}
+
+            .explanation_list{ }
+            .explanation_list dt{ display: block; font-size: 16px; margin-bottom: 7px; padding-left: 12px; position: relative;}
+            .explanation_list dt:before{ content:''; position: absolute; left: 0; top: 50%; margin-top: -3px; display: block; width: 6px; height: 6px; background-color: #faaa83; border-radius: 50%;}
+            .explanation_list dd{ display: block; margin-bottom: 20px; font-size: 14px; color: rgba(89,89,89,.8); line-height: 1.6;}
+
+            .explanation_list_haspic dt{ font-size: 18px;}
+            .explanation_list_haspic dd{font-size: 14px; margin-bottom: 32px;}
+            .explanation_list_haspic dd p{ margin-bottom: 14px; text-indent: 12px;}
+            .explanation_list_haspic dd figure{border-bottom: 1px #c2c2c2 solid; position: relative; padding-top: 61.4%;}
+            .explanation_list_haspic dd figure img{position: absolute; left: 0; top: 0; width: 100%; height: auto;}
+
+            .logo_txt{width: 50%; margin: -10px auto 40px;}
+      </style>
+
+
+      <style id="theme-black">
+        /*theme black*/
+          /*body{background-color: #211f1f; color: rgba(243,237,237,1);}
+          .title{ color: #f3eded;background: #2f2d2d; border-bottom: none; }
+          .explanation_list dd{color: rgba(243,237,237,.8);}
+          .explanation_list dt:before{ background-color: #fff;}
+          .explanation_list_haspic dd figure{border-bottom: 1px #3d3a3a solid;}*/
+      </style>
+
+
+    <!--theme switcher-->
+    <script>
+      (function(){
+            function getQueryString(name){
+                  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                  var r = window.location.search.substr(1).match(reg);
+                  if (r != null){
+                        var value = r[2];
+                        value = value.replace(/(%22|%3E|%3C|<|>)/g, "MM");
+                        return decodeURIComponent(value);
+                  }else{
+                        return null;
+                  }
+            }
+            function setTheme(){
+                if(getQueryString('theme')!='night'||getQueryString('dt_from')=='web'){
+                        var tempElement=document.querySelector('#theme-black');
+                        tempElement.parentNode.removeChild(tempElement);
+                }
+            }
+            setTheme();
+      })();
+    </script>
+
+
+</head>
+<body>
+      
+      <div class="page_gap page_txt">
+            <dl class="explanation_list explanation_list_haspic">
+                  <dt>晓智机器人</dt>
+                  <dd>
+                        <p>智能神助手来帮你</p>
+                        <figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro1.png" alt=""></figure>
+                  </dd>
+
+                  <dt>板块热力图</dt>
+                  <dd>
+                        <p>板块涨跌焕然一新</p>
+                        <figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro2.png" alt=""></figure>
+                  </dd>
+
+                  <dt>大盘预警</dt>
+                  <dd>
+                        <p>市场风险预先知晓</p>
+                        <figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro3.png" alt=""></figure>
+                  </dd>
+
+                  <dt>晓智直播</dt>
+                  <dd>
+                        <p>分秒异动追踪神器</p>
+                        <figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro4.png" alt=""></figure>
+                  </dd>
+
+                  <dt>筹码分布</dt>
+                  <dd>
+                        <p>成本盈亏尽收眼底</p>
+                        <figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro5.png" alt=""></figure>
+                  </dd>
+
+                  <dt>相似 K线</dt>
+                  <dd>
+                        <p>匹配历史相似走势</p>
+                        <figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro6.png" alt=""></figure>
+                  </dd>
+
+                  <dt>个股画像</dt>
+                  <dd>
+                        <p>多维解析个股走势</p>
+                        <figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro7.png" alt=""></figure>
+                  </dd>
+
+                  <!--<dt>定向增发</dt>-->
+                  <!--<dd>-->
+                        <!--<p>定增投资搜寻时机</p>-->
+                        <!--<figure><img src="https://realsscf.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro8.png" alt=""></figure>-->
+                  <!--</dd>-->
+
+                  <!--<dt>智能选股</dt>-->
+                  <!--<dd>-->
+                        <!--<p>大数据精选金策略</p>-->
+                        <!--<figure><img src="https://idtcdn.oss-cn-hangzhou.aliyuncs.com/beacon/images/img_intro9.png" alt=""></figure>-->
+                  <!--</dd>-->
+            </dl>
+
+            <!--<div class="logo_txt"><img src="data:image/png;base64,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" height="154" width="629" alt=""></div>-->
+
+      </div>
+</body>
+
+<script type="text/javascript">
+      window.onload = function(){
+          //接口协议代码
+          ;(function () {
+              var api = {
+                  commandQueue:[],
+                  cmdQueue : {},
+                  index:0,
+                  mNativeFunction:{}
+              };
+              var protocol = "beacon";
+
+              api.exec = function(cmd,option,callback){
+                  api.index+=1;
+                  var callbackId = new Date().getTime()+"|"+api.index;
+                  option = option||{};
+                  api.cmdQueue[callbackId] = callback;
+                  var nativeOption = {
+                      callbackId:callbackId,
+                      option:option
+                  }
+
+                  var apiContent =  protocol+"://["+cmd+"-"+JSON.stringify(nativeOption)+"]";
+                  prompt(protocol,apiContent);
+              }
+
+              api.getAndClearQueuedCommands = function(){
+                  var json = JSON.stringify(api.commandQueue);
+                  api.commandQueue = [];
+                  return json;
+              }
+
+              api.createBridge = function () {
+                  var bridge = document.createElement("iframe");
+                  bridge.setAttribute("style", "display:none;");
+                  bridge.setAttribute("height", "0px");
+                  bridge.setAttribute("width", "0px");
+                  bridge.setAttribute("frameborder", "0");
+                  document.documentElement.appendChild(bridge);
+                  return bridge;
+              };
+
+              window.AppCallback = function(callbackId,option){
+                  if(api.cmdQueue[callbackId])
+                  {
+                      api.cmdQueue[callbackId](option);
+                  }
+              };
+
+              window[protocol+"Api"] = api;
+
+              //客户端预埋接口
+              window.ReqWeb = function (key, value) {
+                  if(api.mNativeFunction[key] != undefined ){
+                      api.mNativeFunction[key](value);
+                  }
+              }
+
+              //监听native
+              window.lisenNative = function (key, func) {
+                  api.mNativeFunction[key] = func;
+              }
+          })();
+
+            var title = "功能介绍";
+            var getQueryString = function (name) {
+                  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                  var r = window.location.search.substr(1).match(reg);
+                  if (r != null) return decodeURIComponent(r[2]); return null;
+            };
+            try {
+                var from = getQueryString("dt_from");
+                if(from == "web"||from == "nod"){
+//                    var divNode = document.createElement("div");
+//                    divNode.className = "title";
+//                    divNode.innerHTML = title;
+//                    document.querySelector("body").insertBefore(divNode,document.querySelector(".page_gap"));
+                }else{
+                    if(typeof NativeProxy != "undefined"){
+                        NativeProxy.setTitle(title);
+                    }else{
+                        beaconApi.exec("setTitle",{"title":title},function(data){
+                        });
+                    }
+                }
+            } catch (e) {
+            }
+      }
+</script>
+</html>

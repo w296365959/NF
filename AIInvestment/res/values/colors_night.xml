@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_bg_color_night">#272524</color>
+    <color name="main_bg_color_semitransparent_night">#f7272524</color>
+    <!--<color name="setting_bg_color_night">#211f1f</color>-->
+    <color name="actionbar_bg_color_night">#2f2d2d</color>
+
+    <!--<color name="default_text_color_100_night">#fff3eded</color>-->
+    <!--<color name="default_text_color_80_night">#cdf3eded</color>-->
+    <!--<color name="default_text_color_60_night">#9af3eded</color>-->
+    <!--<color name="default_text_color_40_night">#66f3eded</color>-->
+    <!--<color name="default_text_color_30_night">#4df3eded</color>-->
+
+    <!-- 股票停牌时的颜色-->
+    <!--<color name="stock_stop_color_night">#3d3a3a</color>-->
+
+    <color name="operation_bar_bg_night">#2f2d2d</color>
+    <color name="line_chart_border_rect_night">#3d3a3a</color>
+    <color name="stock_time_chart_shadow_night">#33178cea</color>
+
+    <color name="operation_bar_add_bg_night">#c8551d</color>
+    <color name="operation_bar_add_bg_night_60">#9ac8551d</color>
+    <color name="tab_title_not_selected_night">@color/default_text_color_60_night</color>
+    <color name="tab_bar_text_selected_color_night">@color/operation_bar_add_bg_night</color>
+    <color name="tab_text_selected_night">@color/default_text_color_60_night</color>
+    <color name="stock_detail_finance_indicator_night">#ffc100</color>
+    <color name="heat_shadow_night">#78442b</color>
+
+    <!-- scrollbar color -->
+    <color name="scrollbar_color_night">@color/line_chart_border_rect_night</color>
+
+    <color name="main_tab_bg_night">#2f2d2d</color>
+</resources>

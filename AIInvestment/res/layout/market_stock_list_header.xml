@@ -1,0 +1,25 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/market_sub_title_layout_style"
+        android:background="@color/default_content_bg">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginLeft="4dp"
+                style="@style/market_list_header_text_style"
+                android:text="@string/name_code"/>
+
+        <TextView
+                style="@style/market_list_header_text_style"
+                android:text="@string/stock_list_head_new_price"/>
+
+        <com.sscf.investment.market.view.StockSortTitleView
+                xmlns:sort="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/deltaTitle"
+                android:layout_width="@dimen/market_sub_item_width"
+                android:layout_height="match_parent"
+                sort:titleName="@string/subject_list_head_daliy_change"/>
+
+</LinearLayout>

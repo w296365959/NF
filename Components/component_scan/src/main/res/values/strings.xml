@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">component_scan</string>
+    <string name="ok">确定</string>
+    <string name="scan_qr_code">扫二维码</string>
+    <string name="scan_qr_code_tips">将二维码放入框内，即可自动扫描</string>
+    <string name="take_picture_tips">将镜头对准待识别的股票，拍照确认</string>
+    <string name="scan_camera_authority_error">请在手机的系统设置或者管理软件中，允许AI智投访问你的相机</string>
+    <string name="network_invalid_please_check">网络不可用,请检查网络设置</string>
+    <string name="scan_import_stock">导入股票</string>
+</resources>

@@ -1,0 +1,97 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/detail_operation_bar_height">
+
+        <com.sscf.investment.detail.view.DetailActionBar
+                android:id="@+id/detail_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"/>
+
+        <com.sscf.investment.widget.BeaconPullToRefreshFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ptr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <com.sscf.investment.widget.FlowScrollView
+                android:id="@+id/scrollview"
+                style="@style/default_scrollview_style" >
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/default_content_bg">
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:paddingBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <include layout="@layout/main_index_detail_quote_infos"/>
+
+                        <FrameLayout
+                            android:id="@+id/nested_fragment_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+
+                        <ViewStub
+                            android:id="@+id/memoLayoutStub"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/stock_status_tips_layout_height"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout="@layout/stock_memo_layout"/>
+
+                        <LinearLayout
+                            android:id="@+id/article_tabs_container"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.sscf.investment.component.ui.widget.TabLayout
+                                android:id="@+id/article_tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <View
+                                style="@style/list_line_style"/>
+                        </LinearLayout>
+                        <FrameLayout
+                            android:id="@+id/article_fragment_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/default_min_tab_fragment_height">
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/article_tabs_sticky_container"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <com.sscf.investment.component.ui.widget.TabLayout
+                            android:id="@+id/article_tabs_sticky"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/default_content_bg"/>
+                        <View
+                            style="@style/list_line_style"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </com.sscf.investment.widget.FlowScrollView>
+        </com.sscf.investment.widget.BeaconPullToRefreshFrameLayout>
+    </LinearLayout>
+
+    <com.sscf.investment.detail.view.OperationBar
+            android:id="@+id/operation_bar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_operation_bar_height"
+            android:layout_gravity="bottom"/>
+</FrameLayout>

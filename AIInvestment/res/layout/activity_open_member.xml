@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_setting" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                layout="@layout/image_banner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_banner_height" />
+
+            <TextView
+                android:id="@+id/setting_privilege_header"
+                style="@style/setting_privilege_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_member_header_height"
+                android:text="@string/setting_member_header_text"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold"
+                android:background="@color/default_content_bg"/>
+
+            <com.sscf.investment.setting.widgt.FeeListView
+                android:id="@+id/fee_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/default_content_bg"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView  style="@style/setting_privilege_header_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_head_height"
+                    android:layout_marginTop="@dimen/setting_item_small_margin_top"
+                    android:text="@string/member_privilege"
+                    android:textStyle="bold"
+                    android:background="@color/default_content_bg"/>
+                <View style="@style/list_line_style" />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/privilege_display_view"
+                    android:paddingLeft="@dimen/actionbar_margin"
+                    android:paddingRight="@dimen/actionbar_margin"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:background="@color/default_content_bg"/>
+            </LinearLayout>
+            <TextView
+                style="@style/member_instructions_title_style"
+                android:text="@string/member_instructions_title" />
+
+            <TextView
+                android:id="@+id/member_instructions_info"
+                style="@style/member_instructions_info_style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

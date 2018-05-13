@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <com.sscf.investment.widget.BeaconPullToRefreshFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
+
+        <include layout="@layout/recycler_view"
+                 android:visibility="gone" />
+
+    </com.sscf.investment.widget.BeaconPullToRefreshFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/homepage_header_sticky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/homepage_actionbar_sticky"
+            layout="@layout/actionbar_homepage_with_right_button"/>
+
+        <include
+            android:id="@+id/select_bar_sticky"
+            layout="@layout/homepage_select_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/homepage_select_bar_height"
+            android:layout_marginTop="0dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/set_attention_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_set_attention_bar_height"
+        android:paddingLeft="@dimen/default_content_margin"
+        android:paddingRight="@dimen/default_content_margin"
+        android:background="@color/default_content_bg"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/setAttentionButton"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/attend_button_bg"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color_attend"
+            android:textSize="@dimen/font_size_16"
+            />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dialogLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/loading_actionbar_rotate"/>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_faq_and_detail"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_bg">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bonus_panel"
+            android:paddingTop="@dimen/bonus_panel_padding_top"
+            android:paddingBottom="@dimen/bonus_panel_padding_bottom"
+            android:paddingLeft="@dimen/bonus_panel_padding_left">
+            <com.sscf.investment.component.ui.widget.NumberTextView
+                android:id="@+id/bonus"
+                style="@style/bonus_style"
+                android:layout_marginRight="@dimen/bonus_margin_right"/>
+            <TextView
+                android:id="@+id/bonus_unit"
+                style="@style/setting_light_style"
+                android:layout_toRightOf="@id/bonus"
+                android:layout_alignBaseline="@id/bonus"
+                android:text="@string/bonus_unit"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bonus"
+                android:layout_marginTop="@dimen/today_bonus_margin_top"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/setting_light_style"
+                    android:text="@string/today_bonus_points"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    android:id="@+id/today_bonus_points_count"
+                    style="@style/setting_light_style"/>
+                <TextView
+                    style="@style/setting_light_style"
+                    android:text="@string/today_bonus_task"
+                    android:layout_marginLeft="@dimen/today_bonus_task_margin_left"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    android:id="@+id/left_task_count"
+                    style="@style/setting_light_style"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button android:id="@+id/login_btn"
+            style="@style/bonus_login_button_style"
+            android:text="@string/login_btn_text"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/bonus_setting_privilege"/>
+            <include layout="@layout/bonus_points_task_list"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

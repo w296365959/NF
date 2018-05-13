@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_bg">@color/actionbar_bg_color_night</color>
+
+    <color name="default_text_color_100">@color/default_text_color_100_night</color>
+    <color name="default_text_color_80">@color/default_text_color_80_night</color>
+    <color name="default_text_color_60">@color/default_text_color_60_night</color>
+    <color name="default_text_color_40">@color/default_text_color_40_night</color>
+    <color name="default_text_color_30">@color/default_text_color_30_night</color>
+
+    <color name="dialog_button_bg_normal">#3d3a3a</color>
+
+    <color name="list_item_bg_normal">#272524</color>
+    <color name="list_item_bg_pressed">#1f1d1d</color>
+
+    <color name="actionbar_title_text_color">#f3eded</color>
+
+    <color name="actionbar_right_button_text_color">@color/default_text_color_100_night</color>
+
+    <color name="default_background">#211f1f</color>
+
+    <color name="default_content_bg">#272524</color>
+
+    <color name="stock_stop_color">#3d3a3a</color>
+
+    <color name="main_tab_bg">#2f2d2d</color>
+
+    <color name="tab_title_not_selected">@color/default_text_color_60_night</color>
+
+    <color name="popup_window_divider_color">@color/setting_bg_color_night</color>
+    <color name="popup_window_edge_bg_edge">#3d3a3a</color>
+    <color name="popup_window_edge_bg">#3d3a3a</color>
+
+    <color name="tab_indicatorColor">#c8551d</color>
+    <color name="default_orange_color">#ca5616</color>
+</resources>

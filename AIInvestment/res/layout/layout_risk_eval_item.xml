@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/risk_eval_panel"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/actionbar_margin"
+    android:paddingRight="@dimen/actionbar_margin"
+    android:paddingBottom="18dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/risk_eval_title"
+        android:text="@string/risk_level_extra_text"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/font_size_18"
+        android:textColor="@color/default_text_color_100"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/risk_eval_result"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/font_size_18"
+        app:layout_constraintLeft_toRightOf="@id/risk_eval_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info1"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/default_text_color_60"
+        app:layout_constraintTop_toBottomOf="@id/risk_eval_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info2"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/default_text_color_60"
+        app:layout_constraintTop_toBottomOf="@id/info1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="6dp"/>
+</android.support.constraint.ConstraintLayout>

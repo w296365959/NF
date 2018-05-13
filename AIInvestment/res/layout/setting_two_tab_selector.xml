@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/left_tab_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:textSize="@dimen/font_size_13"
+        android:background="@drawable/setting_two_tab_textview_bg_selector_left"
+        android:textColor="@color/setting_two_tab_color_selector"/>
+
+    <TextView
+        android:id="@+id/right_tab_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:textSize="@dimen/font_size_13"
+        android:textColor="@color/setting_two_tab_color_selector"
+        android:background="@drawable/setting_two_tab_textview_bg_selector_right"/>
+</merge>

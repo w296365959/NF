@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+
+    <include
+            layout="@layout/actionbar_setting"/>
+
+    <TextView
+            android:text="@string/setting_refresh_frequency_mobile_net"
+            style="@style/setting_sub_title_text_style" />
+    <ListView
+            android:id="@+id/refreshFrequencyMobileNetList"
+            style="@style/default_list_view_style" />
+    <TextView
+            android:text="@string/setting_refresh_frequency_wifi"
+            style="@style/setting_sub_title_text_style" />
+    <ListView
+            android:id="@+id/refreshFrequencyWifiList"
+            style="@style/default_list_view_style" />
+
+</LinearLayout>

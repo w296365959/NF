@@ -1,0 +1,19 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/market_sub_title_layout_style">
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            style="@style/market_list_header_text_style"
+            android:text="@string/subject_list_head_name"/>
+    <TextView
+            style="@style/market_list_header_text_style"
+            android:text="@string/delta"/>
+    <com.sscf.investment.market.view.StockSortTitleView
+            xmlns:sort="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/deltaTitle"
+            android:layout_width="@dimen/market_sub_item_width"
+            android:layout_height="match_parent"
+            sort:titleName="@string/market_capital_flow_net_inflow"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<com.sscf.investment.setting.widgt.ErrorTipsView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/errorTips"
+        style="@style/setting_error_tips_style"/>

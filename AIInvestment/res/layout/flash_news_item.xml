@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/default_content_bg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/time_line_indicator"
+        android:textSize="@dimen/font_size_16"
+        android:textColor="@color/default_text_color_100"
+        android:layout_width="57dp"
+        android:layout_height="match_parent"
+        android:gravity="left|top"
+        android:paddingLeft="@dimen/default_content_margin"
+        android:paddingTop="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/default_content_margin">
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:textColor="@color/default_text_color_100"
+            android:textSize="@dimen/font_size_16"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/news_share_layout"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:paddingBottom="7dp"
+                >
+
+                <TextView
+                    android:id="@+id/news_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/tag_margin"
+                    android:layout_marginRight="4dp"
+                    android:maxLines="1"
+                    android:text="@string/operation_share"
+                    android:textColor="@color/time_line_indicator_color"
+                    android:textSize="@dimen/font_size_12"
+                    />
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/share"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            style="@style/list_line_style"/>
+
+    </LinearLayout>
+</LinearLayout>

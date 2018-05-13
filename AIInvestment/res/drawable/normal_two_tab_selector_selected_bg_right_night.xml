@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners
+        android:radius="@dimen/two_tab_selector_corner_radius"
+        android:topLeftRadius="0dp"
+        android:bottomLeftRadius="0dp"/>
+    <stroke
+        android:width="@dimen/two_tab_selector_strokeWidth"
+        android:color="@color/default_text_color_80_night"/>
+    <solid
+        android:color="@color/default_text_color_80_night"/>
+</shape>

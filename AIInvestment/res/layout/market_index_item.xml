@@ -1,0 +1,52 @@
+<com.sscf.investment.market.view.MarketIndexInfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    style="@style/market_item_style"
+    android:layout_height="78dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/value_null"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_18" />
+
+    <TextView
+        android:id="@+id/allA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name"
+        android:layout_alignTop="@id/name"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/actionbar_bg_color"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:singleLine="true"
+        android:text="@string/all_a"
+        android:textColor="?attr/stock_pick_login_button_text_color"
+        android:textSize="@dimen/market_all_a_indicator_textSize"
+        android:visibility="gone" />
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="@string/value_null"
+        android:textSize="@dimen/font_size_20" />
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/delta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="@string/value_null_2"
+        android:textSize="@dimen/font_size_12" />
+</com.sscf.investment.market.view.MarketIndexInfoView>

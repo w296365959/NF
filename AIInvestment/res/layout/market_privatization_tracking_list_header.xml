@@ -1,0 +1,25 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/privatizationTrackingListHeader"
+        style="@style/market_sub_title_layout_style"
+        android:minHeight="@dimen/default_tab_height">
+    <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="2dp"
+            style="@style/market_list_header_text_style"
+            android:text="@string/name_code"/>
+    <TextView
+            android:layout_width="75dp"
+            style="@style/market_list_header_text_style"
+            android:text="@string/market_offer_price"/>
+    <TextView
+            android:layout_width="75dp"
+            style="@style/market_list_header_text_style"
+            android:text="@string/stock_list_head_new_price"/>
+    <TextView
+            android:layout_width="75dp"
+            style="@style/market_list_header_text_style"
+            android:text="@string/market_current_progress"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<merge
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:id="@+id/title"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/default_text_color_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="@string/value_null"/>
+    <com.sscf.investment.component.ui.widget.NumberTextView
+            android:id="@+id/value"
+            android:textSize="@dimen/font_size_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="@string/value_null"/>
+    <TextView
+            android:id="@+id/company"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/default_text_color_80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="@string/value_null"/>
+    <com.sscf.investment.component.ui.widget.NumberTextView
+            android:id="@+id/delta"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/default_text_color_80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/value_null_2"/>
+</merge>

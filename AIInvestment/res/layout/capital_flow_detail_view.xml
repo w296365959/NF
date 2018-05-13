@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout style="@style/capital_flow_detail_layout">
+        <TextView style="@style/capital_flow_detail_name" android:textColor="@color/transaction_capital_super_in" android:text="@string/capital_super"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_super_in" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_super_in" android:text="--"/>
+    </LinearLayout>
+    <LinearLayout style="@style/capital_flow_detail_layout">
+        <TextView style="@style/capital_flow_detail_name" android:textColor="@color/transaction_capital_big_in" android:text="@string/capital_big"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_big_in" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_big_in" android:text="--"/>
+    </LinearLayout>
+    <LinearLayout style="@style/capital_flow_detail_layout">
+        <TextView style="@style/capital_flow_detail_name" android:textColor="@color/transaction_capital_middle_in" android:text="@string/capital_mid"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_middle_in" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_middle_in" android:text="--"/>
+    </LinearLayout>
+    <LinearLayout style="@style/capital_flow_detail_layout">
+        <TextView style="@style/capital_flow_detail_name" android:textColor="@color/transaction_capital_small_in" android:text="@string/capital_small"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_small_in" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_small_in" android:text="--"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/capital_flow_detail_layout" android:layout_marginTop="4dp">
+        <TextView style="@style/capital_flow_detail_name" android:textColor="@color/transaction_capital_super_out"  android:text="@string/capital_super"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_super_out" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_super_out" android:text="--"/>
+    </LinearLayout>
+    <LinearLayout style="@style/capital_flow_detail_layout">
+        <TextView style="@style/capital_flow_detail_name"  android:textColor="@color/transaction_capital_big_out" android:text="@string/capital_big"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_big_out" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_big_out" android:text="--"/>
+    </LinearLayout>
+    <LinearLayout style="@style/capital_flow_detail_layout">
+        <TextView style="@style/capital_flow_detail_name"  android:textColor="@color/transaction_capital_middle_out"  android:text="@string/capital_mid"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_middle_out" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_middle_out" android:text="--"/>
+    </LinearLayout>
+    <LinearLayout style="@style/capital_flow_detail_layout">
+        <TextView style="@style/capital_flow_detail_name"  android:textColor="@color/transaction_capital_small_out"  android:text="@string/capital_small"/>
+        <TextView style="@style/capital_flow_detail_volume" android:id="@+id/capital_flow_detail_volume_small_out" android:text="--"/>
+        <TextView style="@style/capital_flow_detail_percent" android:id="@+id/capital_flow_detail_percent_small_out" android:text="--"/>
+    </LinearLayout>
+
+</LinearLayout>

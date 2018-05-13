@@ -1,0 +1,30 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/back_button"
+        style="@style/actionbar_back_button_style" />
+    <FrameLayout
+        android:id="@+id/intelligent_answer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/actionbar_margin_half"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:src="@drawable/intelligent_answer" />
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/intelligent_answer_layout"
+        android:paddingLeft="@dimen/actionbar_margin"
+        android:paddingRight="@dimen/actionbar_margin_half"
+        android:src="?attr/actionbar_search_drawable" />
+    <include layout="@layout/actionbar_content_layout" />
+</merge>

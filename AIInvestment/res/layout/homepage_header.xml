@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/homepage_header_background">
+
+    <include
+        android:id="@+id/homepage_actionbar"
+        layout="@layout/actionbar_homepage_with_right_button"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_infos_layout_height"
+        >
+
+        <FrameLayout
+            android:id="@+id/face_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.sscf.investment.setting.widgt.RoundImageView
+                android:id="@+id/face"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@drawable/round_shape_bg"
+                android:padding="2dp"
+                android:src="@drawable/default_consultant_face"/>
+
+            <ImageView
+                android:id="@+id/user_icon_v"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/user_icon_v"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_panel"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/face_layout"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:id="@+id/user_login_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white_100"
+                android:text="@string/value_null"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_member_status"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/user_member_status_margin_left"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/divider"
+            android:layout_below="@id/name_panel"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/homepage_infos_height">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/white_100"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/follow_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/homepage_infos_height"
+            android:layout_toLeftOf="@id/divider"
+            android:layout_alignBottom="@id/divider" >
+
+            <TextView
+                android:id="@+id/follow_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/homepage_infos_height"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="关注"
+                android:textColor="@color/white_100"
+                android:textSize="@dimen/font_size_12"/>
+
+            <com.sscf.investment.component.ui.widget.NumberTextView
+                android:id="@+id/follow_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/homepage_infos_height"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingTop="2dp"
+                android:text="0"
+                android:textColor="@color/white_100"
+                android:textSize="@dimen/font_size_14"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fans_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/homepage_infos_height"
+            android:layout_alignBottom="@id/divider"
+            android:layout_toRightOf="@id/divider">
+
+            <TextView
+                android:id="@+id/fans_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/homepage_infos_height"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="粉丝"
+                android:textColor="@color/white_100"
+                android:textSize="@dimen/font_size_12"/>
+
+            <com.sscf.investment.component.ui.widget.NumberTextView
+                android:id="@+id/fans_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/homepage_infos_height"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingTop="2dp"
+                android:text="0"
+                android:textColor="@color/white_100"
+                android:textSize="@dimen/font_size_14"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/white_100"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="@string/profile_empty"/>
+    </RelativeLayout>
+
+    <include layout="@layout/homepage_select_bar"/>
+</LinearLayout>

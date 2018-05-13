@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/keyboard_height"
+    android:id="@+id/keyboard_container">
+    <com.sscf.investment.widget.keyboard.CharacterKeyBoard
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:id="@+id/character_keyboard"
+        android:background="@color/input_background"
+        android:visibility="invisible"
+        android:clickable="true"/>
+
+    <com.sscf.investment.widget.keyboard.NumberKeyBoard
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/number_keyboard"
+        android:background="@color/input_background"
+        android:visibility="invisible"
+        android:clickable="true"/>
+</FrameLayout>

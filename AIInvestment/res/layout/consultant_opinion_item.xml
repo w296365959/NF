@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/default_content_margin"
+    android:paddingRight="@dimen/default_content_margin">
+
+    <com.sscf.investment.widget.BoldTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="1.5dp"
+        android:maxLines="2"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_17" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="0dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="1.5dp"
+        android:maxLines="3"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="2dp">
+
+        <FrameLayout
+            android:id="@+id/user_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="0dp">
+
+            <com.sscf.investment.setting.widgt.RoundImageView
+                android:id="@+id/user_icon"
+                android:layout_width="@dimen/consultant_face_size"
+                android:layout_height="@dimen/consultant_face_size"
+                android:src="@drawable/default_consultant_face" />
+
+            <ImageView
+                android:id="@+id/user_icon_v"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/user_icon_v"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_icon_layout"
+            android:maxLines="1"
+            android:textColor="@color/time_line_indicator_color"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/name"
+            android:maxLines="1"
+            android:text="10-07"
+            android:textColor="@color/time_line_indicator_color"
+            android:textSize="@dimen/font_size_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"
+            android:layout_toLeftOf="@id/time">
+            <TextView
+                android:id="@+id/page_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:textColor="@color/time_line_indicator_color"
+                android:textSize="@dimen/font_size_12" />
+
+            <!-- 专题tag -->
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:text="@string/market_info_tag_top"
+                android:textSize="@dimen/font_size_10"
+                android:layout_marginLeft="@dimen/topic_tag_margin_left"
+                android:textColor="@color/link_color"
+                android:background="@drawable/tag_top_round_rect_bg_position"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

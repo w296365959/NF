@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_tab_height">36dp</dimen>
+    <dimen name="default_tab_height_small">30dp</dimen>
+    <dimen name="default_min_tab_fragment_height">500dp</dimen>
+
+    <dimen name="default_icon_size">24dp</dimen>
+
+    <dimen name="default_drawable_padding">12dp</dimen>
+
+    <dimen name="red_dot_size">6dp</dimen>
+
+    <dimen name="article_listview_itemHeight">78dp</dimen>
+    <dimen name="article_listview_more_itemHeight">42dp</dimen>
+    <dimen name="capital_flow_radius">80dp</dimen>
+    <dimen name="capital_today_textSize">16dp</dimen>
+    <dimen name="capital_flow_height">300dp</dimen>
+    <dimen name="capital_flow_indicator_bottom_width">12dp</dimen>
+    <dimen name="capital_divider_height">1dp</dimen>
+    <dimen name="capital_flow_change_height">100dp</dimen>    <dimen name="capital_flow_change_divider_marginTop">40dp</dimen>
+    <dimen name="capital_flow_change_value_textSize">12dp</dimen>
+    <dimen name="capital_flow_change_date_textSize">12dp</dimen>
+    <dimen name="capital_flow_change_histogram_width">34dp</dimen>
+    <dimen name="capital_flow_detail_duo_kong_layout_height">20dp</dimen>
+    <dimen name="capital_flow_detail_duo_kong_layout_marginBottom">8dp</dimen>
+    <dimen name="capital_flow_detail_duo_kong_height">12dp</dimen>
+    <dimen name="capital_flow_detail_duo_kong_cornor">2dp</dimen>
+    <dimen name="capital_flow_duo_kong_width">82dp</dimen>
+
+    <dimen name="pillar_change_view_height">200dp</dimen>
+    <dimen name="pillar_bottom_offset">174dp</dimen>
+    <dimen name="pillar_bottom_line_height">0.5dp</dimen>
+    <dimen name="pillar_delta_circle_radius">5dp</dimen>
+    <dimen name="pillar_delta_stroke_width">2dp</dimen>
+    <dimen name="pillar_segment_divider_height">1dp</dimen>
+    <dimen name="pillar_min_drawing_height">1dp</dimen>
+
+
+    <dimen name="tab_bar_divider_line_height">0.5dp</dimen>
+    <dimen name="tab_bar_item_bottom_padding">0dp</dimen>
+    <dimen name="tab_bar_text_top_padding">3dp</dimen>
+    <dimen name="tab_bar_text_size">12dp</dimen>
+
+    <dimen name="detail_operation_bar_height">42.5dp</dimen>
+    <dimen name="operation_textSize">14dp</dimen>
+
+    <dimen name="tab_title_textSize">14dp</dimen>
+    <dimen name="tab_title_textSize_big">16dp</dimen>
+    <dimen name="tab_title_indicator_height">2dp</dimen>
+    <dimen name="tab_title_indicator_extraWidth">10dp</dimen>
+    <dimen name="stock_detail_info_title">12dp</dimen>
+    <dimen name="stock_detail_info_value">14dp</dimen>
+    <dimen name="actionbar_icon_padding">16dp</dimen>
+    <dimen name="setting_icon_padding">5dp</dimen>
+    <!--<dimen name="dialog_horizontal_margin">30dp</dimen>-->
+    <!--<dimen name="dialog_text_horizontal_margin">14dp</dimen>-->
+    <!--<dimen name="dialog_text_vertical_margin">32dp</dimen>-->
+
+    <!--公共list常量定义-->
+    <dimen name="portfolio_list_item_margin_left">19dp</dimen>
+    <dimen name="portfolio_list_item_height">30dp</dimen>
+    <dimen name="portfolio_list_item_width">110dp</dimen>
+    <dimen name="portfolio_market_height">54dp</dimen>
+    <dimen name="portfolio_index_title_item_textSize">@dimen/font_size_18</dimen>
+    <dimen name="portfolio_index_item_textSize">@dimen/font_size_14</dimen>
+    <!--&lt;!&ndash;list头部高度&ndash;&gt;-->
+    <!--<dimen name="list_head_height">32dp</dimen>-->
+    <!--&lt;!&ndash;list条目高度&ndash;&gt;-->
+    <!--<dimen name="list_item_height">48dp</dimen>-->
+    <!--&lt;!&ndash;list条目分割线高度&ndash;&gt;-->
+    <!--<dimen name="list_divider_height">0.5dp</dimen>-->
+    <!--<dimen name="list_market_divider_height">8dp</dimen>-->
+    <!--<dimen name="list_horizontal_divider_height">6dp</dimen>-->
+
+    <!-- 自选股标题部分，文字和下三角之间的间隔-->
+    <dimen name="list_head_text_arrow_dis">4dp</dimen>
+    <!-- 自选股标题部分，下三角图标大小-->
+    <dimen name="list_head_arrow_size">6dp</dimen>
+
+    <!-- 自选标题宽度 -->
+    <dimen name="list_subject_head_width">120dp</dimen>
+    <!--list 头部字体大小-->
+    <dimen name="list_item_stock_name_text_size">16dp</dimen>
+    <!--lsit条目，股票价格字体大小-->
+    <dimen name="list_item_stock_change_text_size">16dp</dimen>
+    <!--list条目，股票涨跌幅字体大小-->
+    <!--公共list常量定义-->
+
+
+    <!-- 保持纵向居中用的 -->
+    <dimen name="number_text_view_margin_top">2dp</dimen>
+
+    <!-- 公共常量定义 -->
+
+    <dimen name="stock_detail_line_chart_height">370dp</dimen>
+    <dimen name="stock_detail_buy_sell_width">108dp</dimen>
+    <dimen name="stock_buy_sell_divider_marginTop">3dp</dimen>
+    <dimen name="stock_buy_sell_textSize">14dp</dimen>
+
+    <!-- 自选界面行情-->
+    <dimen name="portfolio_login_layout_height">36dp</dimen>
+    <dimen name="portfolio_market_item_width">120dp</dimen>             <!--行情item的宽度-->
+    <dimen name="portfolio_market_item_vertical_divider">8dp</dimen>    <!--行情item名称和价格的距离-->
+    <dimen name="stock_detail_top_area_height">64dp</dimen>
+    <dimen name="stock_detail_top_area_marginTop">10dp</dimen>
+    <dimen name="stock_detail_top_area_price_marginBottom">3dp</dimen>
+    <dimen name="stock_detail_top_area_price_textSize">32dp</dimen>
+    <dimen name="stock_detail_top_area_price_delta_textSize">14dp</dimen>
+    <dimen name="stock_detail_top_area_price_delta_gap">18dp</dimen>
+    <dimen name="stock_detail_infos_title_value_gapVertical">0.67dp</dimen>
+    <dimen name="stock_detail_infos_title_value_gapVertical_single_line">2dp</dimen>
+    <dimen name="stock_detail_infos_layout_height">76dp</dimen>
+    <dimen name="stock_detail_infos_layout_height_half">38dp</dimen>
+    <dimen name="stock_detail_infos_indicator_marginRight">8dp</dimen>
+    <dimen name="stock_detail_tips_textSize">14dp</dimen>
+    <dimen name="capital_flow_radius_inner">44dp</dimen>
+    <dimen name="capital_flow_radius_outer">85dp</dimen>
+    <dimen name="capital_flow_percent_textSize">12dp</dimen>
+    <dimen name="default_content_paddingBottom">0dp</dimen>
+    <dimen name="capital_flow_text_padding">4dp</dimen>
+    <dimen name="capital_flow_indicator_gap">10dp</dimen>
+    <dimen name="capital_flow_percent_height">18dp</dimen>
+    <dimen name="portfolio_empty_add_image_size">92dp</dimen>
+    <dimen name="portfolio_edit_icon_size">34dp</dimen>
+    <dimen name="portfolio_edit_icon_margin_left">36dp</dimen>
+    <dimen name="portfolio_edit_icon_padding_left">10dp</dimen>
+    <dimen name="portfolio_group_manager_list_item_height">48dp</dimen>
+    <dimen name="portfolio_group_manager_button_width">48dp</dimen>
+    <dimen name="portfolio_group_manager_button_height">22dp</dimen>
+    <dimen name="portfolio_group_title_width">132dp</dimen>
+    <dimen name="portfolio_menu_margin_left">24dp</dimen>
+    <dimen name="portfolio_menu_translation_x_1">80dp</dimen>
+    <dimen name="portfolio_menu_translation_x_2">240dp</dimen>
+    <dimen name="portfolio_menu_padding">15.5dp</dimen>
+    <dimen name="portfolio_menu_exit_button_width">21dp</dimen>
+    <dimen name="portfolio_menu_exit_button_height">42dp</dimen>
+
+    <!-- 我的 设置 相关常量-->
+    <dimen name="setting_margin_top">24dp</dimen>
+    <dimen name="setting_item_margin_top">36dp</dimen>
+    <dimen name="setting_item_small_margin_top">8dp</dimen>
+    <dimen name="setting_button_margin_top">62dp</dimen>
+    <dimen name="setting_user_icon_size">64dp</dimen>
+    <dimen name="setting_user_padding">2dp</dimen>
+
+    <dimen name="setting_tools_item_height">88dp</dimen>
+
+    <!-- 登录注册-->
+    <dimen name="login_third_party_icon_size">48dp</dimen>
+    <dimen name="user_info_third_party_icon_size">24dp</dimen>
+    <dimen name="user_info_third_party_icon_margin">5dp</dimen>
+
+    <!-- 收藏 -->
+    <dimen name="favor_item_padding_left_normal">15dp</dimen>
+    <dimen name="favor_item_padding_left_edit">12dp</dimen>
+    <dimen name="favor_publish_month_padding_left_edit">33dp</dimen>
+
+    <!-- market -->
+    <dimen name="market_block_margin">8dp</dimen>
+    <dimen name="market_index_futures_padding">6dp</dimen>
+    <dimen name="market_index_futures_height">56dp</dimen>
+    <dimen name="market_index_height">90dp</dimen>
+    <dimen name="market_ah_stock_info_width">70dp</dimen>
+    <dimen name="market_more_drawable_padding">2dp</dimen>
+    <dimen name="market_more_drawable_offset">1dp</dimen>
+    <dimen name="market_sub_item_width">110dp</dimen>
+    <dimen name="market_global_sub_item_width">100dp</dimen>
+    <dimen name="market_global_title_textSize">18dp</dimen>
+    <dimen name="market_global_sub_item_textSize">20dp</dimen>
+    <dimen name="market_all_a_indicator_textSize">@dimen/font_size_10</dimen>
+
+    <!-- 发现 -->
+    <dimen name="discover_card_padding">8dp</dimen>
+    <dimen name="discover_stock_pick_strategy_item_height">88dp</dimen>
+
+    <dimen name="pillar_indicator_marginTop">15dp</dimen>
+    <dimen name="pillar_indicator_marginBottom">12dp</dimen>
+    <dimen name="pillar_indicator_text_marginRight">2dp</dimen>
+    <dimen name="pillar_indicator_gap">12dp</dimen>
+    <dimen name="pillar_indicator_circle_radius">3dp</dimen>
+    <dimen name="stock_finance_indicator_textSize">12dp</dimen>
+    <dimen name="stock_finance_indicator_circle_size">12dp</dimen>
+    <dimen name="pillar_start_offset">28dp</dimen>
+    <dimen name="pillar_delta_value_textSize">10dp</dimen>
+    <dimen name="article_listview_more_textSize">12dp</dimen>
+    <dimen name="two_tab_selector_corner_radius">6dp</dimen>
+    <dimen name="usa_privatization_corner_radius">4dp</dimen>
+    <dimen name="webview_two_tab_selector_corner_radius">3dp</dimen>
+    <dimen name="pillar_text_margin">2dp</dimen>
+    <dimen name="article_container_height">429dp</dimen>
+    <dimen name="line_chart_divider_strokeWidth">1px</dimen>
+
+    <dimen name="line_chart_bottom_rect_height_1">80dp</dimen>
+    <dimen name="line_chart_bottom_rect_height_2">61dp</dimen>
+    <dimen name="line_chart_bottom_rect_height_3">50dp</dimen>
+    <dimen name="line_chart_bottom_rect_height_4">45dp</dimen>
+    <dimen name="line_chart_bottom_rect_height_fullscreen">80dp</dimen>
+    <dimen name="line_chart_indicator_ad_width">50dp</dimen>
+    <dimen name="line_chart_indicator_ad_width_fullscreen">90dp</dimen>
+    <dimen name="line_chart_indicator_ad_text_margin_left">4dp</dimen>
+    <dimen name="line_chart_indicator_ad_text_line_height">20dp</dimen>
+    <dimen name="line_chart_indicator_ad_text_line_height_fullscreen">20dp</dimen>
+    <dimen name="line_chart_indicator_ad_text_margin_bottom">10dp</dimen>
+    <dimen name="line_chart_indicator_ad_text_margin_bottom_fullscreen">20dp</dimen>
+    <dimen name="line_chart_indicator_ad_text_line_margin">10dp</dimen>
+    <dimen name="line_chart_trading_time_area_height">15dp</dimen>
+    <dimen name="line_chart_date_gap">25dp</dimen>
+    <dimen name="line_chart_time_strokeWidth">1dp</dimen>
+    <dimen name="indicator_animation_width">12dp</dimen>
+    <dimen name="intro_title_width">80dp</dimen>
+    <dimen name="intro_text_height">34dp</dimen>
+    <dimen name="intro_text_paddingTop">8dp</dimen>
+    <dimen name="intro_concept_height">49dp</dimen>
+    <dimen name="intro_concept_marginGap">15dp</dimen>
+    <dimen name="intro_concept_marginBottom">10dp</dimen>
+    <dimen name="intro_incoming_ratio_width">92dp</dimen>
+    <dimen name="intro_incoming_amount_width">92dp</dimen>
+    <dimen name="line_chart_k_stroke_width">1dp</dimen>
+    <dimen name="line_chart_k_indicator_vertical_gap">2dp</dimen>
+    <dimen name="line_chart_k_indicator_horizontal_gap">16dp</dimen>
+    <dimen name="line_chart_k_indicator_width">35dp</dimen>
+    <dimen name="line_chart_k_indicator_height">15dp</dimen>
+    <dimen name="line_chart_k_indicator_marginTop">1dp</dimen>
+    <dimen name="market_index_layout_height">98dp</dimen>
+    <dimen name="heat_degree_pill_round_corner_radius">1.33dp</dimen>
+    <dimen name="market_industry_info_height">110dp</dimen>
+    <dimen name="market_capital_flow_index_info_margin">14dp</dimen>
+    <dimen name="market_subject_info_height">78dp</dimen>
+
+    <dimen name="line_chart_title_bar_height">32.5dp</dimen>
+    <dimen name="line_chart_marginLeft">10dp</dimen>
+    <dimen name="line_chart_marginLeft_half">7dp</dimen>
+    <dimen name="line_chart_marginBottom">4dp</dimen>
+    <dimen name="stock_trade_close_btn_width">22dp</dimen>
+    <dimen name="stock_trade_close_btn_height">44dp</dimen>
+    <dimen name="stock_buy_sell_title_width">34dp</dimen>
+    <dimen name="stock_buy_sell_price_width">40dp</dimen>
+    <dimen name="stock_buy_sell_volume_width">40dp</dimen>
+    <dimen name="stock_subject_title_height">14dp</dimen>
+    <dimen name="stock_subject_title_margin">5dp</dimen>
+    <dimen name="default_rect_bg_strokeWidth">4px</dimen>
+    <dimen name="default_round_rect_bg_strokeWidth">4px</dimen>
+    <dimen name="stock_subject_title_padding">4dp</dimen>
+    <dimen name="stock_mark_padding">3dp</dimen>
+    <dimen name="k_line_average_text_area_height">18dp</dimen>
+    <dimen name="k_line_average_text_gap">10dp</dimen>
+    <dimen name="stock_buy_sell_textPadding">3dp</dimen>
+    <dimen name="line_chart_time_area_width_small_for_time_line">44dp</dimen>
+    <dimen name="line_chart_time_area_width_small">64dp</dimen>
+    <dimen name="line_chart_time_area_width">125dp</dimen>
+    <dimen name="line_chart_now_price_gap_small">8dp</dimen>
+    <dimen name="line_chart_now_price_area_width_small">100dp</dimen>
+    <dimen name="line_chart_title_marginRight_small">2dp</dimen>
+    <dimen name="line_chart_text_area_width">115dp</dimen>
+    <dimen name="line_chart_text_area_width_small">62dp</dimen>
+    <dimen name="line_chart_text_marginLeft">6dp</dimen>
+    <dimen name="line_chart_text_marginBottom_small">12dp</dimen>
+    <dimen name="fund_item_line_height">34dp</dimen>
+    <dimen name="transaction_tab_selector_height">20dp</dimen>
+    <dimen name="transaction_layout_marginLeft">6dp</dimen>
+    <dimen name="transaction_tab_selector_marginBottom">8dp</dimen>
+    <dimen name="line_chart_container_margin">5dp</dimen>
+    <dimen name="heat_line_content_marginTop">10dp</dimen>
+    <dimen name="heat_line_right_text_area_width">34dp</dimen>
+    <dimen name="heat_line_right_text_width">34dp</dimen>
+    <dimen name="heat_line_bottom_text_height">13dp</dimen>
+    <dimen name="transaction_tab_bg_strokeWidth">1dp</dimen>
+    <dimen name="transaction_tab_bg_corner_radius">3dp</dimen>
+    <dimen name="two_tab_selector_strokeWidth">0.5dp</dimen>
+    <dimen name="transaction_two_tab_selector_strokeWidth">0.5dp</dimen>
+    <dimen name="sub_title_margin">4dp</dimen>
+    <dimen name="sub_title_padding">4dp</dimen>
+    <dimen name="delta_text_marginBottom">8dp</dimen>
+    <dimen name="default_scrollbar_size">3dp</dimen>
+    <!--<dimen name="default_scrollbar_size_wider">4dp</dimen>-->
+
+    <dimen name="operation_bar_icon_size">14dp</dimen>
+    <dimen name="operation_bar_marginLeft">14dp</dimen>
+    <dimen name="operation_bar_icon_padding">6dp</dimen>
+    <dimen name="tag_round_rect_corner_radius">2dp</dimen>
+    <dimen name="tag_margin">8dp</dimen>
+    <dimen name="tag_padding">4dp</dimen>
+    <dimen name="intro_text_marginTop">11.33dp</dimen>
+    <dimen name="tag_height">16dp</dimen>
+    <dimen name="no_content_layout_height">170dp</dimen>
+    <dimen name="on_content_paddingTop">24dp</dimen>
+
+    <dimen name="k_line_bs_min_gap">2dp</dimen>
+    <dimen name="k_line_bs_max_gap">8dp</dimen>
+
+    <dimen name="intro_shareholder_ratio_width">92dp</dimen>
+    <dimen name="intro_shareholder_change_width">92dp</dimen>
+
+    <dimen name="stock_tag_icon_size">14dp</dimen>
+    <dimen name="stock_tag_icon_margin_top">6dp</dimen>
+    <dimen name="stock_tag_icon_margin_left">6dp</dimen>
+    <dimen name="subject_related_stocks_title_width">125dp</dimen>
+
+    <dimen name="attitude_width_per_character">12dp</dimen>
+    <dimen name="attitude_width">120dp</dimen>
+    <dimen name="attitude_height">14dp</dimen>
+    <dimen name="attitude_bar_height">6dp</dimen>
+    <dimen name="attitude_textSize">9dp</dimen>
+    <dimen name="attitude_radius">3dp</dimen>
+    <dimen name="sec_detail_operation_bar_add_width">80dp</dimen>
+    <dimen name="sec_detail_popup_window_width">100dp</dimen>
+    <dimen name="sec_detail_popup_window_text_icon_gap">5dp</dimen>
+    <dimen name="sec_detail_popup_window_text_paddingLeft">6dp</dimen>
+    <dimen name="sec_detail_popup_window_item_height">40dp</dimen>
+    <dimen name="popup_window_width">72dp</dimen>
+    <dimen name="popup_window_edge_width">1dp</dimen>
+    <dimen name="popup_window_divider_height">0.5dp</dimen>
+    <dimen name="popup_window_divider_width">45dp</dimen>
+    <dimen name="entrance_translation_distance">40dp</dimen>
+    <dimen name="capital_structure_circle_radius">2dp</dimen>
+    <dimen name="capital_structure_chart_top_padding">15dp</dimen>
+    <dimen name="capital_structure_chart_bottom_text_height">13dp</dimen>
+    <dimen name="capital_structure_chart_text_margin">2dp</dimen>
+    <dimen name="capital_flow_reminder_textSize">14dp</dimen>
+    <dimen name="capital_flow_reminder_textBottom">2dp</dimen>
+    <dimen name="capital_flow_reminder_textPadding">8dp</dimen>
+    <dimen name="capital_flow_reminder_height">24dp</dimen>
+    <dimen name="capital_flow_reminder_marginBottom">36.5dp</dimen>
+    <dimen name="capital_flow_reminder_marginBottom_fullscreen">55.5dp</dimen>
+    <dimen name="expanded_detail_infos_paddingTop">144dp</dimen>
+
+    <dimen name="time_dot_size">6dp</dimen>
+    <dimen name="time_first_dot_size">9dp</dimen>
+    <dimen name="time_dot_marginTop">15dp</dimen>
+    <dimen name="time_line_indicator_text_bg_height">18dp</dimen>
+    <dimen name="indicator_group_gap">14dp</dimen>
+    <dimen name="indicator_group_icon_gap">4dp</dimen>
+    <dimen name="indicator_group_circle_radius">4dp</dimen>
+    <dimen name="up_and_down_right_text_area_width">26dp</dimen>
+    <dimen name="up_and_down_line_stroke_width">1.5dp</dimen>
+    <dimen name="up_and_down_view_height">160dp</dimen>
+    <dimen name="live_message_text_extraWidth">80dp</dimen>
+    <dimen name="live_message_layout_margin">26dp</dimen>
+
+    <!-- stock status tips -->
+    <dimen name="stock_status_tips_layout_height">32dp</dimen>
+    <dimen name="stock_status_tips_marginTop">4dp</dimen>
+    <dimen name="stock_status_tips_marginBottom">2dp</dimen>
+
+    <dimen name="consultant_detail_paddingTop">12dp</dimen>
+    <dimen name="consultant_detail_paddingMiddle">4dp</dimen>
+    <dimen name="consultant_detail_paddingBottom">12dp</dimen>
+    <dimen name="consultant_face_size">24dp</dimen>
+
+    <dimen name="comment_reply_top_space_height">12dp</dimen>
+    <dimen name="comment_reply_inner_space_height">8dp</dimen>
+    <dimen name="comment_reply_inner_edge_space_height">6dp</dimen>
+    <dimen name="comment_reply_bottom_space_height">14dp</dimen>
+    <dimen name="comment_input_bar_height">48dp</dimen>
+
+    <dimen name="homepage_header_height">218dp</dimen>
+    <dimen name="homepage_infos_height">22dp</dimen>
+    <dimen name="homepage_infos_layout_height">170dp</dimen>
+    <dimen name="homepage_select_bar_height">32dp</dimen>
+    <dimen name="homepage_set_attention_bar_height">56dp</dimen>
+    <dimen name="list_item_title_bar_height">24dp</dimen>
+    <dimen name="bottom_dialog_divider_height">8dp</dimen>
+    <dimen name="bonus_panel_padding_top">29dp</dimen>
+    <dimen name="bonus_panel_padding_bottom">16dp</dimen>
+    <dimen name="today_bonus_margin_top">3dp</dimen>
+    <dimen name="bonus_margin_right">12dp</dimen>
+    <dimen name="bonus_panel_padding_left">15dp</dimen>
+    <dimen name="today_bonus_task_margin_left">26dp</dimen>
+    <dimen name="bonus_task_padding_left_right">15dp</dimen>
+    <dimen name="execute_task_btn_width">40dp</dimen>
+    <dimen name="execute_task_btn_height">18dp</dimen>
+    <dimen name="bonus_task_padding_top_bottom">16dp</dimen>
+    <dimen name="task_icon_width_height">18dp</dimen>
+    <dimen name="bonus_task_description_margin_top">7dp</dimen>
+    <dimen name="task_icon_margin_right">6dp</dimen>
+    <dimen name="bonus_panel_height">48dp</dimen>
+    <dimen name="buy_button_width">90dp</dimen>
+    <dimen name="privilege_icon_width_height">42dp</dimen>
+    <dimen name="checkbox_list_item_height">90dp</dimen>
+    <dimen name="privilege_title_margin_bottom">12dp</dimen>
+    <dimen name="privilege_icon_margin_right">10dp</dimen>
+    <dimen name="login_btn_width">160dp</dimen>
+    <dimen name="login_btn_height">42dp</dimen>
+    <dimen name="live_item_padding_top_bottom">16dp</dimen>
+    <dimen name="live_item_img_width">134dp</dimen>
+    <dimen name="live_item_img_height">84dp</dimen>
+    <dimen name="live_item_info_padding">8dp</dimen>
+    <dimen name="live_item_img_crop_height">10dp</dimen>
+    <dimen name="date_picker_margin_left">4dp</dimen>
+    <dimen name="live_state_width">48dp</dimen>
+    <dimen name="live_state_height">16dp</dimen>
+    <dimen name="live_state_margin">6dp</dimen>
+    <dimen name="tag_panel_margin_top">8dp</dimen>
+    <dimen name="video_tag_margin_left">6dp</dimen>
+    <dimen name="video_tag_padding_top_bottom">3dp</dimen>
+    <dimen name="video_tag_padding_left_right">4dp</dimen>
+    <dimen name="fee_list_item_height">60dp</dimen>
+    <dimen name="pay_button_width">64dp</dimen>
+    <dimen name="pay_button_height">28dp</dimen>
+    <dimen name="setting_member_header_height">42dp</dimen>
+    <dimen name="setting_member_info_height">58dp</dimen>
+    <dimen name="member_instructions_title_margin_top">16dp</dimen>
+    <dimen name="member_instructions_info_padding_bottom">60dp</dimen>
+    <dimen name="member_instructions_info_padding_top">8dp</dimen>
+    <dimen name="topic_tag_margin_left">12dp</dimen>
+    <dimen name="member_status_margin_left">4dp</dimen>
+    <dimen name="user_member_status_margin_left">4dp</dimen>
+    <dimen name="actionbar_detail_button_margin_right">0dp</dimen>
+
+    <dimen name="vip_drawable_padding">4dp</dimen>
+    <dimen name="image_banner_height">60dp</dimen>
+    <dimen name="dianosis_score_chart_panel_height">168dp</dimen>
+    <dimen name="dianosis_score_panel_padding_left_right">26dp</dimen>
+    <dimen name="radar_view_title_margin">2dp</dimen>
+    <dimen name="radar_view_width">150dp</dimen>
+    <dimen name="radar_view_height">136dp</dimen>
+    <dimen name="radar_view_line_width">1dp</dimen>
+    <dimen name="score_item_height">74dp</dimen>
+    <dimen name="score_item_icon_margin_right">15dp</dimen>
+    <dimen name="score_info_width">142dp</dimen>
+    <dimen name="score_item_description_margin_top">2dp</dimen>
+    <dimen name="ad_view_height">99dp</dimen>
+    <dimen name="ad_view_margin_top">12dp</dimen>
+    <dimen name="ad_view_margin_bottom">8dp</dimen>
+    <dimen name="ad_panel_margin_top">46dp</dimen>
+    <dimen name="order_finish_button_margin_top">48dp</dimen>
+    <dimen name="ad_off_button_width">30dp</dimen>
+    <dimen name="ad_off_button_height">48dp</dimen>
+    <dimen name="ad_off_button_margin_top">94dp</dimen>
+    <dimen name="full_screen_ad_content_width">284dp</dimen>
+    <dimen name="full_screen_ad_content_height">403dp</dimen>
+    <dimen name="ad_view_round_radius">6dp</dimen>
+    <dimen name="dialog_more_operation_item_width">80dp</dimen>
+    <dimen name="ad_off_button_margin_right">6dp</dimen>
+    <dimen name="pay_button_margin_bottom">21dp</dimen>
+    <dimen name="check_margin_left">12dp</dimen>
+    <dimen name="history_time_line_panel_height">254dp</dimen>
+    <dimen name="history_time_line_width">243dp</dimen>
+    <dimen name="history_time_line_panel_padding_top_bottom">6dp</dimen>
+    <dimen name="history_time_line_panel_padding_left">6dp</dimen>
+    <dimen name="history_time_line_panel_padding_right">6dp</dimen>
+    <dimen name="history_time_line_info_title_margin_top">10dp</dimen>
+    <dimen name="linechart_entrance_width">70dp</dimen>
+    <dimen name="linechart_entrance_height">14dp</dimen>
+    <dimen name="touch_line_stroke_width">0.5dp</dimen>
+    <dimen name="stock_pick_banner_height">72dp</dimen>
+    <dimen name="entrance_touch_expand">10dp</dimen>
+    <dimen name="history_time_line_chart_bottom_rect_height">42dp</dimen>
+    <dimen name="column_width">6dp</dimen>
+    <dimen name="avg_stroke_width">1dp</dimen>
+    <dimen name="margin_trade_right_text_width">24dp</dimen>
+    <dimen name="margin_trade_right_text_area_width">24dp</dimen>
+    <dimen name="margin_trade_text_padding">4dp</dimen>
+    <dimen name="margin_trade_border_stroke_width">0.5dp</dimen>
+    <dimen name="margin_trade_content_padding">2dp</dimen>
+    <dimen name="margin_trade_text_area_width">30dp</dimen>
+    <dimen name="margin_trade_content_marginTop">4dp</dimen>
+    <dimen name="margin_trade_mark_length">2dp</dimen>
+    <dimen name="callauction_width">104dp</dimen>
+    <dimen name="callauction_height">24dp</dimen>
+    <dimen name="indicator_pre_text_padding_left_right">2dp</dimen>
+    <dimen name="indicator_pre_text_bg_height">12dp</dimen>
+    <dimen name="indicator_pre_text_bg_round_radius">3dp</dimen>
+    <dimen name="indicator_rect_margin_top">6dp</dimen>
+    <dimen name="confirm_button_margin_top">48dp</dimen>
+
+    <dimen name="guide_margin_right">10dp</dimen>
+    <dimen name="doughnut_inner_radius">30dp</dimen>
+    <dimen name="profile_detail_padding_top_bottom">16dp</dimen>
+    <dimen name="layout_industry_benchmark_item_height">38dp</dimen>
+    <dimen name="tab_setting_header_offset_vertical">56dp</dimen>
+    <dimen name="max_splash_overscroll_distance">72dp</dimen>
+
+    <dimen name="stock_detail_function_button_width">68dp</dimen>
+    <dimen name="stock_detail_function_button_height">32dp</dimen>
+    <dimen name="stock_detail_function_button_margin_right">18dp</dimen>
+    <dimen name="activity_smart_stock_stare_item_height">60dp</dimen>
+    <dimen name="live_item_title_margin_top">9dp</dimen>
+    <dimen name="live_item_source_margin_top">4dp</dimen>
+    <dimen name="live_small_image_width">160dp</dimen>
+    <dimen name="live_small_image_height">90dp</dimen>
+    <dimen name="layout_live_padding_bottom">15dp</dimen>
+    <dimen name="live_image_big_height">186dp</dimen>
+    <dimen name="chip_cost_chart_stroke_width">1dp</dimen>
+    <dimen name="chip_cost_chart_open_button_width">72dp</dimen>
+    <dimen name="chip_cost_chart_open_button_height">24dp</dimen>
+    <dimen name="chip_cost_chart_circle_radius">2dp</dimen>
+    <dimen name="time_axis_margin_left_right">13dp</dimen>
+    <dimen name="time_axis_line_margin_left_right">12dp</dimen>
+    <dimen name="time_axis_change_button_width_height">36dp</dimen>
+    <dimen name="time_axis_change_button_margin">12dp</dimen>
+    <dimen name="angle_margin">30dp</dimen>
+    <dimen name="point_hint_margin_top">12dp</dimen>
+    <dimen name="go_button_margin_left_right">10dp</dimen>
+    <dimen name="keyboard_height">225dp</dimen>
+
+    <dimen name="setting_second_image_margin_right">20dp</dimen>
+
+    <dimen name="teacher_yan_avator_small_size">50dp</dimen>
+    <dimen name="teacher_yan_curse_img_width">110dp</dimen>
+    <dimen name="teacher_yan_curse_img_height">75dp</dimen>
+</resources>

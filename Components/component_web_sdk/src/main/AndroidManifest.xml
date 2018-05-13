@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sscf.investment.web.sdk">
+
+    <application android:allowBackup="false"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_activity_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.CommonWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_no_fitsSystemWindows_activity_theme"
+            android:activityCloseExitAnimation="@android:anim/slide_out_right"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.TeacherYanArticleWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_no_fitsSystemWindows_activity_theme"
+            android:activityCloseExitAnimation="@android:anim/slide_out_right"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.FullScreenWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_no_fitsSystemWindows_activity_theme"
+            android:activityCloseExitAnimation="@android:anim/slide_out_right"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.ContentWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_no_fitsSystemWindows_activity_theme"
+            android:activityCloseExitAnimation="@android:anim/slide_out_right"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.ThirdPartyNewsWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_no_fitsSystemWindows_activity_theme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.CommonUnTransparentWebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_untransparent_activity_theme"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.IntelligentAnswerWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_no_fitsSystemWindows_activity_theme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.widget.LiveMsgActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/default_swipe_back_activity_theme"/>
+        <activity
+            android:name="com.sscf.investment.web.sdk.photoviewer.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+    </application>
+
+</manifest>

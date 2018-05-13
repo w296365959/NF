@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sscf.investment.detail.view.ExpandedDetailInfosView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expanded_detail_infos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/expanded_detail_infos_paddingTop"
+    android:layout_marginTop="@dimen/actionbar_height"
+    android:clickable="true"
+    android:background="@android:color/transparent"
+    />

@@ -1,0 +1,87 @@
+<!-- 自选股界面list item布局-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/default_list_item_style"
+        android:paddingLeft="0dp"
+        android:gravity="center_vertical">
+
+    <!-- 股票名称和号码-->
+    <LinearLayout
+            style="@style/horizontal_average_divide_style"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+            <ImageView
+                    android:id="@+id/portfolio_tag_icon"
+                    android:layout_marginTop="@dimen/stock_tag_icon_margin_top"
+                    android:layout_width="@dimen/stock_tag_icon_size"
+                    android:layout_height="@dimen/stock_tag_icon_size"/>
+            <com.sscf.investment.widget.VariableTextView
+                    android:id="@+id/portfolio_stock_listitem_name"
+                    android:layout_marginLeft="5dp"
+                    android:paddingBottom="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="@dimen/font_size_18"
+                    android:textColor="@color/default_text_color_100"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/portfolio_stock_listitem_number"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_12"
+                    android:textColor="@color/default_text_color_60"
+                    android:text="----"/>
+
+            <!-- 持仓tag -->
+            <com.sscf.investment.widget.MultiTagView
+                    android:id="@+id/portfolio_position_tag"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 价格 -->
+    <com.sscf.investment.component.ui.widget.NumberTextView
+            android:paddingTop="2dp"
+            android:id="@+id/portfolio_stock_listitem_price"
+            android:layout_width="@dimen/portfolio_list_item_width"
+            android:layout_height="@dimen/portfolio_list_item_height"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/font_size_20"
+            android:textColor="@color/default_text_color_100"
+            android:text="@string/value_null"/>
+
+    <!-- 涨跌幅 -->
+    <FrameLayout
+            android:id="@+id/portfolio_stock_listitem_updown_layout"
+            android:layout_width="@dimen/portfolio_list_item_width"
+            android:layout_height="@dimen/portfolio_list_item_height">
+        <com.sscf.investment.component.ui.widget.NumberTextView
+                android:id="@+id/portfolio_stock_listitem_change"
+                android:background="@drawable/stock_updown_bg"
+                android:paddingTop="2dp"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/portfolio_list_item_height"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="#FFFFFF"
+                android:text="@string/value_null"
+                android:clickable="true"/>
+    </FrameLayout>
+</LinearLayout>

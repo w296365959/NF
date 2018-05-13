@@ -1,0 +1,68 @@
+组件化：
+目标：
+1.代码解耦，代码隔离，每个组件模块能单独运行。每个模块之间面向接口编程，不要依赖其他模块的任何代码
+基础模块有sdk，component_ui两个模块，所有模块都可以引入这两个模块
+除此之外，其他模块，如dengta, component_logic，component_web_sdk等其他模块之间可以不引入，并能保持独立编译以及运行
+
+2.UI跳转。使用router
+
+使用：
+以收藏的功能为例
+1.添加收藏的接口
+在dengta，component_web_sdk这两个模块里需要用到收藏相关功能，可以在sdk的模块中定义一个接口IFavorManager
+把需要用到的功能定义为抽象方法
+    void init();
+    boolean isFavor(FavorItem favorItem);
+    void addFavor(final FavorItem favorItem);
+    void deleteFavor(final FavorItem favorItem);
+    ArrayList<FavorItem> getFavorItems();
+    int getFavorCount();
+
+
+2.实现收藏相关接口，并通知sdk模块去加载收藏的功能实现
+在component_logic实现收藏的功能
+FavorManager实现IFavorManager接口
+LogicComponent实现IComponent接口，此类的作用是把component_logic模块下的所有的功能注册到sdk模块里
+目前只把收藏功能注册到sdk模块里，后续可以把其他功能也放到component_logic模块下
+在onCreate方法里使用componentManager.addManager(IFavorManager.class.getName(), new FavorManager());来注册功能
+在onDestroy方法里使用componentManager.removeManager(IFavorManager.class.getName());来注销此功能
+public final class LogicComponent implements IComponent {
+
+    @Override
+    public void onCreate() {
+        final ComponentManager componentManager = ComponentManager.getInstance();
+        componentManager.addManager(IFavorManager.class.getName(), new FavorManager());
+    }
+
+    @Override
+    public void onDestroy() {
+        final ComponentManager componentManager = ComponentManager.getInstance();
+        componentManager.removeManager(IFavorManager.class.getName());
+    }
+}
+
+
+3.在主项目dengta模块里启动的时候动态添加component_logic模块里的功能
+ComponentManager.registerComponent("com.dengtacj.stock.logic.component.LogicComponent");
+因为用到反射，需要混淆的时候需要排除
+
+
+4.其他模块中如何调用收藏功能
+在dengta，component_web_sdk等其他模块中如何使用收藏相关功能呢
+       IFavorManager favorManager = (IFavorManager) ComponentManager.getInstance().getManager(IFavorManager.class.getName());
+        if (favorManager != null) {
+            favorManager.init();
+        }
+使用之前需要判断有没有favorManager对象，如果没有加载收藏相关功能，就不能使用相关功能
+在其他module的build.gradle中
+如果添加compile project(':component_logic')，就可以使用收藏功能
+如果没有添加compile project(':component_logic')，就不能使用收藏功能
+这样就能保证dengta模块与component_logic模块的代码完全隔离，各自能独立编译，功能动态加载的目的
+
+其他
+1.SettingPref类移动到sdk模块里，里面只放get，put的逻辑，其他的逻辑请放到XxxSettingPref，如dengta模块可以添加一个DengtaSettingPref类来处理相关逻辑
+2.关于route跳转，可以沿用以前的方式，使用CommonBeaconJump类，但是页面太多，建议分开放到XxxBeaconJump类里，例如WebBeaconJump类里放的是所有web页面的跳转
+
+
+相关文章请参考
+http://www.jianshu.com/p/1b1d77f58e84

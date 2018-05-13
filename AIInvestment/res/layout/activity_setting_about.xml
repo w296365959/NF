@@ -1,0 +1,88 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:id="@+id/aboutBgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:background="?attr/setting_about_bg">
+
+    <!--style="@style/actionbar_style">-->
+        <ImageView
+                android:id="@+id/actionbar_back_button"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_centerVertical="false"
+                style="@style/actionbar_back_button_style"/>
+        <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_centerInParent="false"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                style="@style/actionbar_title_text_style"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about_logo"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/settingCheckUpgradeLayout"
+            style="@style/default_list_item_style"
+            android:layout_marginTop="@dimen/setting_item_small_margin_top">
+        <TextView
+                android:id="@+id/settingCheckUpgrade"
+                style="@style/setting_default_text_style"
+                android:layout_centerVertical="true"
+                android:text="@string/setting_about_upgrade"/>
+        <TextView
+                android:id="@+id/settingCheckHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/default_text_color_60"
+                android:text="@string/setting_about_newest"/>
+        <View
+                android:id="@+id/settingCheckUpgradeRetDot"
+                style="@style/red_dot_style"
+                android:layout_alignTop="@id/settingCheckUpgrade"
+                android:layout_toRightOf="@id/settingCheckUpgrade"
+                android:layout_marginLeft="2dp"/>
+    </RelativeLayout>
+
+    <View
+            style="@style/list_line_style"/>
+    <!-- 功能介绍 -->
+    <include
+        android:id="@+id/settingIntro"
+        layout="@layout/tab_fragment_setting_normal_item" />
+    <View
+        style="@style/list_line_style"/>
+    <!-- 用户协议 -->
+    <include
+        android:id="@+id/settingUserProtocal"
+        layout="@layout/tab_fragment_setting_normal_item" />
+
+    <LinearLayout
+        android:id="@+id/setting_about_developer_settings_layout_id"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <View
+            style="@style/list_line_style"/>
+
+        <TextView
+            android:id="@+id/setting_about_developer_settings_id"
+            style="@style/setting_text_view_item_style"
+            android:text="@string/setting_about_developer_settings"/>
+    </LinearLayout>
+
+</LinearLayout>

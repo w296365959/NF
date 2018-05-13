@@ -1,0 +1,9 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style"
+        android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/portfolio_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

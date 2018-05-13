@@ -1,0 +1,10 @@
+include ':DragSortListview', ':sdk', ':sdk_demo', ':umeng_social_sdk', ':component_scan', ':component_ocr', ':component_keepalive', ':umeng_push_sdk', ':component_ocr', ':component_pdf', ':component_web_sdk',':component_ui', ':component_logic'
+include ':AIInvestment'
+
+project(':component_keepalive').projectDir = new File("Components/component_keepalive")
+project(':component_scan').projectDir = new File("Components/component_scan")
+project(':component_ocr').projectDir = new File("Components/component_ocr")
+project(':component_pdf').projectDir = new File('Components/component_pdf')
+project(':component_web_sdk').projectDir = new File('Components/component_web_sdk')
+project(':component_ui').projectDir = new File('Components/component_ui')
+project(':component_logic').projectDir = new File('Components/component_logic')

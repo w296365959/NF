@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/actionbar_bg">
+        <ImageView
+            android:id="@+id/back_button"
+            style="@style/actionbar_back_button_style" />
+        <ImageView
+            android:id="@+id/faq_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin"
+            android:src="@drawable/action_bar_faq_icon" />
+        <TextView
+            android:id="@+id/stock_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/dt_live_msg"
+            android:textColor="@color/actionbar_title_text_color"
+            android:textSize="@dimen/font_size_22" />
+    </RelativeLayout>
+    <com.sscf.investment.web.sdk.widget.TabbedWebViewContainer
+        android:id="@+id/tabbed_webview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

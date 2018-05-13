@@ -1,0 +1,4 @@
+<resources>
+    <string name="screen_shot_success">截图成功</string>
+    <string name="screen_shot_no_data">分享失败，无法找到该图片</string>
+</resources>

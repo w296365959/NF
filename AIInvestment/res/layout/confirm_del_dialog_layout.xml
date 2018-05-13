@@ -1,0 +1,26 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dialogContentView"
+        style="@style/dialog_comfirm_layout_style"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/confirm_del_text_content"
+            style="@style/dialog_message_style"/>
+    <View
+            style="@style/list_line_style"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/upgrade_dialog_cancle_btn"
+                style="@style/dialog_button_style"
+                android:text="@string/cancel"/>
+        <View
+                style="@style/list_vertical_line_style"/>
+        <Button
+                android:id="@+id/upgrade_dialog_ok_btn"
+                style="@style/dialog_button_style"
+                android:text="@string/delete"/>
+    </LinearLayout>
+</LinearLayout>

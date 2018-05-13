@@ -1,0 +1,170 @@
+<resources>
+
+    <attr name="dialog_button_bg" format="reference"/>
+
+    <attr name="stock_up_color" format="color"/>
+    <attr name="stock_down_color" format="color"/>
+    <attr name="stock_base_color" format="color"/>
+
+    <!-- 公共控件 -->
+    <attr name="delete_button_text_color_selector" format="color"/>
+    <attr name="actionbar_subtitle_text_color" format="color"/>
+    <attr name="actionbar_refresh_drawable" format="reference"/>
+    <attr name="actionbar_search_drawable" format="reference"/>
+    <attr name="help_icon_drawable" format="reference"/>
+    <attr name="right_arrow_drawable" format="reference"/>
+    <attr name="privatization_right_arrow_drawable" format="reference"/>
+    <attr name="usa_privatization_bg" format="reference"/>
+    <attr name="ticks_scrollbar_thumb_drawable" format="reference"/>
+    <attr name="right_corner" format="reference"/>
+    <attr name="arrow_down" format="reference"/>
+    <attr name="arrow_up" format="reference"/>
+    <attr name="list_group_more_drawable" format="reference"/>
+    <attr name="tag_round_rect_bg_neutual" format="reference"/>
+    <attr name="attitude_neutual" format="color"/>
+    <attr name="actionbar_live_icon" format="reference"/>
+
+    <!-- 主界面下面的tab栏 -->
+    <attr name="main_bottom_tab_bar_bg_color" format="color"/>
+    <attr name="main_bottom_tab_bar_divide_line_color" format="color"/>
+    <attr name="main_bottom_tab_bar_text_color" format="reference"/>
+
+
+    <!-- 自选股 -->
+    <attr name="portfolio_empty_add" format="reference"/>
+    <attr name="recommend_subject_bg" format="reference"/>
+    <attr name="stock_tag_hk_drawable" format="reference"/>
+    <attr name="stock_tag_us_drawable" format="reference"/>
+    <attr name="add_portfolio_icon" format="reference"/>
+    <attr name="portfolio_group_title_expand_drawable" format="reference"/>
+    <attr name="top_close_drawable" format="reference"/>
+    <attr name="portfolio_group_edit_drawable" format="reference"/>
+    <attr name="portfolio_group_new_drawable" format="reference"/>
+    <attr name="portfolio_group_check_mark_drawable" format="reference"/>
+
+    <!-- setting -->
+    <attr name="setting_edit_text_selector" format="reference"/>
+    <attr name="setting_button_selector" format="reference"/>
+    <attr name="setting_checkbox_text_color_selector" format="color"/>
+    <attr name="setting_button_text_color_selector" format="color"/>
+    <attr name="input_clear_button" format="reference"/>
+    <attr name="setting_progress_button_bg" format="reference"/>
+    <attr name="setting_about_bg" format="reference"/>
+    <attr name="setting_edit_bg_selector" format="reference"/>
+    <attr name="setting_seekbar_progress" format="reference"/>
+
+    <!-- search -->
+    <attr name="search_edit_text_bg" format="reference"/>
+    <attr name="search_edit_text_icon" format="reference"/>
+    <attr name="arrow_right_icon" format="reference"/>
+
+    <!-- discovery-->
+    <attr name="stock_pick_down_bg" format="color"/>
+    <attr name="stock_pick_hot_stock_bg" format="reference"/>
+    <attr name="stock_pick_hot_stock_blur" format="reference"/>
+    <attr name="stock_pick_hot_stock_lock" format="reference"/>
+    <attr name="stock_pick_login_button_text_color" format="color"/>
+
+    <!-- TabLayout -->
+    <attr name="news_important" format="color"/>
+    <attr name="news_important_clicked" format="color"/>
+
+    <attr name="normal_two_tab_textColor" format="reference|color"/>
+    <attr name="normal_two_tab_selector_view_bg_drawable" format="reference|color"/>
+    <attr name="normal_two_tab_selector_selected_bg_left_drawable" format="reference|color"/>
+    <attr name="normal_two_tab_selector_selected_bg_middle_drawable" format="reference|color"/>
+    <attr name="normal_two_tab_selector_selected_bg_right_drawable" format="reference|color"/>
+
+    <attr name="transaction_two_tab_textColor" format="reference|color"/>
+    <attr name="transaction_two_tab_selector_view_bg_drawable" format="reference|color"/>
+    <attr name="transaction_two_tab_selector_selected_bg_left_drawable" format="reference|color"/>
+    <attr name="transaction_two_tab_selector_selected_bg_right_drawable" format="reference|color"/>
+    <attr name="transaction_two_tab_selector_selected_bg_middle_drawable" format="reference|color"/>
+
+    <!-- 分时K线图 -->
+    <attr name="line_chart_bg" format="reference|color"/>
+    <attr name="line_chart_border_rect_color" format="reference|color"/>
+    <attr name="line_chart_time_line_shadow_color" format="reference|color"/>
+    <attr name="k_line_control_text_color" format="reference|color"/>
+    <attr name="k_line_indicator_bg_color" format="reference|color"/>
+    <attr name="k_line_indicator_text_color" format="reference|color"/>
+    <attr name="line_chart_touch_line_color" format="reference|color"/>
+
+    <attr name="operation_bar_bg" format="reference|color"/>
+    <attr name="operation_bar_add_bg" format="color"/>
+
+    <attr name="stock_intro_related_subject_bg_color" format="reference|color"/>
+    <attr name="stock_detail_finance_incoming_polyline_color" format="reference|color"/>
+    <attr name="polyline_icon_drawable" format="reference"/>
+    <attr name="capital_structure_shareholder_number_icon_drawable" format="reference"/>
+    <attr name="heat_line_color" format="reference|color"/>
+    <attr name="heat_shadow_color" format="reference|color"/>
+    
+    <!-- 新闻列表 -->
+    <attr name="attitude_view_text_color" format="color"/>
+
+    <!-- refresh anim -->
+    <attr name="refresh_frame_1_00" format="reference"/>
+    <attr name="refresh_frame_1_01" format="reference"/>
+    <attr name="refresh_frame_1_02" format="reference"/>
+    <attr name="refresh_frame_1_03" format="reference"/>
+    <attr name="refresh_frame_1_04" format="reference"/>
+    <attr name="refresh_frame_1_05" format="reference"/>
+    <attr name="refresh_frame_1_06" format="reference"/>
+    <attr name="refresh_frame_1_07" format="reference"/>
+    <attr name="refresh_frame_1_08" format="reference"/>
+    <attr name="refresh_frame_1_09" format="reference"/>
+    <attr name="refresh_frame_1_10" format="reference"/>
+    <attr name="refresh_frame_1_11" format="reference"/>
+    <attr name="refresh_frame_1_12" format="reference"/>
+    <attr name="refresh_frame_1_13" format="reference"/>
+    <attr name="refresh_frame_1_14" format="reference"/>
+    <attr name="refresh_frame_1_15" format="reference"/>
+    <attr name="refresh_frame_1_16" format="reference"/>
+    <attr name="refresh_frame_1_17" format="reference"/>
+    <attr name="refresh_frame_1_18" format="reference"/>
+    <attr name="refresh_frame_1_19" format="reference"/>
+    <attr name="refresh_frame_1_20" format="reference"/>
+    <attr name="refresh_frame_1_21" format="reference"/>
+    <attr name="refresh_frame_1_22" format="reference"/>
+    <attr name="refresh_frame_1_23" format="reference"/>
+    <attr name="refresh_frame_1_24" format="reference"/>
+    <attr name="refresh_frame_1_25" format="reference"/>
+    <attr name="refresh_frame_1_26" format="reference"/>
+    <attr name="refresh_frame_1_27" format="reference"/>
+    <!--<attr name="refresh_frame_1_28" format="reference"/>-->
+    <!--<attr name="refresh_frame_1_29" format="reference"/>-->
+
+    <!--<attr name="refresh_frame_2_00" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_01" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_02" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_03" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_04" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_05" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_06" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_07" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_08" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_09" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_10" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_11" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_12" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_13" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_14" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_15" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_16" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_17" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_18" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_19" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_20" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_21" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_22" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_23" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_24" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_25" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_26" format="reference"/>-->
+    <!--<attr name="refresh_frame_2_27" format="reference"/>-->
+
+    <!-- 二维码 -->
+    <attr name="scan_duplicate_button_bg" format="reference"/>
+    <attr name="scan_duplicate_button_text_color" format="color"/>
+</resources>

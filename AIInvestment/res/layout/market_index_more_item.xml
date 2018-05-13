@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/market_item_style">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/arrow_right_small"
+        android:text="@string/market_index_more"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_14" />
+</FrameLayout>

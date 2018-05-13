@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="live_item_img_crop_height">10dp</dimen>
+
+    <dimen name="portfolio_index_title_item_textSize">@dimen/font_size_18</dimen>
+    <dimen name="portfolio_index_item_textSize">@dimen/font_size_13</dimen>
+</resources>

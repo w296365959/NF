@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/portfolio_group_manager_list_item_height"
+             android:minHeight="@dimen/portfolio_group_manager_list_item_height"
+             android:background="@drawable/list_item_bg"
+             >
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_16"/>
+
+    <TextView
+        android:id="@+id/already_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"
+        android:textColor="@color/default_text_color_40"
+        android:textSize="@dimen/font_size_14"
+        android:text="@string/portfolio_already_added"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/check_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:paddingLeft="@dimen/default_content_margin"
+        android:paddingRight="@dimen/default_content_margin"
+        android:src="?attr/portfolio_group_check_mark_drawable"
+        android:visibility="gone"/>
+</FrameLayout>

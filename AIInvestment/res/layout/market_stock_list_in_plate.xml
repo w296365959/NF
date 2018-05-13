@@ -1,0 +1,17 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        style="@style/setting_bg_style">
+    <include
+            layout="@layout/actionbar_market"/>
+    <include
+        layout="@layout/market_stock_list_in_plate_header"/>
+    <View
+        style="@style/list_line_style"/>
+    <include
+            layout="@layout/market_stock_list_header"/>
+    <View
+            style="@style/list_line_style"/>
+    <include
+            layout="@layout/ptr_list"/>
+</LinearLayout>

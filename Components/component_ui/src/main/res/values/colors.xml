@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_text_color_100">@color/gray_100</color>
+    <color name="default_text_color_80">@color/gray_80</color>
+    <color name="default_text_color_60">@color/gray_60</color>
+    <color name="default_text_color_40">@color/gray_40</color>
+    <color name="default_text_color_30">@color/gray_30</color>
+
+    <color name="gray_100">#ff252525</color>
+    <color name="gray_80">#cd252525</color>
+    <color name="gray_60">#9a252525</color>
+    <color name="gray_40">#66252525</color>
+    <color name="gray_30">#4d252525</color>
+
+    <color name="darker_gray_100">#373737</color>
+    <color name="darker_gray_80">#cd373737</color>
+    <color name="darker_gray_60">#9a373737</color>
+
+    <color name="white_100">#ffffff</color>
+    <color name="white_80">#cdffffff</color>
+    <color name="white_60">#9affffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_10">#19ffffff</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4d000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_60">#9a000000</color>
+    <color name="black_80">#cd000000</color>
+    <color name="black_100">#ff000000</color>
+
+    <color name="bg_gray">#f0f0f0</color>
+
+    <color name="main_tab_bg">#fafafa</color>
+
+    <color name="setting_bg_color_night">#211f1f</color>
+
+    <!-- actionbar color-->
+    <color name="actionbar_bg">@color/actionbar_bg_color</color>
+
+    <color name="actionbar_bg_color">#fd7736</color>
+    <color name="actionbar_bg_color_night">#2f2d2d</color>
+
+    <color name="dialog_button_bg_normal">#fff</color>
+    <color name="dialog_button_bg_pressed">#33ccd0d6</color>
+
+    <color name="list_item_bg_normal">#fff</color>
+    <color name="list_item_bg_pressed">#33ccd0d6</color>
+
+    <color name="list_divider">#e4e4e4</color>
+
+    <color name="actionbar_title_text_color">#ffffff</color>
+
+    <color name="actionbar_right_button_text_color">@color/white_100</color>
+
+    <color name="default_background">#f0f0f0</color>
+
+    <color name="scrollbar_color_dark">@color/gray_60</color>
+
+    <color name="stock_stop_color_night">#3d3a3a</color>
+
+    <color name="default_content_bg">@color/white_100</color>
+
+    <!-- 股票上涨时的颜色-->
+    <color name="stock_red_color">#e64225</color>
+    <color name="stock_red_color_alpha">#20e64225</color>
+    <!-- 股票停牌时的颜色-->
+    <color name="stock_stop_color">#ccd0d6</color>
+
+    <color name="splash_bg_default">#f9f0e8</color>
+
+    <color name="tab_title_not_selected">@color/gray_100</color>
+
+    <color name="tab_bar_text_selected_color">#fd7736</color>
+
+    <color name="popup_window_divider_color">@color/list_divider</color>
+
+    <color name="popup_window_edge_bg_edge">#e4e4e4</color>
+    <color name="popup_window_edge_bg">#fafafa</color>
+
+    <color name="tab_indicatorColor">@color/tab_bar_text_selected_color</color>
+
+    <color name="default_orange_color">#fd7736</color>
+    <color name="setting_notice_color">#E13038</color>
+</resources>

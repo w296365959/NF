@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <RelativeLayout
+        android:layout_width="@dimen/full_screen_ad_content_width"
+        android:layout_height="@dimen/full_screen_ad_content_height"
+        android:id="@+id/content"
+        android:layout_marginTop="@dimen/ad_off_button_margin_top">
+        <ImageView
+            android:id="@+id/ad_off_button"
+            style="@style/ad_off_button_style"
+            android:layout_marginRight="@dimen/ad_off_button_margin_right"/>
+        <com.sscf.investment.widget.RoundCornerRectImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ad_view"
+            android:layout_below="@id/ad_off_button"/>
+    </RelativeLayout>
+</LinearLayout>

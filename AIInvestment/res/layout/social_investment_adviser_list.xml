@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_setting" />
+    <include
+        layout="@layout/loading_layout_center"
+        android:visibility="gone" />
+    <include
+        layout="@layout/fail_retry_fullscreen"
+        android:visibility="gone" />
+    <com.sscf.investment.component.ui.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_tab_height"
+        android:background="@color/default_content_bg"
+        android:visibility="gone"/>
+    <View style="@style/list_line_style" />
+    <com.sscf.investment.widget.AvoidClickViewPager
+        android:id="@+id/viewPager"
+        style="@style/null_bg_style"
+        android:visibility="gone"/>
+</LinearLayout>

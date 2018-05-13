@@ -1,0 +1,329 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/main_bg_style"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_landscape_detail_quote" />
+
+    <com.sscf.investment.component.ui.widget.TabLayout xmlns:tabLayout="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/line_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_background"
+        tabLayout:tabHeight="@dimen/default_tab_height_small" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.sscf.investment.detail.view.LineChartValueView
+            android:id="@+id/line_chart_value_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_11"
+            android:layout_marginLeft="@dimen/line_chart_marginLeft"
+            android:layout_marginRight="@dimen/line_chart_marginLeft"
+            android:minHeight="20dp"
+            android:gravity="left|center_vertical"/>
+        <Button
+            android:id="@+id/select_compare_stock_button"
+            style="@style/select_compare_stock_button_style"
+            android:text="@string/compare_stock"
+            android:layout_marginRight="126dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="top|right"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/line_chart_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/line_chart_marginBottom"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/line_chart_marginLeft"
+            android:paddingRight="@dimen/line_chart_marginLeft">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+
+                <com.sscf.investment.detail.view.LineChartTextureView
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.sscf.investment.detail.view.IndicatorAnimationView
+                    android:id="@+id/line_chart_indicator"
+                    android:layout_width="@dimen/indicator_animation_width"
+                    android:layout_height="@dimen/indicator_animation_width"
+                    android:visibility="invisible" />
+
+                <include
+                    layout="@layout/loading_layout_center"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/fail_retry_center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/transaction_layout"
+                    android:layout_width="@dimen/stock_detail_buy_sell_width"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/transaction_layout_marginLeft"
+                    android:orientation="vertical">
+
+                    <com.sscf.investment.component.ui.widget.TwoTabSelectorView xmlns:sel="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/tab_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_tab_selector_height"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        sel:isBold="true" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.sscf.investment.detail.view.InnerScrollView
+                            android:id="@+id/buy_sell_layout"
+                            style="@style/ticksScrollViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.sscf.investment.detail.view.BuySellView
+                                    android:id="@+id/buy_sell"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="12dp"
+                                    android:layout_marginTop="12dp" />
+                            </FrameLayout>
+                        </com.sscf.investment.detail.view.InnerScrollView>
+
+
+                        <com.sscf.investment.detail.view.InnerScrollView
+                            android:id="@+id/ticks_layout"
+                            style="@style/ticksScrollViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="12dp"
+                            android:fillViewport="true"
+                            android:visibility="invisible">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.sscf.investment.detail.view.TicksView
+                                    android:id="@+id/ticks"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </FrameLayout>
+                        </com.sscf.investment.detail.view.InnerScrollView>
+
+                        <com.sscf.investment.detail.view.InnerScrollView
+                            android:id="@+id/capital_flow_layout"
+                            style="@style/ticksScrollViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true"
+                            android:visibility="invisible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <com.sscf.investment.detail.view.CapitalFlowView
+                                    android:id="@+id/capital_flow_pie_transaction"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="84dp" />
+
+                                <com.sscf.investment.detail.view.CapitalFlowDetailView
+                                    android:id="@+id/capital_flow_detail_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                            </LinearLayout>
+                        </com.sscf.investment.detail.view.InnerScrollView>
+                    </FrameLayout>
+
+                    <com.sscf.investment.detail.view.DKView
+                        android:id="@+id/capital_flow_dkview_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/capital_flow_detail_duo_kong_layout_height" />
+                </LinearLayout>
+
+                <com.sscf.investment.detail.view.KLineControlView
+                    android:id="@+id/k_line_control"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/repair"
+                        style="@style/k_line_control_textview"
+                        android:tag="@string/tag_kline_repair"
+                        android:text="@string/repair" />
+
+                    <TextView
+                        android:id="@+id/un_repair"
+                        style="@style/k_line_control_textview"
+                        android:tag="@string/tag_kline_unrepair"
+                        android:text="@string/un_repair" />
+
+                    <View
+                        style="@style/list_line_style"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="0dp" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/volume"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_volume"
+                                android:text="@string/index_type_amount" />
+
+                            <TextView
+                                android:id="@+id/capital_flow"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_capital_flow"
+                                android:text="@string/index_type_capital_flow" />
+
+                            <TextView
+                                android:id="@+id/macd"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_macd"
+                                android:text="@string/index_type_macd" />
+
+                            <TextView
+                                android:id="@+id/kdj"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_kdj"
+                                android:text="@string/index_type_kdj" />
+
+                            <TextView
+                                android:id="@+id/rsi"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_rsi"
+                                android:text="@string/index_type_rsi" />
+                            <TextView
+                                android:id="@+id/boll"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_boll"
+                                android:text="@string/index_type_boll" />
+                            <TextView
+                                android:id="@+id/dmi"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_dmi"
+                                android:text="@string/index_type_dmi" />
+                            <TextView
+                                android:id="@+id/cci"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_cci"
+                                android:text="@string/index_type_cci" />
+                            <TextView
+                                android:id="@+id/ene"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_ene"
+                                android:text="@string/index_type_ene" />
+                            <TextView
+                                android:id="@+id/dma"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_dma"
+                                android:text="@string/index_type_dma" />
+                            <TextView
+                                android:id="@+id/expma"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_expma"
+                                android:text="@string/index_type_expma" />
+                            <TextView
+                                android:id="@+id/vr"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_vr"
+                                android:text="@string/index_type_vr" />
+                            <TextView
+                                android:id="@+id/bbi"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_bbi"
+                                android:text="@string/index_type_bbi" />
+                            <TextView
+                                android:id="@+id/obv"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_obv"
+                                android:text="@string/index_type_obv" />
+                            <TextView
+                                android:id="@+id/bias"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_bias"
+                                android:text="@string/index_type_bias" />
+                            <TextView
+                                android:id="@+id/wr"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_wr"
+                                android:text="@string/index_type_wr" />
+                            <TextView
+                                android:id="@+id/breakup"
+                                style="@style/k_line_control_textview"
+                                android:tag="@string/tag_kline_break"
+                                android:text="@string/index_type_break" />
+                        </LinearLayout>
+                    </ScrollView>
+                </com.sscf.investment.detail.view.KLineControlView>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.sscf.investment.detail.view.HorizontalPopupEntranceGroup
+            android:id="@+id/similar_k_entrance_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="94dp"
+            android:layout_marginLeft="5dp"
+            android:clipToPadding="false"
+            android:paddingRight="10dp"
+            android:visibility="gone" />
+
+        <com.sscf.investment.widget.LiveMessageView
+            android:id="@+id/live_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="58dp"
+            android:layout_marginLeft="@dimen/line_chart_marginLeft"
+            android:layout_marginRight="@dimen/line_chart_marginLeft"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

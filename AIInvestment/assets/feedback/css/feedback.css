@@ -1,0 +1,21 @@
+
+.feedback{padding: 6px 15px;}
+.feedback .char_left{ text-align: right; color: rgba(89,89,89,.4); font-size: 14px; margin-bottom: 6px;}
+.feedback textarea,
+.feedback input{ display: block; width: 100%; box-sizing:border-box; -webkit-box-sizing:border-box; border: 0; background-color: #fff; color: rgba(89,89,89,1); font-size: 16px; font-family: Helvetica, sans-serif;}
+.feedback textarea::-webkit-input-placeholder,
+.feedback input::-webkit-input-placeholder{color: rgba(89,89,89,0.3);}
+.feedback textarea{ height: 200px; border-radius: 4px 4px 0 0; resize:none; padding: 10px; outline: none;}
+.feedback input{ padding: 14px 10px; height: 45px; border-radius: 0 0 4px 4px; outline: none;}
+
+.btn_submit{ display: block; width: 100%; border: 0; font-size: 16px; height: 48px; border-radius: 4px; margin-top: 25px; background-color: rgba(255,140,84,1); color: #fff;}
+.btn_submit.disabled{background-color: rgba(255,140,84,.6); color: rgba(255,255,255,.6);}
+
+
+.pop_confirm{position: fixed; left: 0; top: 0; width: 100%; bottom: 0; background-color: rgba(0,0,0,.4); z-index: 1000; display: none;}
+.pop_confirm_inside{ position: absolute; left: 0; top: 0; width: 100%; bottom: 0; overflow: auto; display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center;}
+.pop_confirm_inside::-webkit-scrollbar {display: none;}
+
+.confirm_content{ width: 300px; background-color: #fff; border-radius: 3px; text-align: center;}
+.confirm_content .confirm_title{ font-size: 18px; padding: 17px 0;}
+.confirm_content .confirm_btn{ font-size: 16px; padding: 12px 0; color: #fd7736; cursor: pointer;}

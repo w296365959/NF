@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/stare_fragment_style">
+    
+    <TextView
+        android:text="@string/price_exceeded"
+        style="@style/smart_stock_stare_item_title"/>
+    
+    <include
+        android:id="@+id/portfolioRemindStockPriceUpLayout"
+        layout="@layout/activity_portfolio_remind_edit_item" />
+
+    <View
+        style="@style/list_line_style"/>
+
+    <include
+        android:id="@+id/portfolioRemindStockPriceDownLayout"
+        layout="@layout/activity_portfolio_remind_edit_item" />
+
+    <View
+        style="@style/list_line_style"/>
+
+    <include
+        android:id="@+id/portfolioRemindStockRatioUpLayout"
+        layout="@layout/activity_portfolio_remind_edit_item" />
+
+    <View
+        style="@style/list_line_style"/>
+
+    <include
+        android:id="@+id/portfolioRemindStockRatioDownLayout"
+        layout="@layout/activity_portfolio_remind_edit_item" />
+
+    <View
+        style="@style/list_line_style"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/default_content_bg"
+        android:layout_marginTop="14dp">
+        <TextView
+            android:text="@string/intraday_broadcast"
+            style="@style/smart_stock_stare_item_title"
+            android:id="@+id/intraday_broadcast_title"/>
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="20dp"
+            android:id="@+id/time_select_extand"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:background="@drawable/filter_select_extand_bg"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/default_text_color_100"
+            android:text="@string/select_time"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/tab_collapsed_arrow_normal"/>
+    </RelativeLayout>
+    <View style="@style/list_line_style"/>
+    <include layout="@layout/selected_result_layout"/>
+</LinearLayout>

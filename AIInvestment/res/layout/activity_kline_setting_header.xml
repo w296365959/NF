@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/setting_sub_title_text_style"
+        android:text="@string/setting_k_line_function" />
+    <!-- 默认复权选择 -->
+    <include
+        android:id="@+id/settingRightsOffering"
+        layout="@layout/tab_fragment_setting_right_text_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height" />
+
+    <View style="@style/list_line_style" />
+    <!-- 默认K线样式选择 -->
+    <include
+        android:id="@+id/settingKLineStyleType"
+        layout="@layout/tab_fragment_setting_right_text_item" />
+
+    <View style="@style/list_line_style" />
+
+    <!-- 均线 -->
+    <LinearLayout style="@style/portfolio_remind_item_style">
+
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/setting_ma" />
+
+        <ImageView
+            android:id="@+id/ivSettingMa"
+            style="@style/setting_linear_layout_left_image_item_style"
+            android:src="@drawable/setting_kline_configure" />
+
+        <CheckBox
+            android:id="@+id/settingSwitchMa"
+            style="@style/portfolio_remind_item_right_checkbox_style" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+    <!-- BS点开关 -->
+    <LinearLayout style="@style/portfolio_remind_item_style">
+
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/setting_dk" />
+
+        <ImageView
+            android:id="@+id/ivSettingDK"
+            style="@style/setting_linear_layout_left_image_item_style"
+            android:src="@drawable/setting_kline_configure_info" />
+
+        <CheckBox
+            android:id="@+id/settingSwitchBS"
+            style="@style/portfolio_remind_item_right_checkbox_style" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout style="@style/portfolio_remind_item_style">
+
+        <TextView
+            style="@style/setting_linear_layout_left_text_item_style"
+            android:text="@string/setting_gap" />
+
+        <ImageView
+            android:id="@+id/ivSettingGap"
+            style="@style/setting_linear_layout_left_image_item_style"
+            android:src="@drawable/setting_kline_configure_info" />
+
+        <CheckBox
+            android:id="@+id/settingSwitchGap"
+            style="@style/portfolio_remind_item_right_checkbox_style" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout style="@style/portfolio_remind_item_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/setting_magicnine"
+                android:textColor="@color/default_text_color_100"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                style="@style/setting_reming_notice_text"
+                android:text="@string/setting_free_for_time" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivSettingMagicNine"
+            style="@style/setting_linear_layout_left_image_item_style"
+            android:src="@drawable/setting_kline_configure_info" />
+
+        <CheckBox
+            android:id="@+id/settingSwitchMagicNine"
+            style="@style/portfolio_remind_item_right_checkbox_style" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout style="@style/portfolio_remind_item_style">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/setting_bull_bear"
+                android:textColor="@color/default_text_color_100"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                style="@style/setting_reming_notice_text"
+                android:text="@string/setting_free_for_time" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivSettingBull"
+            style="@style/setting_linear_layout_left_image_item_style"
+            android:src="@drawable/setting_kline_configure_info" />
+
+        <CheckBox
+            android:id="@+id/settingSwitchBullBear"
+            style="@style/portfolio_remind_item_right_checkbox_style" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/setting_sub_title_text_style"
+        android:text="@string/setting_params" />
+    <com.sscf.investment.widget.CheckableLinearLayout
+        android:id="@+id/cllSelectedIndicatorNum"
+        style="@style/default_list_item_style"
+        android:layout_height="@dimen/list_item_height"
+        android:minHeight="@dimen/list_item_height"
+        android:paddingLeft="@dimen/favor_item_padding_left_edit"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/ivDeleteCandicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/icon_delete_candicator"
+            android:layout_marginRight="@dimen/default_drawable_padding"/>
+        <TextView
+            android:id="@+id/tvCandicatorName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setting_indicator_num"
+            style="@style/setting_default_text_style"/>
+        <ImageView
+            android:id="@+id/ivSettingCandicatorNum"
+            style="@style/setting_kline_left_second_image_style"
+            android:src="@drawable/setting_kline_configure"/>
+        <TextView
+            android:id="@+id/tvIndicatorNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/setting_default_text_style"
+            android:padding="@dimen/setting_icon_padding"
+            android:text="2个"/>
+    </com.sscf.investment.widget.CheckableLinearLayout>
+
+</LinearLayout>

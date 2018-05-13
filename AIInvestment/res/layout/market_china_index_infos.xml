@@ -1,0 +1,17 @@
+<com.sscf.investment.market.view.MarketChinaIndexFuturesHeader xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/null_bg_style"
+    android:orientation="vertical">
+    <com.sscf.investment.widget.NestScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:paddingTop="@dimen/market_index_futures_padding"
+        android:background="@color/default_content_bg"/>
+    <com.sscf.investment.component.ui.widget.DotIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:background="@color/default_content_bg"/>
+</com.sscf.investment.market.view.MarketChinaIndexFuturesHeader>

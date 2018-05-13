@@ -1,0 +1,9 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/indicator"
+    android:layout_width="75dp"
+    android:layout_height="40dp"
+    android:layout_margin="7.5dp"
+    android:background="@color/bg_gray"
+    android:gravity="center"
+    android:textColor="@color/default_text_color_100"
+    android:textSize="@dimen/font_size_14"/>

@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/setting_edit_bg_normal_night" android:state_focused="false" />
+    <item android:drawable="@drawable/setting_edit_bg_focused_night" android:state_focused="true"/>
+</selector>

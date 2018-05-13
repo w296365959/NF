@@ -1,0 +1,19 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/default_list_item_style"
+        android:layout_height="@dimen/discover_stock_pick_strategy_item_height"
+        android:orientation="vertical"
+        android:gravity="center">
+    <ImageView
+            android:id="@+id/strategyIcon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="fitXY"/>
+    <TextView
+            android:id="@+id/strategyText"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_text_color_100"
+            android:textSize="@dimen/font_size_12"/>
+</LinearLayout>

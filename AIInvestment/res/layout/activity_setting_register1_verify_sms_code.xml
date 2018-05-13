@@ -1,0 +1,98 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style">
+    <include
+            android:id="@+id/settingActionBar"
+            layout="@layout/actionbar_setting"/>
+    <include
+            android:id="@+id/errorTips"
+            style="@style/setting_error_tips_style"
+            layout="@layout/activity_setting_error_tips"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/settingActionBar"/>
+    <FrameLayout
+            android:id="@+id/registerCellphoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/errorTips">
+        <com.sscf.investment.widget.PhoneNumberEditText
+                android:id="@+id/registerCellphone"
+                style="@style/setting_edit_text_item_style"
+                android:inputType="number"
+                android:maxLength="@integer/cellphone_max_length"
+                android:hint="@string/cellphone"/>
+
+        <View
+                android:id="@+id/registerCellphoneClearButton"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/actionbar_margin"
+                style="@style/input_clear_button_style"/>
+    </FrameLayout>
+
+    <RelativeLayout
+            android:id="@+id/registerVerifiedCodeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_below="@id/registerCellphoneLayout">
+        <EditText
+                android:id="@+id/registerVerifiedCode"
+                style="@style/setting_edit_text_item_style"
+                android:inputType="number"
+                android:maxLength="@integer/sms_code_max_length"
+                android:hint="@string/verified_code"/>
+        <Button
+                android:id="@+id/getVerifiedCode"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="@style/setting_verified_code_button_style"/>
+        <View
+                style="@style/list_line_style"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/actionbar_margin"
+                android:layout_toLeftOf="@id/getVerifiedCode"/>
+
+        <View
+                android:id="@+id/registerVerifiedCodeClearButton"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/getVerifiedCode"
+                style="@style/input_clear_button_style"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/registerContractLayout"
+            style="@style/default_list_item_style"
+            android:layout_below="@id/registerVerifiedCodeLayout">
+        <TextView
+                android:id="@+id/registerContractLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_contract_1"
+                android:textSize="12sp"
+                android:textColor="?attr/setting_checkbox_text_color_selector"
+                />
+        <TextView
+                android:id="@+id/registerContractRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_contract_2"
+                android:textSize="12sp"
+                android:textColor="#9af15808"/>
+    </LinearLayout>
+
+    <View
+            style="@style/list_line_style"
+            android:layout_below="@id/registerCellphoneLayout"
+            android:layout_marginLeft="@dimen/actionbar_margin"
+            android:layout_marginRight="@dimen/actionbar_margin"/>
+
+    <Button
+            android:id="@+id/nextButton"
+            style="@style/setting_button_style"
+            android:layout_marginTop="@dimen/setting_button_margin_top"
+            android:layout_below="@id/registerContractLayout"
+            android:text="@string/next"/>
+
+</RelativeLayout>

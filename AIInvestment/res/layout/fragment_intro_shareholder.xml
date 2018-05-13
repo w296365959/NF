@@ -1,0 +1,477 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pillarChange="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shareholder_layout"
+    style="@style/null_bg_style"
+    android:layout_marginLeft="@dimen/default_content_margin"
+    android:layout_marginRight="@dimen/default_content_margin"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/company_structure" />
+
+        <TextView
+            android:id="@+id/company_structure_date"
+            style="@style/finance_group_title_sub" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/struct_total_share" />
+
+        <TextView
+            android:id="@+id/struct_total_share"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/struct_circulating" />
+
+        <TextView
+            android:id="@+id/struct_circulating"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/shareholder_count" />
+
+        <TextView
+            android:id="@+id/struct_shareholder_count"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/struct_average" />
+
+        <TextView
+            android:id="@+id/struct_average"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <!-- 加入股东变化的曲线图 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/company_structure_change_trend" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+                android:src="?attr/capital_structure_shareholder_number_icon_drawable" />
+
+            <TextView
+                android:id="@+id/incoming_with_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pillar_indicator_gap"
+                android:text="@string/shareholder_count"
+                android:textColor="?attr/heat_line_color"
+                android:textSize="@dimen/stock_finance_indicator_textSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+                android:src="@drawable/capital_structure_per_holdings_indicator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/struct_average"
+                android:textColor="@color/k_line_average_3"
+                android:textSize="@dimen/stock_finance_indicator_textSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.sscf.investment.detail.view.CapitalStructureChangeLineView
+            android:id="@+id/capital_structure_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp" />
+
+        <include
+            layout="@layout/no_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- 十大流通股东 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/company_structure_top_ten" />
+
+        <TextView
+            android:id="@+id/company_structure_top_ten_date"
+            style="@style/finance_group_title_sub" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/shareholder_top_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/intro_incoming_name"
+                    android:text="@string/shareholder"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_amount"
+                    android:layout_width="92dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/intro_percent_ratio"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_ratio"
+                    android:layout_width="92dp"
+                    android:text="@string/change"
+                    android:textColor="@color/default_text_color_60" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shareholder_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/shareholder_top_empty"
+            layout="@layout/empty_view" />
+    </FrameLayout>
+
+
+    <!-- 十大股东 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/company_partner_top_ten" />
+
+        <TextView
+            android:id="@+id/company_partner_top_ten_date"
+            style="@style/finance_group_title_sub" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/partner_top_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/intro_incoming_name"
+                    android:text="@string/shareholder"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_amount"
+                    android:layout_width="92dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/intro_percent_ratio"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_ratio"
+                    android:layout_width="92dp"
+                    android:text="@string/change"
+                    android:textColor="@color/default_text_color_60" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/partner_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/partner_top_empty"
+            layout="@layout/empty_view" />
+    </FrameLayout>
+
+    <!-- 主力持仓 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/main_funds_structure" />
+
+        <TextView
+            android:id="@+id/main_funds_structure_date"
+            style="@style/finance_group_title_sub" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/company_count" />
+
+        <TextView
+            android:id="@+id/company_count"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/accumulated_holdings" />
+
+        <TextView
+            android:id="@+id/accumulated_holdings"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:text="@string/value_change" />
+
+        <TextView
+            android:id="@+id/value_change"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_text_height"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/intro_title_style"
+            android:layout_width="wrap_content"
+            android:text="@string/ratio_total_share_capital" />
+
+        <TextView
+            android:id="@+id/ratio_total_share_capital"
+            style="@style/intro_content_style"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pillar_indicator_marginBottom"
+        android:layout_marginTop="@dimen/pillar_indicator_marginTop"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+            android:src="@drawable/pillar_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/pillar_indicator_gap"
+            android:text="@string/stock_price"
+            android:textColor="@color/stock_red_color"
+            android:textSize="@dimen/stock_finance_indicator_textSize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/pillar_indicator_text_marginRight"
+            android:src="?attr/polyline_icon_drawable" />
+
+        <TextView
+            android:id="@+id/net_profit_with_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/structure_ratio"
+            android:textColor="?attr/stock_detail_finance_incoming_polyline_color"
+            android:textSize="@dimen/stock_finance_indicator_textSize" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.sscf.investment.detail.view.PillarChangeView
+            android:id="@+id/company_structure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pillar_change_view_height"
+            android:layout_gravity="center"
+            pillarChange:pillarColorMinus="@color/stock_green_color"
+            pillarChange:pillarColorPlus="@color/stock_red_color"
+            pillarChange:polylineColor="?attr/stock_detail_finance_incoming_polyline_color" />
+
+        <include
+            android:id="@+id/company_structure_empty"
+            layout="@layout/empty_view" />
+    </FrameLayout>
+    <!-- 机构持股 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/finance_group_title"
+            android:text="@string/company_structure_change" />
+
+        <TextView
+            android:id="@+id/company_structure_change_date"
+            style="@style/finance_group_title_sub" />
+    </LinearLayout>
+
+    <View style="@style/list_line_style" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/fund_holder_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_text_height"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/intro_incoming_name"
+                    android:text="@string/shareholder"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_amount"
+                    android:layout_width="92dp"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/intro_percent_ratio"
+                    android:textColor="@color/default_text_color_60" />
+
+                <TextView
+                    style="@style/intro_incoming_ratio"
+                    android:layout_width="92dp"
+                    android:text="@string/change"
+                    android:textColor="@color/default_text_color_60" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fund_holder_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/fund_holder_empty"
+            layout="@layout/empty_view" />
+    </FrameLayout>
+</LinearLayout>

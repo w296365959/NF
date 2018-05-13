@@ -1,0 +1,11 @@
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+        <item android:drawable="@drawable/shake_anim_frame_0" android:duration="25"/>
+        <item android:drawable="@drawable/shake_anim_frame_1" android:duration="25"/>
+        <item android:drawable="@drawable/shake_anim_frame_2" android:duration="25"/>
+        <item android:drawable="@drawable/shake_anim_frame_3" android:duration="25"/>
+        <item android:drawable="@drawable/shake_anim_frame_4" android:duration="25"/>
+        <item android:drawable="@drawable/shake_anim_frame_5" android:duration="25"/>
+        <item android:drawable="@drawable/shake_anim_frame_6" android:duration="1000"/>
+</animation-list>

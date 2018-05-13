@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/tab_title_not_selected" android:state_selected="false"/>
+    <item android:color="@color/tab_bar_text_selected_color" android:state_selected="true"/>
+</selector>

@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+    <include layout="@layout/actionbar_web" />
+    <com.sscf.investment.web.sdk.widget.DtWebView
+        android:id="@+id/dengta_web_view"
+        style="@style/default_scrollview_style"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+    <include layout="@layout/activity_web_intelligent_answer_input_layout"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/market_stock_list_header"/>
+
+    <View
+        style="@style/list_line_style"/>
+
+    <com.sscf.investment.widget.HeightVariableListView
+        android:id="@+id/related_stock_listview"
+        style="@style/default_list_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

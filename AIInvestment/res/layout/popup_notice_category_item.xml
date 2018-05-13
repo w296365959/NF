@@ -1,0 +1,8 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    style="@style/null_bg_style"
+    android:layout_height="30dp"
+    android:background="@drawable/popup_item_bg"
+    android:gravity="center"
+    android:textColor="@color/default_text_color_100"
+    android:textSize="12dp"/>

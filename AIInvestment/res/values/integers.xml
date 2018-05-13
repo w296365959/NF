@@ -1,0 +1,11 @@
+<resources>
+    <integer name="cellphone_max_length">13</integer>
+    <integer name="password_max_length">16</integer>
+    <integer name="sms_code_max_length">4</integer>
+    <integer name="nickname_min_length">2</integer>
+    <integer name="nickname_max_length">20</integer>
+
+    <!-- for leakCanary -->
+    <!--the delay until a reference is considered a memory leak-->
+    <integer name="leak_canary_watch_delay_millis">10000</integer>
+</resources>

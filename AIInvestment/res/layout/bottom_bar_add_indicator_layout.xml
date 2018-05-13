@@ -1,0 +1,22 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomEditLayout"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:orientation="vertical"
+    android:background="?attr/main_bottom_tab_bar_bg_color">
+    <View
+        style="@style/list_line_style"
+        android:background="?attr/main_bottom_tab_bar_divide_line_color"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/font_size_16"
+        android:drawableLeft="@drawable/setting_add_candicator"
+        android:drawablePadding="@dimen/setting_drawable_mini_padding"
+        android:text="@string/setting_kline_add_cadicator"
+        android:textColor="@color/default_text_color_60"/>
+
+</LinearLayout>

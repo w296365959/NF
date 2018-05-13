@@ -1,0 +1,36 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+    <include
+            layout="@layout/actionbar_setting_with_right_button"/>
+    <ScrollView
+            style="@style/default_scrollview_style">
+        <LinearLayout
+                style="@style/null_bg_style"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+            <TextView
+                    style="@style/setting_sub_title_text_style"
+                    android:text="@string/setting_macd_diff"/>
+            <include
+                    android:id="@+id/settingMACD1"
+                    layout="@layout/activity_setting_seekbar_layout"/>
+            <include
+                    android:id="@+id/settingMACD2"
+                    layout="@layout/activity_setting_seekbar_layout"/>
+            <TextView
+                    style="@style/setting_sub_title_text_style"
+                    android:text="@string/setting_macd_dea"/>
+            <include
+                    android:id="@+id/settingMACD3"
+                    layout="@layout/activity_setting_seekbar_layout"/>
+            <TextView
+                    style="@style/setting_sub_title_text_style"
+                    android:text="@string/setting_macd_macd"/>
+            <include
+                    layout="@layout/activity_setting_intro_layout"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

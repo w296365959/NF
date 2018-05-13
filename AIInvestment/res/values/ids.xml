@@ -1,0 +1,10 @@
+<resources>
+    <item type="id" name="stock_code"/>
+    <item type="id" name="stock_name"/>
+
+    <item type="id" name="stock_items"/>
+
+    <item type="id" name="share_title"/>
+
+    <item type="id" name="recycler_list_item_position"/>
+</resources>

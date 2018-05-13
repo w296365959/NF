@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/info_title_0"
+                    style="@style/stock_detail_infos_title_single_line"/>
+
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    android:id="@+id/info_item_0"
+                    style="@style/stock_detail_infos_item_value"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/info_title_1"
+                    style="@style/stock_detail_infos_title_single_line"/>
+
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    android:id="@+id/info_item_1"
+                    style="@style/stock_detail_infos_item_value"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/info_title_2"
+                    style="@style/stock_detail_infos_title_single_line"/>
+
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    android:id="@+id/info_item_2"
+                    style="@style/stock_detail_infos_item_value"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/info_title_3"
+                    style="@style/stock_detail_infos_title_single_line"/>
+
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    android:id="@+id/info_item_3"
+                    style="@style/stock_detail_infos_item_value"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/info_right_arrow"
+        android:layout_width="22dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/stock_detail_infos_indicator_marginRight"
+        android:scaleType="center"
+        android:src="?attr/right_arrow_drawable"
+        android:visibility="invisible"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_text_color_100_night">#fff3eded</color>
+    <color name="default_text_color_80_night">#cdf3eded</color>
+    <color name="default_text_color_60_night">#9af3eded</color>
+    <color name="default_text_color_40_night">#66f3eded</color>
+    <color name="default_text_color_30_night">#4df3eded</color>
+</resources>

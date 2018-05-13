@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_head_height"
+    android:background="@color/default_content_bg"
+    android:minHeight="@dimen/list_head_height">
+
+    <!-- 股票名称-->
+    <TextView
+        android:id="@+id/portfolio_stock_list_head_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/portfolio_list_item_margin_left"
+        android:drawablePadding="@dimen/list_head_text_arrow_dis"
+        android:drawableRight="@drawable/portfolio_stock_list_head_edit"
+        android:gravity="center"
+        android:text="@string/stock_list_head_portfolio_edit"
+        android:textColor="@color/tab_bar_text_selected_color"
+        android:theme="@style/portfolio_stock_list_head_text_style" />
+
+    <!-- 涨跌幅 -->
+    <RelativeLayout
+        android:id="@+id/portfolio_stock_list_head_change_layout"
+        android:layout_width="@dimen/portfolio_list_item_width"
+        android:layout_height="@dimen/portfolio_list_item_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/actionbar_margin">
+
+        <TextView
+            android:id="@+id/portfolio_stock_list_head_updown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/list_head_text_arrow_dis"
+            android:drawableRight="@drawable/right_corner"
+            android:text="@string/delta"
+            android:textColor="@color/tab_bar_text_selected_color"
+            android:theme="@style/portfolio_stock_list_head_text_style" />
+    </RelativeLayout>
+
+
+    <!-- 最新价 -->
+    <RelativeLayout
+        android:id="@+id/portfolio_stock_list_head_price_layout"
+        android:layout_width="@dimen/portfolio_list_item_width"
+        android:layout_height="@dimen/portfolio_list_item_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/portfolio_stock_list_head_change_layout">
+
+        <TextView
+            android:id="@+id/portfolio_stock_list_head_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/list_head_text_arrow_dis"
+            android:drawableRight="@drawable/right_corner"
+            android:text="@string/stock_list_head_new_price"
+            android:textColor="@color/tab_bar_text_selected_color"
+            android:theme="@style/portfolio_stock_list_head_text_style" />
+    </RelativeLayout>
+
+</RelativeLayout>

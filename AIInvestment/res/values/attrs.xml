@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleIndicatorView">
+        <attr name="circleColor" format="reference|color"/>
+        <attr name="circleRadius" format="reference|dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PillarChangeView">
+        <attr name="pillarColorPlus" format="reference|color"/>
+        <attr name="pillarColorMinus" format="reference|color"/>
+        <attr name="polylineColor" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TwoTabSelectorView">
+        <attr name="selectorTextColor" format="reference|color"/>
+        <attr name="isBold" format="boolean"/>
+        <attr name="selectorBg" format="reference|color"/>
+        <attr name="selectedLeftBgDrawable" format="reference"/>
+        <attr name="selectedRightBgDrawable" format="reference"/>
+        <attr name="selectedMiddleBgDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="border_overlay" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="StockSortTitleView">
+        <attr name="titleName" format="reference|string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="MultiTagView">
+        <attr name="tagTextSize" format="dimension"/>
+        <attr name="tagPaddingTopBottom" format="dimension"/>
+        <attr name="tagPaddingLeftRight" format="dimension"/>
+        <attr name="tagMargin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="EquantLayout">
+        <attr name="itemCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="BottomEditLayout">
+        <attr name="right_text" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="maxLine" format="integer" />
+    </declare-styleable>
+</resources>

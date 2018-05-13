@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="serverType"
+        android:title="服务器类型(修改后会自动清数据重启)"
+        android:summary=""
+        android:dialogTitle="请选择服务器类型"
+        android:entries="@array/entries_list_server_type"
+        android:entryValues="@array/entriesvalue_list_server_type"
+        android:defaultValue="0"
+        />
+
+    <Preference
+        android:key="serverIP"
+        android:title="行情服务器地址"
+        android:summary=""/>
+
+    <CheckBoxPreference
+        android:key="useH5LocalCache"
+        android:title="使用H5本地缓存"
+        android:summaryOn="开启"
+        android:summaryOff="关闭"
+        android:defaultValue="true"
+        />
+
+    <PreferenceCategory android:title="插件信息">
+        <CheckBoxPreference
+            android:key="changjiangSecurities"
+            android:title="证券插件正式环境"
+            android:summaryOn="开启"
+            android:summaryOff="关闭"
+            android:defaultValue="true"
+            />
+        <Preference
+            android:key="dfplug"
+            android:title="东方证券插件"
+            android:summary=""/>
+        <Preference
+            android:key="cjplug"
+            android:title="长江证券插件"
+            android:summary=""/>
+        <Preference
+            android:key="pdfplug"
+            android:title="PDF插件"
+            android:summary=""/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="日志管理">
+        <CheckBoxPreference
+            android:key="saveLogToFile"
+            android:title="保存日志到文件"
+            android:summaryOn="开启"
+            android:summaryOff="关闭"
+            android:defaultValue="false"/>
+
+        <Preference
+            android:key="uploadLog"
+            android:title="一键上报日志"
+            android:summary="日志文件可能比较大，请在WIFI下上报"/>
+
+        <Preference
+            android:key="uploadANR"
+            android:title="一键上报ANR日志"
+            android:summary="上报ANR日志，请在WIFI下上报"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="账户信息">
+        <Preference
+            android:key="guid"
+            android:title="GUID"
+            android:summary=""/>
+
+        <Preference
+            android:key="imei"
+            android:title="IMEI"
+            android:summary=""/>
+
+        <Preference
+            android:key="dtid"
+            android:title="DTID"
+            android:summary=""/>
+
+        <Preference
+            android:key="dua"
+            android:title="DUA"
+            android:summary=""/>
+
+        <Preference
+            android:key="deviceToken"
+            android:title="Device Token"
+            android:summary=""/>
+    </PreferenceCategory>
+
+    <Preference
+        android:key="testJump"
+        android:title="测试跳转地址"
+        android:summary=""/>
+
+    <!--<PreferenceCategory android:title="SMS 助手">-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="smsSilence"-->
+            <!--android:title="静音"-->
+            <!--android:summaryOn="开启"-->
+            <!--android:summaryOff="关闭"-->
+            <!--android:defaultValue="false"-->
+            <!--/>-->
+        <!--<PreferenceScreen android:title="更多选项">-->
+            <!--<CheckBoxPreference-->
+                <!--android:key="cb21"-->
+                <!--android:title="功能1"-->
+                <!--android:summaryOn="开启"-->
+                <!--android:summaryOff="关闭"-->
+                <!--android:defaultValue="true"-->
+                <!--/>-->
+            <!--<CheckBoxPreference-->
+                <!--android:key="cb22"-->
+                <!--android:title="功能2"-->
+                <!--android:summaryOn="使用"-->
+                <!--android:summaryOff="停用"-->
+                <!--android:defaultValue="true"-->
+                <!--/>-->
+            <!--&lt;!&ndash;<ListPreference&ndash;&gt;-->
+                <!--&lt;!&ndash;android:key="list1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="android forum"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:summary="开发论坛"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:dialogTitle="请选择论坛"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:entries="@array/entries_list_preference"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:entryValues="@array/entriesvalue_list_preference"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--<EditTextPreference-->
+                <!--android:key="et1"-->
+                <!--android:title="EditTextPreference Sample"-->
+                <!--android:summary="点击输入"-->
+                <!--android:dialogTitle="输入设置"-->
+                <!--android:defaultValue="Hello EditTextPreference"-->
+                <!--/>-->
+        <!--</PreferenceScreen>-->
+    <!--</PreferenceCategory>-->
+
+    <!--<PreferenceCategory android:title="其他选项">-->
+        <!--<RingtonePreference-->
+            <!--android:key="rt1"-->
+            <!--android:title="RingtonePreference Sample"-->
+            <!--android:summary="选择铃声"-->
+            <!--/>-->
+    <!--</PreferenceCategory>-->
+</PreferenceScreen>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/setting_bg_style">
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        style="@style/actionbar_style">
+        <TextView
+            style="@style/actionbar_title_text_style"
+            android:text="@string/consultant"/>
+
+        <ImageView
+            android:id="@+id/intelligent_answer_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/actionbar_margin_half"
+            android:paddingRight="@dimen/actionbar_margin"
+            android:src="@drawable/intelligent_answer"
+            android:layout_alignParentRight="true" />
+
+        <View
+            android:id="@+id/intellgentAnswerRedDot"
+            style="@style/red_dot_style"
+            android:layout_gravity="right"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dot_red_intelligent_answer"
+            android:layout_alignRight="@id/intelligent_answer_layout"
+            android:layout_alignTop="@id/intelligent_answer_layout" />
+
+        <ImageView
+            android:id="@+id/actionbar_portfolio_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/intelligent_answer_layout"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin_half"
+            android:src="?attr/actionbar_search_drawable" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无数据"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/default_text_color_60"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/date_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_tab_bg"
+    android:clickable="true"
+    tools:showIn="@layout/flash_news_list">
+    <TextView
+        android:id="@+id/date"
+        style="@style/setting_sub_title_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_title_bar_height"/>
+    <View
+        style="@style/list_line_style"
+        android:layout_gravity="bottom" />
+</FrameLayout>

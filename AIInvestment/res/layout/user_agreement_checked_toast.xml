@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_agreement_checked_layout"
+    style="@style/null_bg_style"
+    android:clickable="true"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_gravity="left"
+        android:layout_marginLeft="13dp"
+        style="@style/guide_triangle_indicator_style"
+        android:src="@drawable/guide_black_triangle_indicator" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:gravity="center"
+        android:text="@string/user_agreement_checked"
+        android:textColor="@color/white_100"
+        android:textSize="@dimen/font_size_16"
+        android:background="@drawable/black_guide_background"/>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/fund_intro"
+            style="@style/finance_group_title"
+            android:layout_marginLeft="@dimen/default_content_margin"
+            android:layout_marginRight="@dimen/default_content_margin"/>
+    </LinearLayout>
+    
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin">
+
+        <TextView
+            android:text="@string/fund_name"
+            style="@style/intro_title_style"/>
+        <TextView
+            android:id="@+id/fund_name"
+            style="@style/intro_content_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin">
+
+        <TextView
+            android:text="@string/fund_type"
+            style="@style/intro_title_style"/>
+        <TextView
+            android:id="@+id/fund_type"
+            style="@style/intro_content_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin">
+
+        <TextView
+            android:text="@string/fund_type"
+            style="@style/intro_title_style"/>
+        <TextView
+            android:id="@+id/fund_invest_type"
+            style="@style/intro_content_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin">
+
+        <TextView
+            android:text="@string/fund_invest_style"
+            style="@style/intro_title_style"/>
+        <TextView
+            android:id="@+id/fund_invest_style"
+            style="@style/intro_content_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/intro_text_height"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin">
+
+        <TextView
+            android:text="@string/fund_company"
+            style="@style/intro_title_style"/>
+        <TextView
+            android:id="@+id/fund_company"
+            style="@style/intro_content_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/fund_invest_target"
+            style="@style/finance_group_title"
+            android:layout_marginLeft="@dimen/default_content_margin"
+            android:layout_marginRight="@dimen/default_content_margin"/>
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"/>
+
+    <TextView
+        android:id="@+id/fund_invest_target"
+        style="@style/fund_content_multi_line"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/fund_invest_orientation"
+            style="@style/finance_group_title"
+            android:layout_marginLeft="@dimen/default_content_margin"
+            android:layout_marginRight="@dimen/default_content_margin"/>/>
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"/>
+
+    <TextView
+        android:id="@+id/fund_invest_orient"
+        style="@style/fund_content_multi_line"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/fund_compare_base"
+            style="@style/finance_group_title"
+            android:layout_marginLeft="@dimen/default_content_margin"
+            android:layout_marginRight="@dimen/default_content_margin"/>/>
+    </LinearLayout>
+
+    <View
+        style="@style/list_line_style"
+        android:layout_marginLeft="@dimen/default_content_margin"
+        android:layout_marginRight="@dimen/default_content_margin"/>
+
+    <TextView
+        android:id="@+id/fund_performance_bench"
+        style="@style/fund_content_multi_line"/>
+
+</LinearLayout>

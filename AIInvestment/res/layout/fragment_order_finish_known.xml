@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/default_scrollview_style">
+    <LinearLayout
+        style="@style/null_bg_style"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_height="105dp"
+            style="@style/main_bg_style"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pay_unknown_icon"
+                android:layout_marginRight="14dp"/>
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/default_text_color_60"
+                android:textSize="@dimen/font_size_14"/>
+        </LinearLayout>
+        <TextView
+            style="@style/setting_sub_title_text_style"
+            android:text="@string/order_detail"/>
+        <LinearLayout
+            style="@style/default_list_item_style">
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/commodity_info" />
+            <TextView
+                android:id="@+id/commodity_info"
+                style="@style/setting_linear_layout_right_text_item_style"
+                android:textColor="@color/default_text_color_100"/>
+        </LinearLayout>
+        <View
+            style="@style/list_line_style" />
+        <LinearLayout
+            style="@style/default_list_item_style">
+            <TextView
+                style="@style/setting_linear_layout_left_text_item_style"
+                android:text="@string/order_amount" />
+            <TextView
+                android:id="@+id/order_amount"
+                style="@style/setting_linear_layout_right_text_item_style"
+                android:textColor="@color/default_text_color_100"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/refresh"
+            style="@style/setting_stress_button_style"
+            android:layout_marginTop="48dp"
+            android:text="@string/refresh_order"/>
+        <Button
+            android:id="@+id/exit"
+            style="@style/setting_cancel_button_style"
+            android:layout_marginTop="18dp"
+            android:text="@string/exit_order"/>
+        <TextView style="@style/member_instructions_title_style"
+            android:layout_marginTop="50dp"
+            android:text="@string/order_finish_title"/>
+        <TextView style="@style/member_instructions_info_style"
+            android:text="@string/order_finish_unknown_info"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>什么是灯塔指数?</title>
+      <style>
+        /*reset*/
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}img{vertical-align:middle}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a[href],label[for],select,input[type=checkbox],input[type=radio]{cursor:pointer}button,input[type=button],input[type=image],input[type=reset],input[type=submit]{padding:0;overflow:visible;cursor:pointer}button::-moz-focus-inner,input[type=button]::-moz-focus-inner,input[type=image]::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]::-moz-focus-inner{border:0}.hide{position:absolute!important;left:-9999em!important}.clearfix:after{content:".";display:block;visibility:hidden;clear:both;height:0}h1,h2,h3,h4,h5,h6{font-weight:normal}.ie7 .clearfix{zoom:1}strong{font-weight:bold}em{font-style:italic}del{text-decoration:line-through}th,td{vertical-align:top}th{font-weight:normal;text-align:left}address,cite,dfn{font-style:normal}abbr,acronym{border-bottom:1px dotted #999;cursor:help}sub{line-height:0}sup{top:-0.5em}sub{bottom:-0.25em}textarea{overflow:auto}img{width: 100%; height: auto;}
+        html{font-size:10px}
+        body{ background: #ececec; color: #595959; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0,0,0,0); width: 100%; overflow-x: hidden;}
+        body.body_news{background-color: #f6f6f6;}
+        /*通用title*/
+        .title{text-align: center; font-size: 16px;color: #595959;background: #f6f6f6;border-bottom: 1px solid #ececec; height: 40px;display: block; line-height: 40px; position: relative; z-index: 99;}
+        .bdb{ position: relative;}
+        .bdb:before{content:""; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; -webkit-transform: scale(1,0.5); -moz-transform: scale(1,0.5); -ms-transform: scale(1,0.5); background-color: #e4e4e4;}
+
+        .faq_section{ background-color: #f6f6f6; font-size: 14px; line-height: 1.6; padding: 0 15px 12px; color:#929292;}
+        .faq_section p{ margin-bottom: 10px; -ms-word-break: break-all; word-break: break-all;}
+        .faq_desc{ color:rgba(89,89,89,1); padding: 15px 0 0; margin-bottom: 8px;}
+        h2{ font-size: 16px; color: #fd7736; padding: 8px 0 6px; margin: 0 -15px 0; text-indent: 15px;}
+        h3{ font-size: 16px; color: #595959; margin: 0 -15px 8px; padding-bottom: 5px; text-indent: 15px;}
+        .sub_title{ margin-bottom: 10px;}
+        
+        .img_gold_stock{ margin: 0 -15px 10px;}
+
+        .img_night{display: none;}
+
+
+    </style>
+
+
+    <style id="theme-black">
+        /*theme black*/
+        body{background-color: #211f1f; }
+        .faq_section{background-color: #272524; color:rgba(243, 237, 237, 0.6)}
+        .faq_desc{ color:rgba(243, 237, 237, 1)}
+        .bdb:before{background-color: #211f1f;}
+        .img_default{display: none;}
+        .img_night{display: block;}
+        h3{ color:rgba(243, 237, 237, 1);}
+    </style>
+
+
+    <!--theme switcher-->
+    <script>
+    (function(){
+          function getQueryString(name){
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null){
+                      var value = r[2];
+                      value = value.replace(/(%22|%3E|%3C|<|>)/g, "MM");
+                      return decodeURIComponent(value);
+                }else{
+                      return null;
+                }
+          }
+          function setTheme(){
+              if(getQueryString('theme')!='night'||getQueryString('dt_from')=='web'){
+                      var tempElement=document.querySelector('#theme-black');
+                      tempElement.parentNode.removeChild(tempElement);
+                }
+          }
+          setTheme();
+    })();
+    </script>
+
+
+</head>
+<body>
+
+      <div class="faq_section">
+        <div class="faq_desc">灯塔指数将沪深全部A股的股票纳入成分股，实时监测市场表现。相比于当前常用的上证指数、深证成指，更客观反映当前沪深A股市场趋势。</div>
+
+        <h2>风险预警</h2>
+        <p>2015年4月，通过灯塔指数能发现已经超过上一波牛市2007年顶点，预示当前大盘风险加剧，但是上证指数仍然预示未超过高点。</p>
+
+        <p class="img_default"><img src="http://res.idtcdn.com/beacon/images/dt_index_faq1.png" alt=""></p>
+        <p class="img_night"><img src="http://res.idtcdn.com/beacon/images/dt_index_faq1_night.png" alt=""></p>
+
+        <h2>涨跌风向</h2>
+        <p>实时监测沪深A股盘面个股的涨跌幅情况，快速了解当前市场强度。</p>
+
+        <h3 class="bdb">个股涨跌幅</h3>
+        <div class="sub_title">两市个股涨跌比852:1660，赚钱效应33.9%</div>
+
+        <p class="img_default"><img src="http://res.idtcdn.com/beacon/images/dt_index_faq2.png" alt=""></p>
+        <p class="img_night"><img src="http://res.idtcdn.com/beacon/images/dt_index_faq2_night.png" alt=""></p>
+        
+        <h3 class="bdb">个股涨跌停板</h3>
+        <div class="sub_title">两市个股涨跌停比36:1</div>
+
+        <p class="img_default"><img src="http://res.idtcdn.com/beacon/images/dt_index_faq3.png" alt=""></p>
+        <p class="img_night"><img src="http://res.idtcdn.com/beacon/images/dt_index_faq3_night.png" alt=""></p>
+
+        
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        //接口协议代码
+        ;(function () {
+            var api = {};
+            var cmdQueue = {};
+            var protocol = "beacon";
+            var index = 0;
+            api.exec = function(cmd,option,callback){
+                ++index;
+                var callbackId = new Date().getTime()+"|"+index;
+                option = option||{};
+                cmdQueue[callbackId] = callback;
+                var nativeOption = {
+                    callbackId:callbackId,
+                    option:option
+                }
+                var apiContent =  protocol+"://["+cmd+"-"+JSON.stringify(nativeOption)+"]";
+
+                prompt(protocol,apiContent);
+            }
+
+            var createBridge = function () {
+                var bridge = document.createElement("iframe");
+                bridge.setAttribute("style", "display:none;");
+                bridge.setAttribute("height", "0px");
+                bridge.setAttribute("width", "0px");
+                bridge.setAttribute("frameborder", "0");
+                document.documentElement.appendChild(bridge);
+                return bridge;
+            };
+
+            window.AppCallback = function(callbackId,option){
+                if(cmdQueue[callbackId])
+                {
+                    cmdQueue[callbackId](option);
+                }
+            };
+
+            window[protocol+"Api"] = api;
+
+            //客户端预埋接口
+            window.ReqWeb = function (key, value) {
+                if(mNativeFunction[key] != undefined ){
+                    mNativeFunction[key](value);
+                }
+            }
+
+            window.mNativeFunction = {};
+
+            //监听native
+            window.lisenNative = function (key, func) {
+                mNativeFunction[key] = func;
+            }
+        })();
+
+        var title = "什么是灯塔指数?";
+        var getQueryString = function (name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return decodeURIComponent(r[2]); return null;
+        };
+        try {
+            var from = getQueryString("dt_from");
+            if(from == "web"){
+//                var divNode = document.createElement("div");
+//                divNode.className = "title";
+//                divNode.innerHTML = title;
+//                document.querySelector("body").insertBefore(divNode,document.querySelector(".page_gap"));
+            }else{
+                if(typeof NativeProxy != "undefined"){
+                    NativeProxy.setTitle(title);
+                }else{
+                    beaconApi.exec("setTitle",{"title":title},function(data){
+                    });
+                }
+            }
+        } catch (e) {
+        }
+    }
+</script>
+</html>
+
+

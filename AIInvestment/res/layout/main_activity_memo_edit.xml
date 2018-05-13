@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_setting_with_right_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_tab_height"
+        android:paddingLeft="@dimen/actionbar_margin"
+        android:paddingRight="@dimen/actionbar_margin"
+        android:background="@color/default_background">
+        <TextView
+            android:id="@+id/portfolioRemindStockTitle"
+            style="@style/portfolio_remind_sub_title_left_style" />
+        <TextView
+            android:id="@+id/portfolioRemindStockPrice"
+            style="@style/portfolio_remind_sub_title_center_style" />
+        <TextView
+            android:id="@+id/portfolioRemindStockRatio"
+            style="@style/portfolio_remind_sub_title_right_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_content_bg">
+        <TextView
+            android:id="@+id/wordTips"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/default_text_color_60"
+            android:textSize="@dimen/font_size_12"/>
+        <EditText
+            android:id="@+id/modifyMemoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_above="@id/wordTips"
+            android:gravity="top"
+            android:paddingLeft="@dimen/actionbar_margin"
+            android:paddingRight="@dimen/actionbar_margin"
+            android:paddingTop="@dimen/actionbar_margin"
+            android:hint="@string/memo_edit_hint"
+            android:textColor="@color/default_text_color_100"
+            android:textColorHint="@color/default_text_color_40"
+            android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+</LinearLayout>

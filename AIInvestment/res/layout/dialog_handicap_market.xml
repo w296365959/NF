@@ -1,0 +1,294 @@
+<com.sscf.investment.detail.view.HandicapMarketView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/null_bg_style">
+
+    <TextView
+        android:id="@+id/text11"
+        style="@style/handicap_left_key_text_style"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/newest"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text12"
+        style="@style/handicap_value_text_style"
+        android:layout_marginLeft="54dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/text11"/>
+
+    <TextView
+        android:id="@+id/text13"
+        style="@style/handicap_right_key_text_style"
+        android:layout_marginLeft="136dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/text11"
+        android:text="@string/average"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text14"
+        style="@style/handicap_value_text_style"
+        android:layout_marginLeft="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/text11"/>
+
+    <TextView
+        android:id="@+id/text21"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text11"
+        app:layout_constraintTop_toBottomOf="@id/text11"
+        android:text="@string/highest"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text22"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text21"/>
+
+    <TextView
+        android:id="@+id/text23"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text21"
+        android:text="@string/lowest"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text24"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text21"/>
+
+    <TextView
+        android:id="@+id/text31"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text21"
+        app:layout_constraintTop_toBottomOf="@id/text21"
+        android:text="@string/stock_detail_limit_raising"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text32"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text31"/>
+
+    <TextView
+        android:id="@+id/text33"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text31"
+        android:text="@string/stock_detail_limit_down"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text34"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text31"/>
+
+    <TextView
+        android:id="@+id/text41"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text31"
+        app:layout_constraintTop_toBottomOf="@id/text31"
+        android:text="@string/today_open"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text42"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text41"/>
+
+    <TextView
+        android:id="@+id/text43"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text41"
+        android:text="@string/yestoday_close"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text44"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text41"/>
+
+    <TextView
+        android:id="@+id/text51"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text41"
+        app:layout_constraintTop_toBottomOf="@id/text41"
+        android:text="@string/stock_detail_turnover_rate"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text52"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text42"
+        app:layout_constraintBaseline_toBaselineOf="@id/text51"/>
+
+    <TextView
+        android:id="@+id/text53"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text51"
+        android:text="@string/stock_detail_amplitude"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text54"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text51"/>
+
+    <TextView
+        android:id="@+id/text61"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text51"
+        app:layout_constraintTop_toBottomOf="@id/text51"
+        android:text="@string/stock_detail_amount"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text62"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text61"/>
+
+    <TextView
+        android:id="@+id/text63"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text61"
+        android:text="@string/stock_detail_volume"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text64"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text61"/>
+
+    <TextView
+        android:id="@+id/text71"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text61"
+        app:layout_constraintTop_toBottomOf="@id/text61"
+        android:text="@string/stock_detail_volume_ratio"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text72"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text71"/>
+
+    <TextView
+        android:id="@+id/text73"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text71"
+        android:text="@string/stock_detail_bill_ratio"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text74"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text71"/>
+
+    <TextView
+        android:id="@+id/text81"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text71"
+        app:layout_constraintTop_toBottomOf="@id/text71"
+        android:text="@string/stock_detail_outside"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text82"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text81"/>
+
+    <TextView
+        android:id="@+id/text83"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text81"
+        android:text="@string/stock_detail_inside"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text84"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text81"/>
+
+
+
+    <TextView
+        android:id="@+id/text91"
+        style="@style/handicap_left_key_text_style"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/text81"
+        app:layout_constraintTop_toBottomOf="@id/text81"
+        android:text="@string/struct_circulating_stock"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text92"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text91"/>
+
+    <TextView
+        android:id="@+id/text93"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text91"
+        android:text="@string/circulation_value"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text94"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text91"/>
+
+    <TextView
+        android:id="@+id/text101"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text91"
+        app:layout_constraintTop_toBottomOf="@id/text91"
+        android:text="@string/struct_total_share"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text102"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text101"/>
+
+    <TextView
+        android:id="@+id/text103"
+        style="@style/handicap_right_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text13"
+        app:layout_constraintBaseline_toBaselineOf="@id/text101"
+        android:text="@string/stock_detail_market_value"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text104"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text14"
+        app:layout_constraintBaseline_toBaselineOf="@id/text101"/>
+
+    <TextView
+        android:id="@+id/text111"
+        style="@style/handicap_left_key_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text101"
+        app:layout_constraintTop_toBottomOf="@id/text101"
+        android:text="@string/stock_detail_pe_ratio"/>
+
+    <com.sscf.investment.component.ui.widget.NumberTextView
+        android:id="@+id/text112"
+        style="@style/handicap_value_text_style"
+        app:layout_constraintLeft_toLeftOf="@id/text12"
+        app:layout_constraintBaseline_toBaselineOf="@id/text111"/>
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        layout="@layout/a_h_premium_layout"/>
+</com.sscf.investment.detail.view.HandicapMarketView>

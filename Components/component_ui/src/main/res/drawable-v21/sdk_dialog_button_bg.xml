@@ -1,0 +1,4 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33fd7736">
+    <item android:drawable="@color/dialog_button_bg_normal" />
+</ripple>

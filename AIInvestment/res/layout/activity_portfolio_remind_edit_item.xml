@@ -1,0 +1,24 @@
+<com.sscf.investment.portfolio.widget.RemindEditItemLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/smart_stare_item_style">
+    <TextView
+            android:id="@+id/portfolioRemindTextView"
+            style="@style/smart_stare_item_style_left_style"/>
+    <FrameLayout
+            android:id="@+id/portfolioRemindCheckboxLayout"
+            style="@style/portfolio_remind_item_right_style">
+        <CheckBox
+                android:id="@+id/portfolioRemindCheckbox"
+                android:layout_gravity="right"
+                style="@style/portfolio_remind_item_right_checkbox_style"/>
+    </FrameLayout>
+    <EditText
+            android:id="@+id/portfolioRemindEditText"
+            style="@style/portfolio_remind_item_center_edit_style"
+            android:layout_marginLeft="131dp"
+            android:layout_alignParentLeft="true"/>
+    <TextView
+            android:id="@+id/portfolioRemindTextHint"
+            android:layout_alignLeft="@id/portfolioRemindEditText"
+            style="@style/portfolio_remind_item_center_text_hint_style"/>
+</com.sscf.investment.portfolio.widget.RemindEditItemLayout>

@@ -1,0 +1,255 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.chenenyu.router'
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url  "http://dl.bintray.com/dodola/maven"
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.3.0'
+    }
+}
+
+dependencies {
+    compile 'com.dodola:rocoo:1.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile rootProject.ext.supportV4
+    compile rootProject.ext.supportAppcompatV7
+    compile rootProject.ext.supportRecyclerviewV7
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile project(':DragSortListview')
+    compile project(':sdk')
+    compile project(':component_pdf')
+    compile project(':component_keepalive')
+    compile project(':component_scan')
+    compile project(':component_ocr')
+    compile project(':umeng_social_sdk')
+    compile project(':umeng_push_sdk')
+    compile project(':component_logic')
+    compile project(':component_web_sdk')
+    compile fileTree(include: '*.jar', dir: 'libs')
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    compile 'com.hejunlin.superindicatorlibray:superindicatorlibray:1.0.3'
+    compile 'com.bigkoo:pickerview:2.1.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile files('lib/ta-lib-0.4.0.jar')
+}
+
+def outputDirName = ""
+def versionCodeStr = ''
+def versionNameStr = ''
+
+int buildVersionCode() {
+    def df = new SimpleDateFormat("MMddHH")
+    df.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"))
+    return Integer.parseInt("100" + df.format(new Date()))
+}
+
+String buildVersionName() {
+    return "1.2.0"
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.sscf.investment"
+        versionCode buildVersionCode()
+        versionName buildVersionName()
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+            abiFilters 'x86'
+        }
+    }
+
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDir(['libs'])
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    productFlavors {
+        development {
+            versionCode 5
+            versionName "1.2.0"
+        }
+
+        preview {
+            versionName "release_" + "${defaultConfig.versionCode}"
+        }
+
+        distrib {
+
+        }
+    }
+
+    signingConfigs {
+//        debug {
+//            storeFile file("D:\\Android打包\\sscf.keystore")
+//            storePassword "sscf2018"
+//            keyAlias "sscf"
+//            keyPassword "sscf2018"
+//        }
+
+        release {
+            storeFile file("sscf.keystore")
+            storePassword "sscf2018"
+            keyAlias "sscf"
+            keyPassword "sscf2018"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+        }
+
+        publish {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFile 'proguard-project.txt'
+            signingConfig signingConfigs.release
+
+            dependencies {
+                publishCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+            }
+        }
+
+        applicationVariants.all { variant ->
+            versionCodeStr = "${defaultConfig.versionCode}"
+            versionNameStr = "${defaultConfig.versionName}"
+
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                String buildTypeName = "${variant.buildType.name}"
+                println "buildTypeName is " + buildTypeName
+                if (!(buildTypeName == "debug")) {
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为Sscf-1.2.1-121020113-release.apk
+                        def fileName = "AIInvest-${defaultConfig.versionName}-${defaultConfig.versionCode}-${variant.buildType.name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+
+                        outputDirName = outputFile.parent
+
+                        println "outputFile path is " + output.outputFile
+                    }
+                } else {
+                    println "buildTypeName is debug finally"
+                }
+            }
+        }
+
+    }
+
+    variantFilter { variant ->
+        def buildType = variant.buildType.name
+        def flavorName = variant.getFlavors().get(0).name
+
+        // 根据构建类型，自动过滤渠道
+        if (buildType.equals('release')) {
+            variant.setIgnore(!flavorName.equals('preview'))
+        } else if (buildType.equals('publish')) {
+            variant.setIgnore(!flavorName.equals('distrib'))
+        } else { //目前只有"debug"版本
+            variant.setIgnore(!flavorName.equals('development'))
+        }
+    }
+
+    repositories{
+        flatDir{
+            dirs 'libs'
+        }
+    }
+}
+
+//使用jenkins时需要执行该task，用于获取version
+task generateVersionFiles << {
+    //生成两个临时文件供发邮件通知用
+    println "app build finished."
+    println "app build finished. outputDirName = " + outputDirName;
+    println "app build finished. versionCode = " + versionCodeStr;
+    println "app build finished. versionName = " + versionNameStr;
+
+    def versionCodeFile = new File(outputDirName, "version.properties")
+    versionCodeFile.write(versionCodeStr)
+
+    def versionNameFile = new File(outputDirName, "version_name.properties")
+    versionNameFile.write(versionNameStr)
+
+    //删除中间文件apk
+    new File(outputDirName).eachFile {
+        if (it.name.contains("-unaligned.apk")) {
+            it.delete()
+        }
+    }
+}

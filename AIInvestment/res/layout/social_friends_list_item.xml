@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_list_item_style"
+    android:layout_height="66dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.sscf.investment.setting.widgt.RoundImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <ImageView
+            android:id="@+id/iconV"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/user_icon_v"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/horizontal_average_divide_style"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:drawablePadding="@dimen/vip_drawable_padding"
+            android:textColor="@color/default_text_color_100"
+            android:textSize="@dimen/font_size_16" />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/default_text_color_60"
+            android:textSize="@dimen/font_size_14"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/setAttentionButton"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="@dimen/font_size_14"/>
+</LinearLayout>

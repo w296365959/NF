@@ -1,0 +1,24 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionBar"
+    style="@style/actionbar_style">
+    <ImageView
+        android:id="@+id/actionbar_back_button"
+        style="@style/actionbar_back_button_style"
+        android:paddingRight="0dp"/>
+    <TextView
+        android:id="@+id/actionbar_close_button"
+        android:layout_toRightOf="@id/actionbar_back_button"
+        style="@style/actionbar_text_button_style"
+        android:paddingLeft="6dp"
+        android:visibility="gone"
+        android:text="@string/close_button"/>
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_centerVertical="true"
+        style="@style/actionbar_title_text_style"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"/>
+</RelativeLayout>

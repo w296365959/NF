@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 股票名称的颜色-->
+    <color name="stock_name_color">@color/gray_100</color>
+
+    <!-- 股票下跌时的颜色-->
+    <color name="stock_green_color">#0fa802</color>
+    <color name="stock_green_color_alpha">#200fa802</color>
+    <!-- 股票价格跟昨日收盘价相等时的颜色-->
+    <color name="stock_base_color">@color/gray_60</color>
+
+    <!-- scrollbar color -->
+    <color name="scrollbar_color">@color/gray_60</color>
+
+    <color name="text_color_attend">@color/actionbar_bg_color</color>
+    <color name="text_color_attended">@color/default_text_color_60</color>
+
+    <!-- public -->
+    <color name="capital_flow_main_in">#e64b4b</color>
+    <color name="capital_flow_main_out">#30a050</color>
+    <color name="capital_flow_retail_in">#ff664d</color>
+    <color name="capital_flow_retail_out">#4eb76c</color>
+    <color name="operation_bar_add_bg">#e8783d</color>
+
+    <color name="splash_bg">#f7e6d4</color>
+    <color name="splash_button_normal">#fb9764</color>
+    <color name="splash_button_pressed">#b2fb9764</color>
+    <color name="splash_indicator_selected">#541a04</color>
+    <color name="splash_indicator_unselected">#b69481</color>
+
+    <!--个股详情成交资金特大、大、中、小单的颜色-->
+    <color name="transaction_capital_super_in">#c1323f</color>
+    <color name="transaction_capital_big_in">#dd4444</color>
+    <color name="transaction_capital_middle_in">#fd9c35</color>
+    <color name="transaction_capital_small_in">#fec42c</color>
+    <color name="transaction_capital_super_out">#1e9312</color>
+    <color name="transaction_capital_big_out">#48ad2c</color>
+    <color name="transaction_capital_middle_out">#b1cc11</color>
+    <color name="transaction_capital_small_out">#cfdb4c</color>
+    <color name="transaction_capital_duo">#fd9c35</color>
+    <color name="transaction_capital_kong">#b1cc11</color>
+
+    <color name="dengta_a_big_rise">#e64b4b</color>
+    <color name="dengta_a_rise">#fca000</color>
+    <color name="dengta_a_down">#178cea</color>
+    <color name="dengta_a_big_down">#4eb76c</color>
+    <color name="dengta_a_rise_limit">@color/stock_red_color</color>
+    <color name="dengta_a_down_limit">@color/stock_green_color</color>
+
+    <!-- tab bar color-->
+    <color name="tab_title_selected">#3894e3</color>
+    <color name="main_bg_color">@color/white_100</color>
+    <color name="main_bg_color_semitransparent">#f7ffffff</color>
+
+    <color name="main_bottom_tab_bar_divide">#e6e6e6</color>
+
+    <!-- actionbar color-->
+    <color name="actionbar_bg_color">#fd7736</color>
+    <color name="vip_actionbar_bg_color">#fd7736</color>
+    <color name="actionbar_bg_color_20">#33fd7736</color>
+    <color name="actionbar_bg_color_60">#9afd7736</color>
+    <color name="stock_time_chart_shadow">#33ccd0d6</color>
+
+    <!-- stock detail finance-->
+    <color name="stock_detail_finance_indicator_default">#10174c</color>
+    <color name="stock_detail_finance_incoming_pillar_plus">#f69300</color>
+    <color name="stock_detail_finance_incoming_pillar_minus">@android:color/holo_green_light</color>
+
+    <!-- setting -->
+    <color name="line_chart_border_rect">#cccccc</color>
+    <color name="line_chart_time_line">#178cea</color>
+    <color name="line_chart_time_average_line">#ffc100</color>
+    <color name="line_chart_time_amount">#ccd0d6</color>
+    <color name="indicator_animation_inner">#178cea</color>
+    <color name="k_line_average_1">#f06ea9</color>
+    <color name="k_line_average_2">#fca600</color>
+    <color name="k_line_average_3">#178cea</color>
+    <color name="k_line_average_4">#595959</color>
+    <color name="k_line_average_5">#8412ef</color>
+    <color name="k_line_average_6">#ea6617</color>
+    <color name="line_chart_touch_line">#858585</color>
+
+    <!-- fullscreen line chart -->
+    <color name="tab_text_selected">#ff7628</color>
+
+    <color name="k_line_indicator_bg">#a8b0bb</color>
+    <color name="tag_relatedStock">#106fbc</color>
+    <color name="attitude_buy">#e64b4b</color>
+    <color name="attitude_holding">#f69300</color>
+    <color name="attitude_neutual">#989898</color>
+    <color name="attitude_reduction">#4eb76c</color>
+    <color name="attitude_sell">#066a5c</color>
+
+    <!-- subject heat -->
+    <color name="heat_line">#fd7736</color>
+    <color name="heat_shadow">#33ffd5c0</color>
+
+    <color name="attitude_strong_negative">#2a8e29</color>
+    <color name="attitude_negative">#4cba2a</color>
+    <color name="attitude_neutrual">#c5d106</color>
+    <color name="attitude_positive">#ff9800</color>
+    <color name="attitude_strong_positive">#ea4410</color>
+
+    <color name="popup_window_item_bg">@color/list_item_bg_pressed</color>
+    
+    <color name="operation_bar_bg">@color/popup_window_edge_bg</color>
+    <color name="capital_flow_reminder_bg">#e6f0f0f0</color>
+
+    <color name="time_line_indicator_color">#929292</color>
+
+    <color name="stock_status_tips_bg">#178cea</color>
+
+    <color name="default_background">@color/bg_gray</color>
+
+    <color name="default_content_semitransparent">@color/main_bg_color_semitransparent</color>
+
+    <color name="list_item_bg_pressed">#33ccd0d6</color>
+
+    <!-- stock detail page -->
+    <color name="operation_bar_text">@color/time_line_indicator_color</color>
+
+    <color name="tag_stock_pick_bg">@color/gray_60</color>
+    <color name="homepage_header_bg_mask">@android:color/transparent</color>
+    <color name="homepage_has_attention">#929292</color>
+
+    <color name="setting_light_text_color">@color/white_100</color>
+    <color name="setting_dark_text_color_normal">@color/black_100</color>
+    <color name="setting_header_extra_text_color">#ff492c</color>
+    <color name="buy_button_disable_bg_color">#e4e4e4</color>
+    <color name="buy_button_text_color_normal">@color/setting_light_text_color</color>
+    <color name="buy_button_text_color_disable">@color/setting_light_text_color</color>
+    <color name="link_color">#106fbc</color>
+    <color name="setting_cancel_button_background_color">@color/white_100</color>
+    <color name="setting_cancel_button_text_color">@color/gray_100</color>
+    <color name="normal_user_name_color">#106fbc</color>
+    <color name="member_user_name_color">#ff5c0e</color>
+    <color name="radar_view_line_color">#ffdccb</color>
+    <color name="dark_activity_bg">#262525</color>
+    <color name="line_chart_touch_line_color">#0e1228</color>
+    <color name="up_rate_color">#10174c</color>
+    <color name="column_color">#b3e64225</color>
+    <color name="last_column_color">#e64225</color>
+    <color name="indicator_pre_text_color">#929292</color>
+    <color name="indicator_pre_text_bg_color">#33929292</color>
+    <color name="indicator_ad_bg_color">#f0f0f0</color>
+    <color name="top_panel_bg_color">#f9f9f9</color>
+    <color name="appraisal_result_pass_color">#0fa802</color>
+    <color name="appraisal_result_failed_color">#e64b4b</color>
+    <color name="doughnut_color0">#ff6700</color>
+    <color name="doughnut_color1">#ffb230</color>
+    <color name="doughnut_color2">#ff8736</color>
+    <color name="doughnut_color3">#c3a279</color>
+    <color name="doughnut_color4">#4c4743</color>
+    <color name="doughnut_color5">#8a412a</color>
+    <color name="industry_benchmark_default_bar_color">#ffb230</color>
+    <color name="industry_benchmark_average_bar_color">#c3a279</color>
+    <color name="industry_benchmark_mine_bar_color">#ff6700</color>
+    <color name="industry_benchmark_tab_text_color_selected">@color/gray_60</color>
+    <color name="doughnut_view_empty_color">@color/gray_60</color>
+    <color name="top_hint_color">#dfe8f2</color>
+    <color name="recommend_hint_item_bg_color">#19ca5616</color>
+    <color name="recommend_hint_color">#ca5616</color>
+    <color name="pay_button_bg_color">#d6b780</color>
+    <color name="total_money_color">#f96524</color>
+    <color name="tag_bg_color">#ff4b4d</color>
+    <color name="user_info_bg_top_color">#fd7736</color>
+    <color name="user_info_bg_bottom_color">#ff5502</color>
+    <color name="vip_info_bg_top_color">#2f2d2d</color>
+    <color name="vip_info_bg_bottom_color">#1d1d1d</color>
+    <color name="setting_vip_name_color">#d6b780</color>
+    <color name="default_actionbar_bg_color">#fd7736</color>
+    <color name="member_actionbar_bg_color">#2f2d2d</color>
+    <color name="main_tab_bar_text_color_selected">#fd7736</color>
+    <color name="main_tab_bar_text_color_normal">@color/gray_60</color>
+    <color name="main_tab_bar_vip_text_color_selected">#cea76e</color>
+    <color name="message_count_none_vip_color">@color/actionbar_bg_color</color>
+    <color name="message_count_vip_color">@color/gray_100</color>
+    <color name="flow_select_bg_color">#f2f3f5</color>
+    <color name="flow_select_bg_stroke_color">#e4e4e4</color>
+    <color name="risk_eval_nomatch_color">#c62f16</color>
+    <color name="risk_eval_match_color">#1c5c22</color>
+    <color name="smart_stock_stare_button_text_color_normal">@color/gray_100</color>
+    <color name="selected_storke_orange_color">#f96f24</color>
+    <color name="selected_solid_orange_color">#29f96f24</color>
+    <color name="normal_storke_gray_color">#e4e4e4</color>
+    <color name="chip_cost_mask_color">#f0f0f0</color>
+    <color name="time_axis_chart_color">#000000</color>
+    <color name="time_axis_orange_color">#ff9b26</color>
+    <color name="slider_seekbar_bg_color">#fafafa</color>
+    <color name="slider_seekbar_scrollbar_bg_color">#f0f0f0</color>
+    <color name="slider_seekbar_thumb_color">#ff9b26</color>
+    <color name="time_axis_bg">#fafafa</color>
+
+    <color name="market_change_stat_divider_color">#e4e4e4</color>
+    <color name="input_background">#d1d6dc</color>
+    <color name="select_compare_stock_button_color">#fd5b36</color>
+    <color name="chart_rect_color">#cccccc</color>
+    <color name="portfolio_two_tab_color">@color/actionbar_bg</color>
+
+    <color name="color_ff5c01">#ff5c01</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="black_40_trans">#7f000000</color>
+</resources>

@@ -1,0 +1,29 @@
+<com.sscf.investment.widget.CheckableLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_list_item_style"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="@dimen/list_item_height"
+    android:paddingLeft="@dimen/favor_item_padding_left_edit"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/ivDeleteCandicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_delete_candicator"
+        android:layout_marginRight="@dimen/default_drawable_padding"/>
+    <TextView
+        android:id="@+id/tvCandicatorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/setting_default_text_style"/>
+    <ImageView
+        android:id="@+id/ivSettingCandicator"
+        style="@style/setting_kline_left_second_image_style"
+        android:src="@drawable/setting_kline_configure"/>
+    <ImageView
+        android:id="@+id/drag_handle"
+        style="@style/setting_linear_layout_left_image_item_style"
+        android:src="@drawable/portfolio_edit_drag_icon"/>
+</com.sscf.investment.widget.CheckableLinearLayout>

@@ -1,0 +1,44 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_bg"
+        android:orientation="vertical"
+        android:gravity="center">
+    <!--股指名称-->
+    <TextView
+            android:id="@+id/portfolio_market_item_stock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/portfolio_index_title_item_textSize"
+            android:textColor="@color/default_text_color_100"/>
+    <LinearLayout
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!-- 上下箭头 -->
+        <ImageView
+            android:id="@+id/updownArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1dp"
+            android:paddingBottom="1dp"
+            android:visibility="gone"/>
+        <!--现价，指数点数-->
+        <com.sscf.investment.component.ui.widget.NumberTextView
+                android:id="@+id/portfolio_market_item_stock_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/portfolio_index_item_textSize"/>
+        <!--涨跌幅度-->
+        <com.sscf.investment.component.ui.widget.NumberTextView
+                android:id="@+id/portfolio_market_item_stock_change"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/portfolio_index_item_textSize"/>
+    </LinearLayout>
+</LinearLayout>

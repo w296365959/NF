@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/null_bg_style">
+    <SurfaceView
+        android:id="@+id/preview_view"
+        style="@style/null_bg_style" />
+    <com.sscf.investment.scan.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        style="@style/null_bg_style"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/actionbar_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/actionbar_back_selector" />
+    <ImageView
+        android:id="@+id/actionbar_faq"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="right"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/action_bar_faq_icon" />
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="115dp"
+        android:textColor="#fff"
+        android:text="@string/take_picture_tips"
+        android:textSize="14dp" />
+    <View
+        android:id="@+id/takePictureButton"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/scan_take_picture_icon_selector"/>
+    <View
+        android:id="@+id/gallaryButton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/scan_gallary_icon"/>
+</FrameLayout>

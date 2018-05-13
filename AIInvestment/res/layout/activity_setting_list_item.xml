@@ -1,0 +1,4 @@
+<CheckedTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/settingRefreshFrequencyListItem"
+        style="@style/setting_sub_list_item_style" />

@@ -1,0 +1,26 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/marketAHStockListHeader"
+        style="@style/market_sub_title_layout_style"
+        android:minHeight="@dimen/default_tab_height">
+    <TextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:gravity="left"
+            style="@style/market_list_header_text_style"
+            android:text="@string/subject_list_head_name"/>
+    <TextView
+            android:layout_width="@dimen/market_ah_stock_info_width"
+            style="@style/market_list_header_text_style"
+            android:text="@string/market_h_shares"/>
+    <TextView
+            android:layout_width="@dimen/market_ah_stock_info_width"
+            style="@style/market_list_header_text_style"
+            android:text="@string/market_a_shares"/>
+    <com.sscf.investment.market.view.StockSortTitleView
+            xmlns:sort="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/premiumTitle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            sort:titleName="@string/market_ah_premium"/>
+</LinearLayout>

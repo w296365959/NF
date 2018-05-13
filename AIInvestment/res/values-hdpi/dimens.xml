@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--公共list常量定义-->
+    <dimen name="portfolio_list_item_width">100dp</dimen>
+    <dimen name="portfolio_index_title_item_textSize">@dimen/font_size_16</dimen>
+    <dimen name="portfolio_index_item_textSize">@dimen/font_size_13</dimen>
+
+    <!-- market -->
+    <dimen name="market_sub_item_width">100dp</dimen>
+    <dimen name="market_global_sub_item_width">90dp</dimen>
+    <dimen name="market_global_title_textSize">14dp</dimen>
+    <dimen name="market_global_sub_item_textSize">16dp</dimen>
+    <dimen name="market_all_a_indicator_textSize">@dimen/font_size_6</dimen>
+</resources>

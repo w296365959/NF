@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/no_more_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/default_background"
+             android:clickable="true">
+    <View
+        android:id="@+id/line"
+        style="@style/list_line_style"/>
+    <TextView
+        android:id="@+id/more"
+        android:text="@string/no_more"
+        android:textSize="@dimen/article_listview_more_textSize"
+        android:textColor="@color/default_text_color_60"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

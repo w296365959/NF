@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+       xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:src="?attr/right_corner"
+        android:layout_width="@dimen/list_head_arrow_size"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_head_text_arrow_dis"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/stock_list_head_new_price"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/default_text_color_100"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/icon"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</merge>

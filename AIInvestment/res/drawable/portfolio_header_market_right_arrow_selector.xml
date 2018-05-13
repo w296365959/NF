@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/portfolio_header_market_right_arrow_enable" android:state_enabled="true"/>
+    <item android:drawable="@drawable/portfolio_header_market_right_arrow_disable" android:state_enabled="false"/>
+</selector>

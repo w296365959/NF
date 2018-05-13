@@ -1,0 +1,24 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:dslv="http://schemas.android.com/apk/res-auto"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+    <include
+            layout="@layout/actionbar_setting"/>
+    <com.mobeta.android.dslv.DragSortListView
+        android:id="@android:id/list"
+        style="@style/default_list_view_style"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:choiceMode="multipleChoice"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@+id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.8"
+        dslv:slide_shuffle_speed="0.3"/>
+    <include
+        android:id="@+id/viewAddCandicator"
+        layout="@layout/bottom_bar_add_indicator_layout" />
+</LinearLayout>

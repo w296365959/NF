@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_40">
+    <LinearLayout
+        style="@style/dialog_history_time_line_style"
+        android:id="@+id/content">
+        <LinearLayout
+            style="@style/history_time_line_panel_style">
+            <FrameLayout
+                android:layout_width="@dimen/history_time_line_width"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/history_time_line_panel_padding_top_bottom">
+                <com.sscf.investment.widget.linechart.TimeLineChartTextureView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/time_line_chart"/>
+                <com.sscf.investment.detail.view.IndicatorAnimationView
+                    android:id="@+id/line_chart_indicator"
+                    android:layout_width="@dimen/indicator_animation_width"
+                    android:layout_height="@dimen/indicator_animation_width"
+                    android:visibility="invisible" />
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/close_button"
+                    android:paddingTop="@dimen/history_time_line_panel_padding_top_bottom"
+                    android:paddingBottom="@dimen/history_time_line_panel_padding_top_bottom"
+                    android:paddingLeft="@dimen/history_time_line_panel_padding_right"
+                    android:paddingRight="@dimen/history_time_line_panel_padding_right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/history_timeline_dialog_close_button"/>
+                </LinearLayout>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_16"
+                    android:includeFontPadding="false"
+                    android:id="@+id/today_close_value"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="12dp"/>
+
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/change_value_title"
+                    android:text="@string/change_value"
+                    android:layout_marginTop="53dp"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/change_value"
+                    android:layout_alignBaseline="@id/change_value_title"
+                    android:layout_toRightOf="@id/change_value_title"/>
+
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/change_rate_title"
+                    android:text="@string/change_rate"
+                    android:layout_below="@id/change_value_title"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/change_rate_value"
+                    android:layout_alignBaseline="@id/change_rate_title"
+                    android:layout_toRightOf="@id/change_rate_title"/>
+
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/highest_title"
+                    android:text="@string/highest"
+                    android:layout_below="@id/change_rate_title"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/highest_title_value"
+                    android:layout_alignBaseline="@id/highest_title"
+                    android:layout_toRightOf="@id/highest_title"/>
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/lowest_title"
+                    android:text="@string/lowest"
+                    android:layout_below="@id/highest_title"
+                    android:layout_marginTop="@dimen/history_time_line_info_title_margin_top"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/lowest_title_value"
+                    android:layout_alignBaseline="@id/lowest_title"
+                    android:layout_toRightOf="@id/lowest_title"/>
+
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/today_open_title"
+                    android:text="@string/today_open"
+                    android:layout_below="@id/lowest_title"
+                    android:layout_marginTop="24dp"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/today_open_value"
+                    android:layout_alignBaseline="@id/today_open_title"
+                    android:layout_toRightOf="@id/today_open_title"/>
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/yestoday_close_title"
+                    android:text="@string/yestoday_close"
+                    android:layout_below="@id/today_open_title"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/yestoday_close_value"
+                    android:layout_alignBaseline="@id/yestoday_close_title"
+                    android:layout_toRightOf="@id/yestoday_close_title"/>
+
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/turnover_title"
+                    android:text="@string/turnover"
+                    android:layout_below="@id/yestoday_close_title"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/turnover_value"
+                    android:layout_alignBaseline="@id/turnover_title"
+                    android:layout_toRightOf="@id/turnover_title"/>
+
+
+                <TextView style="@style/history_time_line_info_title_style"
+                    android:id="@+id/amount_title"
+                    android:text="@string/amount"
+                    android:layout_below="@id/turnover_title"
+                    android:layout_marginTop="@dimen/history_time_line_info_title_margin_top"/>
+                <com.sscf.investment.component.ui.widget.NumberTextView
+                    style="@style/history_time_line_info_value_style"
+                    android:id="@+id/amount_value"
+                    android:layout_alignBaseline="@id/amount_title"
+                    android:layout_toRightOf="@id/amount_title"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <Button
+                style="@style/history_timeline_dialog_button_style"
+                android:id="@+id/pre_button"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/default_text_color_100"/>
+            <Button
+                style="@style/history_timeline_dialog_button_style"
+                android:id="@+id/next_button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/background"
+        style="@style/dialog_background_style"
+        android:layout_above="@id/content"/>
+</RelativeLayout>

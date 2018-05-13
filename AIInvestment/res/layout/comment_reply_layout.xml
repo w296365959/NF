@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp">
+
+    <com.sscf.investment.detail.view.TriangleView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/reply_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/default_background"
+        android:paddingLeft="5dp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_reply_bottom_space_height"
+        />
+
+</merge>

@@ -1,0 +1,19 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style">
+    <include
+            layout="@layout/ptr_list"/>
+    <TextView
+            android:id="@+id/emptyViewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/default_text_color_60"
+            android:textSize="@dimen/font_size_12"/>
+    <Button
+            android:id="@+id/loginButton"
+            android:layout_marginTop="115dp"
+            style="@style/setting_button_style"
+            android:text="@string/login_now"/>
+</FrameLayout>

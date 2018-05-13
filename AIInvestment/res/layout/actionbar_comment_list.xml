@@ -1,0 +1,17 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/actionbar_style">
+
+    <ImageView
+        android:id="@+id/actionbar_back_button"
+        style="@style/actionbar_back_button_style"/>
+
+    <include layout="@layout/actionbar_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <com.sscf.investment.component.ui.widget.RefreshButton
+        android:id="@+id/refresh_button"
+        style="@style/actionbar_right_button_style"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/actionbar_margin"
+    android:paddingRight="@dimen/actionbar_margin"
+    android:background="@color/default_content_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_14"
+        android:background="@drawable/recommend_hint_item_bg"
+        android:textColor="@color/link_color"
+        android:text="@string/recommend_hint_text"/>
+</LinearLayout>

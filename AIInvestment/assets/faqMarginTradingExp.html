@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>融资融劵解读</title>
+      <style>
+            /*reset*/
+            html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}img{vertical-align:middle}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}a[href],label[for],select,input[type=checkbox],input[type=radio]{cursor:pointer}button,input[type=button],input[type=image],input[type=reset],input[type=submit]{padding:0;overflow:visible;cursor:pointer}button::-moz-focus-inner,input[type=button]::-moz-focus-inner,input[type=image]::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]::-moz-focus-inner{border:0}.hide{position:absolute!important;left:-9999em!important}.clearfix:after{content:".";display:block;visibility:hidden;clear:both;height:0}h1,h2,h3,h4,h5,h6{font-weight:normal}.ie7 .clearfix{zoom:1}strong{font-weight:bold}em{font-style:italic}del{text-decoration:line-through}th,td{vertical-align:top}th{font-weight:normal;text-align:left}address,cite,dfn{font-style:normal}abbr,acronym{border-bottom:1px dotted #999;cursor:help}sub{line-height:0}sup{top:-0.5em}sub{bottom:-0.25em}textarea{overflow:auto}img{width: 100%; height: auto;}
+            html{font-size:10px}
+            body{ background: #ececec; color: #595959; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0,0,0,0); width: 100%; overflow-x: hidden;}
+            body.body_news{background-color: #f6f6f6;}
+            /*通用title*/
+            .title{text-align: center; font-size: 16px;color: #595959;background: #f6f6f6;border-bottom: 1px solid #ececec; height: 40px;display: block; line-height: 40px; position: relative; z-index: 99;}
+            .page_gap{padding: 16px 15px;}
+
+            .explanation_list{}
+            .explanation_list dt{ display: block; font-size: 16px; margin-bottom: 7px; padding-left: 12px; position: relative;}
+            .explanation_list dt:before{ content:''; position: absolute; left: 0; top: 50%; margin-top: -3px; display: block; width: 6px; height: 6px; background-color: #faaa83; border-radius: 50%;}
+            .explanation_list dd{ display: block; margin-bottom: 20px; font-size: 14px; color: rgba(89,89,89,.8); line-height: 1.6; padding-left: 12px;}
+            .explanation_list dd p{margin-bottom: 12px;}
+      </style>
+
+      <style id="theme-black">
+        /*theme black*/
+        body.body_news{background-color: #211f1f; color: rgba(243,237,237,1);}
+        .title{ color: #f3eded;background: #2f2d2d; border-bottom: none; }
+        .explanation_list dd{color: rgba(243,237,237,.8);}
+        .explanation_list dt:before{ background-color: #fd7736;}
+      </style>
+
+
+    <!--theme switcher-->
+    <script>
+      (function(){
+            function getQueryString(name){
+                  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                  var r = window.location.search.substr(1).match(reg);
+                  if (r != null){
+                        var value = r[2];
+                        value = value.replace(/(%22|%3E|%3C|<|>)/g, "MM");
+                        return decodeURIComponent(value);
+                  }else{
+                        return null;
+                  }
+            }
+            function setTheme(){
+                  if(getQueryString('theme')!='night'||getQueryString('dt_from')=='web'){
+                        var tempElement=document.querySelector('#theme-black');
+                        tempElement.parentNode.removeChild(tempElement);
+                  }
+            }
+            setTheme();
+      })();
+    </script>
+
+</head>
+<body class="body_news">
+
+      <div class="page_gap page_txt">
+            <dl class="explanation_list">
+                  <dt>融资融券分析价值</dt>
+                  <dd>
+                        <p>融资融券是券商向投资者出借资金供其买入证券,或出借证券供其卖出的经营活动。</p>
+                        <p>融资余额与融券余额差值体现的是多方、空方的能量大小。融资差值大,说明购买股票、做多的能量大;融券差值大,说明抛售股票、做空的能量大。</p>
+                  </dd>
+
+                  <dt>融资融券差额</dt>
+                  <dd>融资融券差额=融资余额-融券余额</dd>
+            </dl>
+      </div>
+</body>
+
+<script type="text/javascript">
+      window.onload = function(){
+            //接口协议代码
+            ;(function () {
+                  var api = {};
+                  var cmdQueue = {};
+                  var protocol = "beacon";
+                  var index = 0;
+                  api.exec = function(cmd,option,callback){
+                        ++index;
+                        var callbackId = new Date().getTime()+"|"+index;
+                        option = option||{};
+                        cmdQueue[callbackId] = callback;
+                        var nativeOption = {
+                              callbackId:callbackId,
+                              option:option
+                        }
+                        var apiContent =  protocol+"://["+cmd+"-"+JSON.stringify(nativeOption)+"]";
+
+                        prompt(protocol,apiContent);
+                  }
+
+                  var createBridge = function () {
+                        var bridge = document.createElement("iframe");
+                        bridge.setAttribute("style", "display:none;");
+                        bridge.setAttribute("height", "0px");
+                        bridge.setAttribute("width", "0px");
+                        bridge.setAttribute("frameborder", "0");
+                        document.documentElement.appendChild(bridge);
+                        return bridge;
+                  };
+
+                  window.AppCallback = function(callbackId,option){
+                        if(cmdQueue[callbackId])
+                        {
+                              cmdQueue[callbackId](option);
+                        }
+                  };
+
+                  window[protocol+"Api"] = api;
+
+                  //客户端预埋接口
+                  window.ReqWeb = function (key, value) {
+                        if(mNativeFunction[key] != undefined ){
+                              mNativeFunction[key](value);
+                        }
+                  }
+
+                  window.mNativeFunction = {};
+
+                  //监听native
+                  window.lisenNative = function (key, func) {
+                        mNativeFunction[key] = func;
+                  }
+            })();
+
+            var title = "融资融劵解读";
+            var getQueryString = function (name) {
+                  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                  var r = window.location.search.substr(1).match(reg);
+                  if (r != null) return decodeURIComponent(r[2]); return null;
+            };
+            try {
+                  var from = getQueryString("dt_from");
+                  if(from == "web"){
+//                        var divNode = document.createElement("div");
+//                        divNode.className = "title";
+//                        divNode.innerHTML = title;
+//                        document.querySelector("body").insertBefore(divNode,document.querySelector(".page_gap"));
+                  }else{
+                        if(typeof NativeProxy != "undefined"){
+                              NativeProxy.setTitle(title);
+                        }else{
+                              beaconApi.exec("setTitle",{"title":title},function(data){
+                              });
+                        }
+                  }
+            } catch (e) {
+            }
+      }
+</script>
+</html>

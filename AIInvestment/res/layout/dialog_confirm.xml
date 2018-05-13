@@ -1,0 +1,26 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dialogContentView"
+        style="@style/dialog_comfirm_layout_style"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/dialogMessage"
+            style="@style/dialog_message_style"/>
+    <View
+            style="@style/list_line_style"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+        <Button
+                android:id="@+id/cancel"
+                style="@style/dialog_button_style"
+                android:text="@string/cancel"/>
+        <View
+                android:id="@+id/dialogButtonDivider"
+                style="@style/list_vertical_line_style"/>
+        <Button
+                android:id="@+id/ok"
+                style="@style/dialog_button_style"
+                android:text="@string/ok"/>
+    </LinearLayout>
+</LinearLayout>

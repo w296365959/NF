@@ -1,0 +1,14 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/market_tools_item_style">
+    <TextView
+        android:id="@+id/text"
+        style="@style/market_tools_text_style" />
+    <TextView
+        android:id="@+id/newIcon"
+        style="@style/tag_new_style"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="7dp"/>
+</RelativeLayout>

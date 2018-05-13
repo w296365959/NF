@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="viewfinder_view_size">220dp</dimen>
+    <dimen name="viewfinder_view_offset">-20dp</dimen>
+    <dimen name="viewfinder_scan_laser_height">62dp</dimen>
+    <dimen name="viewfinder_angle_width">24dp</dimen>
+    <dimen name="viewfinder_angle_height">3dp</dimen>
+</resources>

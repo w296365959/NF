@@ -1,0 +1,16 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/null_bg_style">
+    <ListView
+            android:id="@+id/searchResultStockList"
+            style="@style/default_list_view_style"/>
+    <TextView
+            android:id="@+id/searchResultEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/search_result_empty"
+            android:textColor="@color/default_text_color_60"
+            android:textSize="@dimen/font_size_18"/>
+</FrameLayout>

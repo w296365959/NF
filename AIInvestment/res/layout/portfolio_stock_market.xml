@@ -1,0 +1,31 @@
+<com.sscf.investment.portfolio.PortfolioHeaderMarket
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/portfolio_header_market_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/portfolio_market_height"
+        android:minHeight="@dimen/portfolio_market_height"
+        android:background="@color/default_content_bg"
+        android:orientation="vertical">
+    <com.sscf.investment.portfolio.widget.HorizontalRecyclerView
+            android:id="@+id/indexListView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/portfolio_market_height"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/portfolio_header_market_left_arrow_selector"/>
+    <ImageView
+            android:id="@+id/rightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/portfolio_header_market_right_arrow_selector"/>
+</com.sscf.investment.portfolio.PortfolioHeaderMarket>

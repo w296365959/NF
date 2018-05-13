@@ -1,0 +1,36 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plateLayout"
+    style="@style/default_list_item_style"
+    android:gravity="center_vertical">
+    <LinearLayout
+        style="@style/horizontal_average_divide_style"
+        android:orientation="vertical">
+        <com.sscf.investment.widget.VariableTextView
+            android:id="@+id/plateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/actionbar_bg_color"
+            style="@style/market_stock_name_text_style"/>
+        <TextView
+            android:id="@+id/plateCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/actionbar_bg_color"
+            style="@style/market_stock_code_text_style"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/plateUpdown"
+        android:layout_width="@dimen/market_sub_item_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/number_text_view_margin_top"
+        android:textColor="@color/default_text_color_60"
+        android:textSize="@dimen/font_size_20"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="@string/value_null"/>
+    <TextView
+        android:layout_width="@dimen/market_sub_item_width"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/right_arrow_orange_night"/>
+</LinearLayout>

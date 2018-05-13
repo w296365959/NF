@@ -1,0 +1,134 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style">
+
+    <include
+            android:id="@+id/settingActionBar"
+            layout="@layout/actionbar_setting"/>
+
+    <include
+            style="@style/setting_error_tips_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_margin_top"
+            android:layout_below="@id/settingActionBar"
+            layout="@layout/activity_setting_error_tips"/>
+    <FrameLayout
+            android:id="@+id/loginCellphoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/errorTips">
+
+        <com.sscf.investment.widget.PhoneNumberEditText
+                android:id="@+id/loginCellphone"
+                android:hint="@string/cellphone"
+                android:inputType="number"
+                android:maxLength="@integer/cellphone_max_length"
+                style="@style/setting_edit_text_item_style"/>
+        <View
+                android:id="@+id/loginCellphoneClearButton"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/actionbar_margin"
+                style="@style/input_clear_button_style"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/loginPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginCellphoneLayout">
+        <EditText
+                android:id="@+id/loginPassword"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="@integer/password_max_length"
+                style="@style/setting_edit_text_item_style"/>
+
+        <View
+                android:id="@+id/loginPasswordClearButton"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/actionbar_margin"
+                style="@style/input_clear_button_style"/>
+        <View
+                style="@style/list_line_style"
+                android:layout_marginLeft="@dimen/actionbar_margin"
+                android:layout_marginRight="@dimen/actionbar_margin"/>
+    </FrameLayout>
+
+    <Button
+            android:id="@+id/loginButton"
+            style="@style/setting_button_style"
+            android:layout_below="@id/loginPasswordLayout"
+            android:layout_marginTop="74dp"
+            android:text="@string/login"/>
+
+    <TextView
+            android:id="@+id/loginRegister"
+            style="@style/setting_login_text_button_style"
+            android:layout_below="@id/loginButton"
+            android:text="@string/register"
+            android:layout_marginLeft="@dimen/actionbar_margin"
+            android:layout_marginTop="22dp"/>
+
+    <TextView
+            android:id="@+id/forgetPassword"
+            style="@style/setting_login_text_button_style"
+            android:layout_below="@id/loginButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/loginRegister"
+            android:layout_marginRight="@dimen/actionbar_margin"
+            android:text="@string/forget_password"/>
+
+    <LinearLayout
+            android:id="@+id/thirdPartyLoginButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+        <FrameLayout
+            android:id="@+id/wechatLoginButton"
+                style="@style/setting_third_party_login_button_layout_style">
+            <View
+                    style="@style/setting_third_party_login_button_style"
+                    android:background="@drawable/login_icon_wechat"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/qqLoginButton"
+                style="@style/setting_third_party_login_button_layout_style">
+            <View
+                    style="@style/setting_third_party_login_button_style"
+                    android:background="@drawable/login_icon_qq"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/weiboLoginButton"
+                style="@style/setting_third_party_login_button_layout_style">
+            <View
+                    style="@style/setting_third_party_login_button_style"
+                    android:background="@drawable/login_icon_sina_weibo"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/loginQuickLoginTextLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/thirdPartyLoginButtonLayout"
+            >
+        <TextView
+                android:id="@+id/loginQuickLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quick_login"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/default_text_color_80"/>
+        <View
+                android:layout_toLeftOf="@id/loginQuickLogin"
+                android:layout_centerVertical="true"
+                style="@style/list_line_style"/>
+        <View
+                android:layout_toRightOf="@id/loginQuickLogin"
+                android:layout_centerVertical="true"
+                style="@style/list_line_style"/>
+    </RelativeLayout>
+
+</RelativeLayout>

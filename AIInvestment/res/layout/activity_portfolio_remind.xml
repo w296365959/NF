@@ -1,0 +1,90 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/setting_bg_style"
+        android:orientation="vertical">
+
+    <include
+            layout="@layout/actionbar_setting_with_right_button"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+            <LinearLayout
+                    style="@style/portfolio_sub_title_layout_style">
+                <TextView
+                        android:id="@+id/portfolioRemindStockTitle"
+                        style="@style/portfolio_remind_sub_title_left_style"/>
+                <TextView
+                        android:id="@+id/portfolioRemindStockPrice"
+                        style="@style/portfolio_remind_sub_title_center_style"/>
+                <TextView
+                        android:id="@+id/portfolioRemindStockRatio"
+                        style="@style/portfolio_remind_sub_title_right_style"/>
+            </LinearLayout>
+
+            <include
+                    android:id="@+id/portfolioRemindStockPriceUpLayout"
+                    layout="@layout/activity_portfolio_remind_edit_item" />
+
+            <View
+                    style="@style/list_line_style"/>
+
+            <include
+                    android:id="@+id/portfolioRemindStockPriceDownLayout"
+                    layout="@layout/activity_portfolio_remind_edit_item" />
+
+            <View
+                    style="@style/list_line_style"/>
+
+            <include
+                    android:id="@+id/portfolioRemindStockRatioUpLayout"
+                    layout="@layout/activity_portfolio_remind_edit_item" />
+
+            <View
+                    style="@style/list_line_style"/>
+
+            <include
+                    android:id="@+id/portfolioRemindStockRatioDownLayout"
+                    layout="@layout/activity_portfolio_remind_edit_item" />
+
+            <include
+                android:id="@+id/portfolioRemindAiRemind"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_marginTop="@dimen/setting_margin_top"
+                layout="@layout/activity_portfolio_remind_checkbox_item"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/portfolioRemindAiRemindIntro"
+                style="@style/setting_sub_intro_item_style"
+                android:text="@string/portfolio_remind_ai_remind_intro"
+                android:layout_marginBottom="0px"
+                android:visibility="gone"/>
+
+            <include
+                    android:id="@+id/portfolioRemindPushAnnouncementLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_height"
+                    android:layout_marginTop="@dimen/setting_margin_top"
+                    layout="@layout/activity_portfolio_remind_checkbox_item"
+                    android:visibility="gone"/>
+
+            <View
+                    android:id="@+id/portfolioLine"
+                    style="@style/list_line_style"
+                    android:visibility="gone"/>
+
+            <include
+                    android:id="@+id/portfolioRemindResearchReportLayout"
+                    layout="@layout/activity_portfolio_remind_checkbox_item"
+                    android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

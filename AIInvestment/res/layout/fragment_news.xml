@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.sscf.investment.widget.HeightVariableListView
+        android:id="@+id/news_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+    <include layout="@layout/no_content_layout" />
+    <include
+        layout="@layout/default_loading_layout"
+        android:visibility="gone" />
+    <include
+        layout="@layout/fail_retry"
+        android:visibility="gone" />
+</FrameLayout>

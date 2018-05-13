@@ -1,0 +1,30 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dialogContentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@null">
+        <TextView
+                android:id="@+id/modifyAccountPhotograph"
+                style="@style/setting_dialog_modify_avatar_button_style"
+                android:text="@string/photograph"/>
+        <View
+                style="@style/list_line_style"/>
+        <TextView
+                android:id="@+id/modifyAccountVideo"
+                style="@style/setting_dialog_modify_avatar_button_style"
+                android:text="@string/record_video"/>
+        <View
+                style="@style/list_line_style"/>
+        <TextView
+                android:id="@+id/modifyAccountAlbumPicker"
+                style="@style/setting_dialog_modify_avatar_button_style"
+                android:text="@string/album_picker"/>
+        <TextView
+                android:id="@+id/modifyAccountCancel"
+                style="@style/setting_dialog_modify_avatar_button_style"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/default_text_color_100"
+                android:text="@string/cancel"/>
+</LinearLayout>

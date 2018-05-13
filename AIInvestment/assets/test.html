@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Test Title</title>
+
+    <script type="text/javascript">
+            function doAlert() {
+                alert("hello!");
+            }
+
+            function doConfirm() {
+                confirm("are you sure?");
+            }
+
+            function doPrompt() {
+                var val = prompt("what's your name?");
+                if (val) {
+                    alert("your name is:" + val);
+                }
+            }
+        </script>
+</head>
+
+<body background="black">
+<input type="button" value="alert" onclick="doAlert()"/><br/>
+<input type="button" value="confirm" onclick="doConfirm()"/><br/>
+<input type="button" value="prompt" onclick="doPrompt()"/><br/>
+
+<p>
+    <a href="beacon://stock?id=000001">上证指数</a>
+    scheme测试，跳转本地个股详情
+</p>
+
+</body>
+
+</html>

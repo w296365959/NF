@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_guide_layout"
+    style="@style/null_bg_style"
+    android:clickable="true"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/guide_orange_triangle_indicator" />
+    <LinearLayout
+        android:layout_width="198dp"
+        android:layout_height="36dp"
+        android:background="@drawable/round_rect_guide_bg"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:text="@string/video_guide"
+            android:textColor="@color/white_100"
+            android:textSize="@dimen/font_size_16" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white_100" />
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="6dp"
+            android:scaleType="center"
+            android:src="@drawable/guide_close_icon" />
+    </LinearLayout>
+</LinearLayout>

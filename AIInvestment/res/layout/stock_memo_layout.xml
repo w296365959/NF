@@ -1,0 +1,32 @@
+<com.sscf.investment.detail.view.MemoLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stock_status_tips_layout_height"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center_vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect_bg_memo"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="@string/operation_memo"
+        android:textColor="@color/white_100"
+        android:textSize="@dimen/font_size_12" />
+    <TextView
+        android:id="@+id/text"
+        style="@style/horizontal_average_divide_style"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_rect_bg_memo_msg"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="#929292"
+        android:textSize="@dimen/font_size_14" />
+</com.sscf.investment.detail.view.MemoLayout>

@@ -1,0 +1,27 @@
+<com.sscf.investment.market.view.MarketCapitalFlowIndexInfoView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/market_capital_flow_index_info_style">
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/default_text_color_100"
+            android:text="@string/value_null"/>
+    <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:textSize="@dimen/font_size_22"
+            android:text="@string/value_null"/>
+    <com.sscf.investment.component.ui.widget.NumberTextView
+            android:id="@+id/delta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/default_text_color_80"
+            android:text="@string/value_null_2"/>
+</com.sscf.investment.market.view.MarketCapitalFlowIndexInfoView>

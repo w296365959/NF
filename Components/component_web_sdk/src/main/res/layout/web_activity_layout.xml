@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/setting_bg_style"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_webactivity" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_content_bg">
+
+        <com.sscf.investment.web.sdk.widget.DtWebView
+            android:id="@+id/dengta_web_view"
+            style="@style/default_scrollview_style" />
+
+        <FrameLayout
+            android:id="@+id/webViewBottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom"
+            android:background="@color/default_content_bg"
+            android:visibility="gone">
+
+            <View style="@style/list_line_style" />
+
+            <TextView
+                android:id="@+id/webViewFavor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/actionbar_margin"
+                android:drawableLeft="@drawable/setting_favor_icon_selector"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/setting_favor_text_selector"
+                android:textSize="@dimen/font_size_14" />
+            <TextView
+                android:id="@+id/webViewShare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/actionbar_margin"
+                android:drawableLeft="@drawable/share"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/default_text_color_60"
+                android:textSize="@dimen/font_size_14" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

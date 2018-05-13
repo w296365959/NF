@@ -1,0 +1,3 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    style="@style/portfolio_dialog_text_style" />

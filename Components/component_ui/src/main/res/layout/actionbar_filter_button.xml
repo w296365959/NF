@@ -1,0 +1,5 @@
+<ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/actionbar_filter"
+        style="@style/null_bg_style"
+        android:src="@drawable/actionbar_filter_icon"/>

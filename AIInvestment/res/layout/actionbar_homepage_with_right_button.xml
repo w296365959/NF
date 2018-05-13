@@ -1,0 +1,37 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/actionbar_style"
+        android:background="@android:color/transparent">
+
+        <ImageView
+                android:id="@+id/actionbar_back_button"
+                style="@style/actionbar_back_button_style"/>
+
+        <LinearLayout
+            android:id="@+id/actionbar_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+                <com.sscf.investment.setting.widgt.RoundImageView
+                    android:id="@+id/actionbar_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/default_consultant_face"/>
+
+                <TextView
+                    android:id="@+id/actionbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/actionbar_title_text_color"
+                    android:textSize="@dimen/font_size_22"
+                    android:lines="1"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/actionbar_right_button"
+                android:layout_alignParentRight="true"
+                style="@style/actionbar_text_button_style"/>
+</RelativeLayout>

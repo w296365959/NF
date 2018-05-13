@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/setting_bg_style"
+    android:gravity="center_horizontal">
+    <include layout="@layout/actionbar_setting"/>
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/gallery_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_text_color_100"
+        android:textSize="@dimen/font_size_16"
+        android:text="@string/import_gallery_info"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_text_color_80"
+        android:textSize="@dimen/font_size_12"
+        android:gravity="top|center_horizontal"
+        android:text="@string/import_gallery_sub_info"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="80dp"/>
+    <Button
+        android:id="@+id/import_button"
+        style="@style/setting_button_style"
+        android:text="@string/go_gallery"
+        android:layout_marginBottom="@dimen/pay_button_margin_bottom"/>
+</LinearLayout>
