@@ -1,0 +1,4 @@
+1.关于解决部分版本android上ScrollView和ListView以及ScrollView和RecyclerView嵌套时，
+在初次进入时会滚动到ListView和RecyclerView的问题，调用setFocusable使其无法获取焦点可以解决。
+2.视频播放需要注意，如果通过前端列表页面跳转至播放页面，会出现权限问题导致无法全屏，
+需要通过终端进行中转开启新的webview。
